@@ -77,7 +77,7 @@ html {
 /* line 16, ../sass/screen.scss */
 body {
   background-color: #D1DBBD;
-  width: 100%;
+  width: 1020px;
   margin: 0 auto;
 }
 
@@ -93,18 +93,16 @@ h3 {
 /* line 31, ../sass/screen.scss */
 header {
   background-color: #193441;
-  width: 1020px;
-  margin: 0 auto;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #wrapper-logo {
   height: 150px;
   text-align: middle;
   border-bottom: solid 1px #FCFFF5;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #logo {
   background-color: #D1DBBD;
   float: left;
@@ -112,7 +110,7 @@ header {
   width: 150px;
   height: 150px;
 }
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #logo svg {
   margin-left: 25px;
   margin-right: auto;
@@ -127,13 +125,13 @@ header {
   height: 100px;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 nav {
   float: left;
   margin-left: 85px;
   height: 150px;
 }
-/* line 60, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 nav ul {
   /*has to be in the element to verticaly align*/
   display: inline-block;
@@ -143,28 +141,28 @@ nav ul {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 62, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 nav ul li {
   float: left;
   padding-right: 85px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: #FCFFF5;
   font-size: 14px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #wrapper-name {
   height: 150px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #wrapper-name h1 {
   float: left;
   /*has to be in the element to verticaly align*/
@@ -182,7 +180,7 @@ nav ul li a:hover {
   border-right: solid 1px #FCFFF5;
   padding-left: 64px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #wrapper-name h2 {
   float: left;
   font-size: 20px;
@@ -198,37 +196,29 @@ nav ul li a:hover {
   margin-left: 64px;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #about_me {
-  width: 700px;
+  width: 75%;
   margin: 0 auto;
   padding-top: 100px;
 }
-/* line 107, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #about_me #linkedin_logo svg {
   height: 30px;
   border-radius: 50px;
   background: #193441;
 }
-/* line 114, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #about_me svg {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 300px;
-  background: -webkit-linear-gradient(#193441, #FCFFF5);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#193441, #FCFFF5);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#193441, #FCFFF5);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#193441, #FCFFF5);
-  /* Standard syntax */
+  border-radius: 150px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #about_me p {
   padding-top: 50px;
   text-align: center;
@@ -237,112 +227,131 @@ nav ul li a:hover {
   letter-spacing: 1px;
   line-height: 150%;
 }
-/* line 130, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #about_me p strong {
   font-weight: bold;
   color: #91AA9D;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #skills {
+  padding-top: 100px;
   width: 700px;
-  margin: 100px auto 0;
-  display: inline;
-}
-/* line 145, ../sass/screen.scss */
-#skills ul {
   margin: 0 auto;
 }
-/* line 147, ../sass/screen.scss */
-#skills ul li {
-  width: 50%;
+/* line 139, ../sass/screen.scss */
+#skills dl {
+  padding-top: 50px;
+}
+/* line 143, ../sass/screen.scss */
+#skills dl dt {
+  float: left;
+  width: 350px;
   color: #3E606F;
   font-size: 16px;
-  float: left;
-  height: 50px;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-0 {
-  border-radius: 10px;
-  background: #193441;
-  height: 10px;
-  width: 0px;
-  box-shadow: 300px 0 0 #fff;
-}
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-1 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 30px;
   box-shadow: 270px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-2 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 60px;
   box-shadow: 240px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-3 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 90px;
   box-shadow: 210px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-4 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 120px;
   box-shadow: 180px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-5 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 150px;
   box-shadow: 150px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-6 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 180px;
   box-shadow: 120px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-7 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-7 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 210px;
   box-shadow: 90px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-8 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-8 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 240px;
   box-shadow: 60px 0 0 #fff;
 }
-/* line 155, ../sass/screen.scss */
-#skills ul li .skill-9 {
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-9 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 270px;
   box-shadow: 30px 0 0 #fff;
 }
+/* line 151, ../sass/screen.scss */
+#skills dl .skill-10 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #193441;
+  height: 10px;
+  width: 300px;
+  box-shadow: 0px 0 0 #fff;
+}
 
-/* line 168, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 footer {
   background-color: #193441;
   height: 300px;

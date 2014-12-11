@@ -15,7 +15,7 @@ html{
 
 body{
 	background-color: $color2;
-	width:100%;
+	width:1020px;
 	margin: 0 auto;
 			
 }
@@ -30,8 +30,6 @@ h3{
 
 header{
 	background-color: $color5;
-	width: 1020px;
-	margin: 0 auto;
 }
 
 #wrapper-logo{
@@ -99,7 +97,7 @@ nav{
 }
 
 #about_me{
-	width: 700px;
+	width: 75%;
 	margin:0 auto;
 	padding-top: 100px;
 	#linkedin_logo{
@@ -108,17 +106,17 @@ nav{
 			height: 30px;	
 			border-radius: 50px;
 			background: $color5;
+			
 		}
 	}
 
 	svg{
 		margin-top: 50px;
-		@include size(150px);
+		@include size(300px);
 		display: block;
 		margin-left: auto;
     	margin-right: auto;
-		border-radius:300px;	
-		@include gradient;	
+		border-radius:150px;		
 	}	
 	p{	
 		padding-top: 50px;	
@@ -134,36 +132,37 @@ nav{
 	}
 }
 
-
-
 #skills{
-
+	padding-top: 100px;
 	width: 700px;
-	margin:100px auto 0;	
-	display: inline;
-
-	ul{
-		margin: 0 auto;
-		li{
-			width: 50%;
+	margin:0 auto;
+	dl{
+		
+		padding-top: 50px;		
+		
+		dt{
+			float:left;
+			width: 350px;
 			color:$color4;
-			font-size: 16px;
-			float: left;																
-			height: 50px;
-
-			@for $i from 0 to 10{
-				.skill-#{$i}
-				{				
-					border-radius: 10px;
-					background: $color5;
-					height: 10px;
-					width: $i*30px;
-					box-shadow: 300-$i*30px 0 0 #fff;					
-				}
-			}	
+			font-size: 16px;													
 		}
+
+		@for $i from 1 to 11{
+			.skill-#{$i}
+			{				
+				margin-top: 20px;
+				margin-bottom: 20px;						
+				border-radius: 10px;
+				background: $color5;
+				height: 10px;
+				width: $i*30px;
+				box-shadow: 300-$i*30px 0 0 #fff;
+			}
+		}		
+		
 	}
 }
+
 
 footer{
 	background-color: $color5;
