@@ -1,0 +1,48 @@
+#contact{
+	margin:100px auto 0;
+	max-width: 800px;
+	form{
+		max-width: 800px;
+		.info-group{
+			margin: 40px auto 0;
+			label{
+				@include column(400px);
+				span{
+					display: block;
+					width: 400px;
+				}
+				input{
+					margin: 10px auto 0;
+					width: 300px;
+					border: 1px $color5 solid;
+					background: $color1;
+				}
+			}
+		}
+		.tell-group{
+			margin: 40px auto 0;
+			label{
+				display: block;
+				float:left;
+				width:800px;
+				span{
+					margin-top: 40px;
+					display: block;
+				}
+				textarea{
+					margin-top: 10px;
+					display: block;
+					width: 300px;
+					border: 1px $color5 solid;
+					background: $color1;
+				}
+			}			
+		}
+		.submit-wrap{
+			display: block;
+			float:left;
+			width:400px;
+			margin-top: 40px;
+		}
+	}			
+}

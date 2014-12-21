@@ -1,0 +1,35 @@
+#about_me{
+	max-width: 800px;
+	margin:0 auto;
+	padding-top: 100px;
+	#linkedin_logo{
+		width: 30px;
+		height: 30px;	
+		border-radius: 50%;
+		svg{
+			width: 30px;
+			height: 30px;	
+			background: $color5;
+		}
+	}
+
+	svg{
+		margin: 50px auto;
+		display: block;
+		border-radius:300px;	
+		@include size(150px);
+		@include gradient;	
+	}	
+	p{	
+		margin-top: 50px;	
+		text-align:center;
+		color:$color4;
+		font-size: 20px;		
+		letter-spacing: 1px;
+		line-height: 150%;
+		strong{
+			font-weight: bold;
+			color: $color3;
+		}
+	}
+}

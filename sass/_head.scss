@@ -1,0 +1,112 @@
+header{
+	background-color: $color5;
+	margin: 0 auto;
+	max-width: 1020px;
+}
+
+#wrapper-logo{
+	height:150px;
+	text-align: middle;
+	border-bottom:solid 1px $color1;
+}
+
+#logo{
+	background-color: $color2;
+	float:left;
+	margin-left:64px;		
+	@include size(150px);
+	svg{
+		margin-left: 25px;
+    	margin-right: auto;
+		@include verticaly-align;
+		@include size(100px);
+	}
+}
+
+nav{
+	float:left;
+	margin-left:85px;
+	height:150px;	
+	ul{
+		@include verticaly-align;
+		li{
+			display:inline-block;
+			float: left;
+			padding-right: 85px;
+			a{				
+				text-decoration: none;
+				font-weight: bold;
+				color:$color1;
+				font-size: 14px;
+				&:hover{
+					text-decoration: underline; 
+				}
+			}
+		}
+	}
+}
+
+#wrapper-name{
+	height:150px;
+	
+	h1{
+		float:left;
+		@include verticaly-align;	
+		color: $color2;
+		font-size: 36px;
+		font-weight: bold;
+		line-height: 150px;		
+		border-right: solid 1px $color1;		
+		padding-left: 64px;
+	}	
+	h2{		
+		display:inline-block;
+		float: left;
+		font-size: 20px;
+		font-weight: bold;
+		color:$color3;
+		@include verticaly-align;
+		margin-left: 64px;
+	}
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	header{
+		max-width: 640px;
+	}
+	/*Make dropdown links appear inline*/
+	nav{
+		ul {
+			position: static;
+			display: none;
+			width: 100%;
+			li {
+				width: 100%;
+				/*Create vertical spacing*/		
+				margin-bottom: 1px;
+				a{
+					width: 100%;
+				}
+			}
+		}		
+	}
+
+	#wrapper-name{
+		background-color: $color5;
+		h1{
+			border-bottom: solid 1px $color1;
+			width: 100%;
+			margin-right: 0;
+
+		}
+		h2{
+			width: 100%;
+			background-color: $color5;
+			height: 150px;			
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
