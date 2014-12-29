@@ -1,17 +1,12 @@
-#work{
-	max-width: 800px;
-	margin:0 auto;
-	h3{		
-		margin: 100px auto 30px;
+#work{	
+	margin:100px auto 0;
+	max-width: $full-width;
+	display: block;
+	h3{
+		
 	}
 	#work-group{
-		max-width: 800px;
-		font-size:0px;
-		a{				
-			display: inline-block;
-   			text-align: left; 	
-		}
-	}
-	
+		font-size:0px;		
+		max-width: $full-width;
+	}	
 }
-

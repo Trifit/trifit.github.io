@@ -11,8 +11,3 @@
 	width:$size;
 	height:$size;
 }
-@mixin column($wth){
-	display: block;
-	float:left;
-	width:$wth;
-}

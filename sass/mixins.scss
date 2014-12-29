@@ -21,3 +21,7 @@
   	background: -moz-linear-gradient($color5, $color1); /* For Firefox 3.6 to 15 */
   	background: linear-gradient($color5, $color1); /* Standard syntax */
 }
+@mixin column{
+	display: block;
+	float:left;	
+}

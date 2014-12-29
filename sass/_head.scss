@@ -58,6 +58,8 @@ nav{
 		line-height: 150px;		
 		border-right: solid 1px $color1;		
 		padding-left: 64px;
+		padding-right: 64px;
+		margin: 0 auto;
 	}	
 	h2{		
 		display:inline-block;
@@ -66,7 +68,8 @@ nav{
 		font-weight: bold;
 		color:$color3;
 		@include verticaly-align;
-		margin-left: 64px;
+		padding-left: 64px;
+		margin: 0 auto;
 	}
 }
 

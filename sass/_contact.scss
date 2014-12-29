@@ -1,48 +1,56 @@
-#contact{
-	margin:100px auto 0;
-	max-width: 800px;
-	form{
-		max-width: 800px;
-		.info-group{
-			margin: 40px auto 0;
-			label{
-				@include column(400px);
-				span{
-					display: block;
-					width: 400px;
-				}
-				input{
-					margin: 10px auto 0;
-					width: 300px;
-					border: 1px $color5 solid;
-					background: $color1;
-				}
-			}
-		}
-		.tell-group{
-			margin: 40px auto 0;
-			label{
-				display: block;
-				float:left;
-				width:800px;
-				span{
-					margin-top: 40px;
-					display: block;
-				}
-				textarea{
-					margin-top: 10px;
-					display: block;
-					width: 300px;
-					border: 1px $color5 solid;
-					background: $color1;
-				}
-			}			
-		}
-		.submit-wrap{
-			display: block;
-			float:left;
-			width:400px;
-			margin-top: 40px;
-		}
-	}			
+.contact {
+    margin: 100px auto 0;
+    max-width: $half-width;
+    form {
+        letter-spacing: 2px;
+        color: $color4;
+        input, textarea {
+            border: 3px solid $color5;
+            padding: 10px;
+            font-size: 16px;
+            background: $color6;
+            &:focus {
+                border-color: $color3;
+            }            
+        }
+        .info-group {
+            margin-top: 10px;
+            label {
+                width: 45%;
+                float:left;
+                span{
+                    text-align: left;
+                }
+            	&:nth-child(2) {
+                    float: right;
+                    margin: 0 auto;
+                }
+                input{
+                	width: calc(100% - 20px);
+                }
+            }
+        }
+        .tell-group {
+        	margin-top: 10px;
+        	textarea {
+                height: 10em;
+                width: calc(100% - 20px);
+                resize: none; 
+            }
+        }
+        .submit-wrap {
+            margin-top: 20px;
+            float: right;
+            input {
+                width: 100px;
+                font-size: 18px;
+                color: $color6;
+                background-color: $color5;
+                margin-right: -6px;
+                &:hover {
+                    color: $color1;
+                }
+            }
+        }
+    }
 }

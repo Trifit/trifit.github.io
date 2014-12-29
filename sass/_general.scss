@@ -2,18 +2,21 @@ html{
 	font-family: sans-serif;
 	ms-text-size-adjust: 100%;
 	webkit-text-size-adjust: 100%; 
+	margin: 0 auto;		
 }
 
 body{
 	background-color: $color2;
-	width:100%;
-	margin: 0 auto;			
 }
 
 h3{
 		text-align:center;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: bold;
-		color: $color4;
+		color: $color5;
 		letter-spacing: 2px;
+}
+
+section{
+	display:block;	
 }
