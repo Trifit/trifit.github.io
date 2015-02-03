@@ -1,12 +1,79 @@
-#work{	
-	margin:100px auto 0;
-	max-width: $full-width;
-	display: block;
-	h3{
+#work{
+	overflow-x: hidden;
+	#work-belt{	
+		width: 200%;	
+		left:0;
+		position: relative;
+		#thumb-cointainer, #work-container{
+			width: 50%;			
+			float: left;
+			#thumb-wrap{
+				font-size: 0; 
+			}
+			#thumb-wrap, #work-wrap{
+				max-width: $full-width;
+				margin: 0 auto;
+				min-height: 1px; //in this way the div doesn't collapse when whe hide id with jquery
+				figure{		
+					display: inline-block;
+		  			position: relative;
+		  			margin:0;
+		  			overflow: hidden;
+		  			height: 134px;
+		  			width: 200px;
+		  			background: $color5;
+					cursor: pointer;								
+					figcaption {
+					  	position: absolute;
+						height:100%;
+						width:100%;
+						top:-134px;
+						transition: top 0.5s ease;
+						vertical-align: left;
+						background: rgba($color5, 0.9);
+						padding-left: 10px;
+					  	h4{
+							opacity:1!important;
+							color:$color2;
+							font-weight: bold;
+							font-size: 14px;
+						}
+						p{
+							font-size: 12px;
+							color: $color6;
+						}
+					}
+				}
+				figure:hover figcaption {
+					  top:0;
+				}
+			
+				#arrow{
+					@include size(50px);
+					cursor:pointer;
+					opacity: 0.5;
+					position:relative;
+					top:50px;
+					left:-60px;
+					path{
+						stroke: grey;  
+					}
+					&:hover{
+						opacity: 1;
+					}
+				}
+				img,iframe{
+					margin:0 auto;
+					background: pink;
+				}
+			}
+			#work-wrap{
+				margin:0 auto;
+				position: relative;
+				top:-50px;
+				width: 750px;
+			}	
 		
+		}			
 	}
-	#work-group{
-		font-size:0px;		
-		max-width: $full-width;
-	}	
 }

@@ -16,10 +16,12 @@
 }
 
 @mixin gradient{
-	background: -webkit-linear-gradient($color5, $color1); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient($color5, $color1); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient($color5, $color1); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient($color5, $color1); /* Standard syntax */
+  	background: -webkit-gradient(linear, to top, to bottom, from($color1), to($color5));
+	background: -webkit-linear-gradient(to top, $color1, $color5);/* For Safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(to top, $color1, $color5); /* For Firefox 3.6 to 15 */
+	background: -o-linear-gradient(to top, $color1, $color5);/* For Opera 11.1 to 12.0 */
+	background: -ms-linear-gradient(to top, $color1, $color5);
+	background: linear-gradient(to top, $color1, $color5);/* Standard syntax */
 }
 @mixin column{
 	display: block;

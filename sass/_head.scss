@@ -52,10 +52,6 @@ nav{
 	h1{
 		float:left;
 		@include verticaly-align;	
-		color: $color2;
-		font-size: 36px;
-		font-weight: bold;
-		line-height: 150px;		
 		border-right: solid 1px $color1;		
 		padding-left: 64px;
 		padding-right: 64px;
@@ -64,9 +60,6 @@ nav{
 	h2{		
 		display:inline-block;
 		float: left;
-		font-size: 20px;
-		font-weight: bold;
-		color:$color3;
 		@include verticaly-align;
 		padding-left: 64px;
 		margin: 0 auto;
