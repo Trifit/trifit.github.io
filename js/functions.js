@@ -1,5 +1,7 @@
 $(function() {
 	workBelt();	
+	smoothScroll(300);
+	formSubmit();
 }); 
 
 function workBelt() {
@@ -15,5 +17,28 @@ function workBelt() {
 		$(this).parent().parent().parent().animate({left:"0%"});
 		$(".detail").hide();
 		$(".thumbnail").show();
+	});
+}
+
+function smoothScroll(duration){
+	$('a[href^="#"]').on('click', function(event) {
+	var target = $( $(this).attr('href') );
+	if( target.length ) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: target.offset().top
+		}, duration);
+		}
+	});
+}
+
+function formSubmit(){
+	$( "#contact-form" ).submit(function( event ) {
+		$(this).hide("slow");
+		
+		$("#contact h3").after("<p class='success-message'>Success!!!</p>").delay(1000);
+		
+		//alert( "Handler for .submit() called." );
+		event.preventDefault();
 	});
 }

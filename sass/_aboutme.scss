@@ -1,21 +1,14 @@
 #about_me{
-	max-width: $full-width;
+	max-width: 700px;
 	margin:0 auto;
-	#linkedin_logo{
-		border-radius: 50%;
-		svg{
-			@include size(30px);	
-			background: $color5;
-		}
-	}
-
-	svg{
+	#myself{
+		width: 150px;
 		margin: 20px auto;
-		display: block;		
-		@include size(150px);
-		@include gradient;	
-		border-radius: 75px;
-	}	
+		svg{
+			@include gradient;	
+			border-radius: 100%;		
+		}		
+	}
 	p{	
 		margin-top: 50px;			
 		text-align:center;		

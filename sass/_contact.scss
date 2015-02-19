@@ -1,18 +1,21 @@
-.contact {
-    margin: 0 auto;
-    max-width: $half-width;
+#contact {
+    margin: 0 auto 200px;
+    max-width: 500px;
     form {
         letter-spacing: 2px;
         color: $color4;
         input, textarea {
             border: 3px solid $color5;
-            padding: 10px;
+            padding: 3px 10px;
             font-size: 16px;
             background: $color6;
+            margin-top: 7px;
             &:focus {
                 border-color: $color3;
             }            
         }
+        
+
         .info-group {
             margin-top: 10px;
             display: inline-block;
@@ -20,7 +23,7 @@
                 width: 45%;
                 float:left;
                 span{
-                    text-align: left;
+                    text-align: left;                    
                 }
             	&:nth-child(2) {
                     float: right;
@@ -45,13 +48,21 @@
             input {
                 width: 100px;
                 font-size: 18px;
+                font-weight: 600;
                 color: $color6;
                 background-color: $color5;
-                margin-right: -6px;
+                margin-right: -6px; //we have this negative margin because the border of 3px in the inputs
+                padding:10px 60px 10px;
+                letter-spacing: 2px;
                 &:hover {
                     color: $color1;
                 }
             }
         }
+
+    }
+    .success-message{
+        font-size: 36px;
+        text-align: center;
     }
 }

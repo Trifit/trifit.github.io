@@ -27,3 +27,26 @@
 	display: block;
 	float:left;	
 }
+
+@mixin navbar{
+	nav{
+			ul{
+				li{
+					display: inline-block;
+					margin:0 30px;
+					a{
+						text-decoration: none;
+						font-weight: 600;
+						color: $color1;
+						font-size: 14px;
+						letter-spacing: 2px;
+						&:hover{
+							border-bottom: 2px solid;
+							padding-bottom: 1px;
+						}
+					}
+				}
+			}
+
+		}
+}

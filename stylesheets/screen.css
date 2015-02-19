@@ -442,31 +442,32 @@ th {
 
 /* line 1, ../sass/_general.scss */
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+/* line 7, ../sass/_general.scss */
+body {
+  background-color: #D1DBBD;
+  width: 100%;
   margin: 0 auto;
 }
 
-/* line 8, ../sass/_general.scss */
-body {
-  background-color: #D1DBBD;
-}
-
-/* line 12, ../sass/_general.scss */
+/* line 13, ../sass/_general.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 16, ../sass/_general.scss */
+/* line 17, ../sass/_general.scss */
 h1 {
   color: #D1DBBD;
   font-size: 36px;
   font-weight: bold;
 }
 
-/* line 22, ../sass/_general.scss */
+/* line 23, ../sass/_general.scss */
 h2 {
   font-size: 20px;
   font-weight: bold;
@@ -474,7 +475,7 @@ h2 {
   letter-spacing: 2px;
 }
 
-/* line 29, ../sass/_general.scss */
+/* line 30, ../sass/_general.scss */
 h3 {
   margin: 50px auto 50px;
   text-align: center;
@@ -484,47 +485,48 @@ h3 {
   letter-spacing: 2px;
 }
 
-/* line 38, ../sass/_general.scss */
+/* line 39, ../sass/_general.scss */
 h4, h5 {
   font-size: 20px;
   color: #193441;
   letter-spacing: 2px;
 }
 
-/* line 44, ../sass/_general.scss */
+/* line 45, ../sass/_general.scss */
 p {
   color: #3E606F;
   letter-spacing: 1px;
   line-height: 150%;
   font-size: 16px;
 }
-/* line 49, ../sass/_general.scss */
+/* line 51, ../sass/_general.scss */
 p strong {
   font-weight: bold;
   color: #91AA9D;
 }
 
-/* line 55, ../sass/_general.scss */
+/* line 57, ../sass/_general.scss */
 ul {
   list-style: none;
+  padding: 0;
 }
 
-/* line 59, ../sass/_general.scss */
+/* line 63, ../sass/_general.scss */
 section {
   display: block;
   clear: both;
   padding: 0px;
 }
 
-/* line 66, ../sass/_general.scss */
+/* line 69, ../sass/_general.scss */
 .alternate {
   background: #3E606F;
 }
-/* line 68, ../sass/_general.scss */
+/* line 71, ../sass/_general.scss */
 .alternate h1 {
   color: #FCFFF5;
 }
-/* line 71, ../sass/_general.scss */
+/* line 74, ../sass/_general.scss */
 .alternate h3 {
   color: #D1DBBD;
 }
@@ -532,27 +534,25 @@ section {
 /* line 1, ../sass/_head.scss */
 header {
   background-color: #193441;
-  margin: 0 auto;
-  max-width: 1020px;
+  min-width: 100%;
+  float: left;
 }
-
-/* line 7, ../sass/_head.scss */
-#wrapper-logo {
+/* line 6, ../sass/_head.scss */
+header #wrapper-logo {
   height: 150px;
   text-align: middle;
   border-bottom: solid 1px #FCFFF5;
 }
-
-/* line 13, ../sass/_head.scss */
-#logo {
+/* line 12, ../sass/_head.scss */
+header #logo {
   background-color: #D1DBBD;
   float: left;
   margin-left: 64px;
   width: 150px;
   height: 150px;
 }
-/* line 18, ../sass/_head.scss */
-#logo svg {
+/* line 17, ../sass/_head.scss */
+header #logo svg {
   margin-left: 25px;
   margin-right: auto;
   /*has to be in the element to verticaly align*/
@@ -565,47 +565,30 @@ header {
   width: 100px;
   height: 100px;
 }
-
-/* line 26, ../sass/_head.scss */
-nav {
-  float: left;
-  margin-left: 85px;
+/* line 34, ../sass/mixins.scss */
+header nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+/* line 37, ../sass/mixins.scss */
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #FCFFF5;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+/* line 43, ../sass/mixins.scss */
+header nav ul li a:hover {
+  border-bottom: 2px solid;
+  padding-bottom: 1px;
+}
+/* line 27, ../sass/_head.scss */
+header #wrapper-name {
   height: 150px;
 }
 /* line 30, ../sass/_head.scss */
-nav ul {
-  /*has to be in the element to verticaly align*/
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-/* line 32, ../sass/_head.scss */
-nav ul li {
-  display: inline-block;
-  float: left;
-  padding-right: 85px;
-}
-/* line 36, ../sass/_head.scss */
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #FCFFF5;
-  font-size: 14px;
-}
-/* line 41, ../sass/_head.scss */
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* line 49, ../sass/_head.scss */
-#wrapper-name {
-  height: 150px;
-}
-/* line 52, ../sass/_head.scss */
-#wrapper-name h1 {
+header #wrapper-name h1 {
   float: left;
   /*has to be in the element to verticaly align*/
   display: inline-block;
@@ -619,8 +602,8 @@ nav ul li a:hover {
   padding-right: 64px;
   margin: 0 auto;
 }
-/* line 60, ../sass/_head.scss */
-#wrapper-name h2 {
+/* line 38, ../sass/_head.scss */
+header #wrapper-name h2 {
   display: inline-block;
   float: left;
   /*has to be in the element to verticaly align*/
@@ -636,41 +619,39 @@ nav ul li a:hover {
 
 /*Responsive Styles*/
 @media screen and (max-width: 760px) {
-  /* line 72, ../sass/_head.scss */
+  /* line 51, ../sass/_head.scss */
   header {
     max-width: 640px;
+    /*Make dropdown links appear inline*/
   }
-
-  /*Make dropdown links appear inline*/
-  /* line 77, ../sass/_head.scss */
-  nav ul {
+  /* line 55, ../sass/_head.scss */
+  header nav ul {
     position: static;
     display: none;
     width: 100%;
   }
-  /* line 81, ../sass/_head.scss */
-  nav ul li {
+  /* line 59, ../sass/_head.scss */
+  header nav ul li {
     width: 100%;
     /*Create vertical spacing*/
     margin-bottom: 1px;
   }
-  /* line 85, ../sass/_head.scss */
-  nav ul li a {
+  /* line 63, ../sass/_head.scss */
+  header nav ul li a {
     width: 100%;
   }
-
-  /* line 92, ../sass/_head.scss */
-  #wrapper-name {
+  /* line 70, ../sass/_head.scss */
+  header #wrapper-name {
     background-color: #193441;
   }
-  /* line 94, ../sass/_head.scss */
-  #wrapper-name h1 {
+  /* line 72, ../sass/_head.scss */
+  header #wrapper-name h1 {
     border-bottom: solid 1px #FCFFF5;
     width: 100%;
     margin-right: 0;
   }
-  /* line 100, ../sass/_head.scss */
-  #wrapper-name h2 {
+  /* line 78, ../sass/_head.scss */
+  header #wrapper-name h2 {
     width: 100%;
     background-color: #193441;
     height: 150px;
@@ -680,25 +661,16 @@ nav ul li a:hover {
 }
 /* line 1, ../sass/_aboutme.scss */
 #about_me {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
 }
 /* line 4, ../sass/_aboutme.scss */
-#about_me #linkedin_logo {
-  border-radius: 50%;
-}
-/* line 6, ../sass/_aboutme.scss */
-#about_me #linkedin_logo svg {
-  width: 30px;
-  height: 30px;
-  background: #193441;
-}
-/* line 12, ../sass/_aboutme.scss */
-#about_me svg {
-  margin: 20px auto;
-  display: block;
+#about_me #myself {
   width: 150px;
-  height: 150px;
+  margin: 20px auto;
+}
+/* line 7, ../sass/_aboutme.scss */
+#about_me #myself svg {
   background: -webkit-gradient(linear, to top, to bottom, from(#FCFFF5), to(#193441));
   background: -webkit-linear-gradient(to top, #FCFFF5, #193441);
   /* For Safari 5.1 to 6.0 */
@@ -709,9 +681,9 @@ nav ul li a:hover {
   background: -ms-linear-gradient(to top, #FCFFF5, #193441);
   background: linear-gradient(to top, #FCFFF5, #193441);
   /* Standard syntax */
-  border-radius: 75px;
+  border-radius: 100%;
 }
-/* line 19, ../sass/_aboutme.scss */
+/* line 12, ../sass/_aboutme.scss */
 #about_me p {
   margin-top: 50px;
   text-align: center;
@@ -721,110 +693,114 @@ nav ul li a:hover {
 #skills {
   max-width: 900px;
   margin: 0 auto;
-  display: block;
 }
-/* line 5, ../sass/_skills.scss */
+/* line 4, ../sass/_skills.scss */
 #skills ul {
+  text-align: center;
   margin: 20px auto 0;
 }
 /* line 7, ../sass/_skills.scss */
 #skills ul li {
-  width: 360px;
+  width: 270px;
   color: #3E606F;
   font-size: 16px;
   margin-right: 2%;
   margin-left: 2%;
   display: inline-block;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 15, ../sass/_skills.scss */
+#skills ul li p {
+  text-align: left;
+}
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-0 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
   width: 0px;
-  box-shadow: 360px 0 0 #fff;
+  box-shadow: 270px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-1 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 36px;
-  box-shadow: 324px 0 0 #fff;
+  width: 27px;
+  box-shadow: 243px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-2 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 72px;
-  box-shadow: 288px 0 0 #fff;
+  width: 54px;
+  box-shadow: 216px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-3 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 108px;
-  box-shadow: 252.0px 0 0 #fff;
+  width: 81px;
+  box-shadow: 189px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-4 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 144px;
-  box-shadow: 216px 0 0 #fff;
+  width: 108px;
+  box-shadow: 162px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-5 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 180px;
-  box-shadow: 180px 0 0 #fff;
+  width: 135px;
+  box-shadow: 135px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-6 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 216px;
-  box-shadow: 144.0px 0 0 #fff;
+  width: 162px;
+  box-shadow: 108.0px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-7 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 252px;
-  box-shadow: 108.0px 0 0 #fff;
+  width: 189px;
+  box-shadow: 81.0px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-8 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 288px;
-  box-shadow: 72.0px 0 0 #fff;
+  width: 216px;
+  box-shadow: 54.0px 0 0 #fff;
 }
-/* line 16, ../sass/_skills.scss */
+/* line 19, ../sass/_skills.scss */
 #skills ul li .skill-9 {
   margin: 20px 0;
   border-radius: 10px;
   background: #193441;
   height: 10px;
-  width: 324px;
-  box-shadow: 36.0px 0 0 #fff;
+  width: 243px;
+  box-shadow: 27.0px 0 0 #fff;
 }
 
 /* line 1, ../sass/_work.scss */
@@ -921,126 +897,188 @@ nav ul li a:hover {
   width: 750px;
 }
 
-/* line 2, ../sass/_social.scss */
+/* line 1, ../sass/_social.scss */
+#social {
+  text-align: center;
+}
+/* line 3, ../sass/_social.scss */
 #social #icons {
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto 50px;
   text-align: center;
   padding-bottom: 40px;
-  border-bottom: 3px solid #FCFFF5;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-/* line 7, ../sass/_social.scss */
+/* line 15, ../sass/_social.scss */
 #social #icons .icon {
-  display: inline-block;
   opacity: 0.7;
-  cursor: pointer;
   background: #FCFFF5;
   border-radius: 40px;
   width: 50px;
   height: 50px;
   margin: 20px;
+  transition: all .1s ease-in-out;
 }
-/* line 15, ../sass/_social.scss */
+/* line 22, ../sass/_social.scss */
 #social #icons .icon:hover {
   opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
-/* line 19, ../sass/_social.scss */
+/* line 27, ../sass/_social.scss */
 #social #icons .icon svg {
   vertical-align: middle;
   height: 50px;
 }
-/* line 25, ../sass/_social.scss */
-#social h1 {
-  text-align: center;
-  letter-spacing: 2px;
-  font-weight: normal;
-  opacity: 0.7;
-  padding-bottom: 40px;
+/* line 35, ../sass/_social.scss */
+#social .bar {
+  width: 250px;
+  height: 5px;
+  background-color: #193441;
+  border: 0;
+  margin: 0 auto 70px;
 }
-/* line 31, ../sass/_social.scss */
-#social h1:hover {
-  opacity: 1;
+/* line 43, ../sass/_social.scss */
+#social .big-email {
+  display: inline-block;
+  margin: 0 auto 70px;
+  font-size: 72px;
+  font-weight: 300;
+  color: #91AA9D;
+}
+/* line 49, ../sass/_social.scss */
+#social .big-email:hover {
+  color: #FCFFF5;
   cursor: pointer;
 }
-/* line 36, ../sass/_social.scss */
+/* line 56, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
+@media screen and (max-width: 760px) {
+  /* line 61, ../sass/_social.scss */
+  #social .big-email {
+    font-size: 32px;
+  }
+}
 
 /* line 1, ../sass/_contact.scss */
-.contact {
-  margin: 0 auto;
-  max-width: 400px;
+#contact {
+  margin: 0 auto 200px;
+  max-width: 500px;
 }
 /* line 4, ../sass/_contact.scss */
-.contact form {
+#contact form {
   letter-spacing: 2px;
   color: #3E606F;
 }
 /* line 7, ../sass/_contact.scss */
-.contact form input, .contact form textarea {
+#contact form input, #contact form textarea {
   border: 3px solid #193441;
-  padding: 10px;
+  padding: 3px 10px;
   font-size: 16px;
   background: #c8d4ce;
+  margin-top: 7px;
 }
-/* line 12, ../sass/_contact.scss */
-.contact form input:focus, .contact form textarea:focus {
+/* line 13, ../sass/_contact.scss */
+#contact form input:focus, #contact form textarea:focus {
   border-color: #91AA9D;
 }
-/* line 16, ../sass/_contact.scss */
-.contact form .info-group {
+/* line 19, ../sass/_contact.scss */
+#contact form .info-group {
   margin-top: 10px;
   display: inline-block;
 }
-/* line 19, ../sass/_contact.scss */
-.contact form .info-group label {
+/* line 22, ../sass/_contact.scss */
+#contact form .info-group label {
   width: 45%;
   float: left;
 }
-/* line 22, ../sass/_contact.scss */
-.contact form .info-group label span {
+/* line 25, ../sass/_contact.scss */
+#contact form .info-group label span {
   text-align: left;
 }
-/* line 25, ../sass/_contact.scss */
-.contact form .info-group label:nth-child(2) {
+/* line 28, ../sass/_contact.scss */
+#contact form .info-group label:nth-child(2) {
   float: right;
   margin: 0 auto;
 }
-/* line 29, ../sass/_contact.scss */
-.contact form .info-group label input {
+/* line 32, ../sass/_contact.scss */
+#contact form .info-group label input {
   width: calc(100% - 20px);
 }
-/* line 34, ../sass/_contact.scss */
-.contact form .tell-group {
+/* line 37, ../sass/_contact.scss */
+#contact form .tell-group {
   margin-top: 10px;
 }
-/* line 36, ../sass/_contact.scss */
-.contact form .tell-group textarea {
+/* line 39, ../sass/_contact.scss */
+#contact form .tell-group textarea {
   height: 10em;
   width: calc(100% - 20px);
   resize: none;
 }
-/* line 42, ../sass/_contact.scss */
-.contact form .submit-wrap {
+/* line 45, ../sass/_contact.scss */
+#contact form .submit-wrap {
   margin-top: 20px;
   float: right;
 }
-/* line 45, ../sass/_contact.scss */
-.contact form .submit-wrap input {
+/* line 48, ../sass/_contact.scss */
+#contact form .submit-wrap input {
   width: 100px;
   font-size: 18px;
+  font-weight: 600;
   color: #c8d4ce;
   background-color: #193441;
   margin-right: -6px;
+  padding: 10px 60px 10px;
+  letter-spacing: 2px;
 }
-/* line 51, ../sass/_contact.scss */
-.contact form .submit-wrap input:hover {
+/* line 57, ../sass/_contact.scss */
+#contact form .submit-wrap input:hover {
   color: #FCFFF5;
+}
+/* line 64, ../sass/_contact.scss */
+#contact .success-message {
+  font-size: 36px;
+  text-align: center;
 }
 
 /* line 1, ../sass/_footer.scss */
 footer {
-  width: 100%;
   background-color: #193441;
-  height: 300px;
+  height: 150px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 6, ../sass/_footer.scss */
+footer .wrapper {
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+}
+/* line 34, ../sass/mixins.scss */
+footer .wrapper nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+/* line 37, ../sass/mixins.scss */
+footer .wrapper nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #FCFFF5;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+/* line 43, ../sass/mixins.scss */
+footer .wrapper nav ul li a:hover {
+  border-bottom: 2px solid;
+  padding-bottom: 1px;
 }
