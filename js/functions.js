@@ -1,7 +1,8 @@
 $(function() {
 	workBelt();	
 	smoothScroll(300);
-	formSubmit();
+	//formSubmit();
+	minimenu();
 }); 
 
 function workBelt() {
@@ -35,10 +36,17 @@ function smoothScroll(duration){
 function formSubmit(){
 	$( "#contact-form" ).submit(function( event ) {
 		$(this).hide("slow");
-		
 		$("#contact h3").after("<p class='success-message'>Success!!!</p>").delay(1000);
-		
-		//alert( "Handler for .submit() called." );
 		event.preventDefault();
+	});
+}
+
+function minimenu(){
+	$(".navbar-icon").hide();
+	$(window).resize(function(){
+		if ($(window).width() <= 760){	
+			$(".wrapper nav").hide();
+			$(".navbar-icon").show();
+		}	
 	});
 }

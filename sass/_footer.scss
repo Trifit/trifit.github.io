@@ -10,5 +10,8 @@ footer{
 		position: relative;
 		top:50%;
 		@include navbar;
+		.navbar-icon{
+			@include size(30px);
+		}		
 	}
 }

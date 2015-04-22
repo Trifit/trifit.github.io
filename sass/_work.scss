@@ -67,13 +67,25 @@
 					background: pink;
 				}
 			}
-			#work-wrap{
+			#work-container{
+				
 				margin:0 auto;
-				position: relative;
-				top:-50px;
-				width: 750px;
-			}	
-		
+				text-align: center;
+				#work-wrap{
+					width: 750px;
+					position: relative;
+					top:-50px;
+					#icon{
+						svg{
+							vertical-align: middle;
+							height: 150px;	
+							path{
+								fill: $color1;
+							}
+						}
+					}
+				}
+			}
 		}			
 	}
 }

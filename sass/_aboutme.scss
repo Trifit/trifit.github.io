@@ -2,11 +2,13 @@
 	max-width: 700px;
 	margin:0 auto;
 	#myself{
-		width: 150px;
 		margin: 20px auto;
+		width: 200px;
 		svg{
 			@include gradient;	
-			border-radius: 100%;		
+			border-radius: 100%;
+			border: 3px solid #fcfff5;
+			box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);		
 		}		
 	}
 	p{	

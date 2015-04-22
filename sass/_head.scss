@@ -1,26 +1,15 @@
 header{
-		background-color: $color5;
+		background: url("../img/hero-backg.jpg") fixed;
+		background-size: 100%;
 		min-width: 100%;
 		float:left;	
-
-	#wrapper-logo{
+		
+	#wrapper-var{
 		height:150px;
 		text-align: middle;
-		border-bottom:solid 1px $color1;
+		float:right;
 	}
 
-	#logo{
-		background-color: $color2;
-		float:left;
-		margin-left:64px;		
-		@include size(150px);
-		svg{
-			margin-left: 25px;
-	    	margin-right: auto;
-			@include verticaly-align;
-			@include size(100px);
-		}
-	}
 
 	@include navbar;
 

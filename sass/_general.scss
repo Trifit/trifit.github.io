@@ -5,7 +5,7 @@ html{
 }
 
 body{
-	background-color: $color2;
+	background-color: $color1;
 	width:100%;
 	margin:0 auto;
 }
@@ -28,7 +28,7 @@ h2{
 }
 
 h3{
-		margin: 50px auto 50px;
+		margin: 0 auto;
 		text-align:center;
 		font-size: 20px;
 		font-weight: bold;
@@ -64,6 +64,7 @@ section{
 	display:block;	
 	clear: both;
 	padding: 0px;	
+	margin-top: 50px;
 }
 
 .alternate{
@@ -72,7 +73,7 @@ section{
 		color: $color1;
 	}
 	h3{
-		color: $color2;
+		color: $color1;
 	}
 
 }

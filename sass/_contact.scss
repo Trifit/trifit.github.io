@@ -25,12 +25,18 @@
                 span{
                     text-align: left;                    
                 }
-            	&:nth-child(2) {
+                &:nth-child(2) {
                     float: right;
                     margin: 0 auto;
                 }
                 input{
-                	width: calc(100% - 20px);
+                    width: calc(100% - 20px);
+                }
+            }
+            @media screen and (max-width : 760px){
+                label{
+                    width: 90%;
+                    float:left !important;
                 }
             }
         }
@@ -40,6 +46,11 @@
                 height: 10em;
                 width: calc(100% - 20px);
                 resize: none; 
+            }
+            @media screen and (max-width : 760px){
+                textarea{
+                    width: 90%!important;                    
+                }
             }
         }
         .submit-wrap {

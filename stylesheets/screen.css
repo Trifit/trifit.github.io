@@ -440,6 +440,12 @@ th {
   padding: 0;
 }
 
+/*$color1:#FCFFF5;
+$color2:#D1DBBD;
+$color3:#91AA9D;
+$color4:#3E606F;
+$color5:#193441;
+$color6:#c8d4ce;*/
 /* line 1, ../sass/_general.scss */
 html {
   font-family: 'Open Sans', sans-serif;
@@ -449,7 +455,7 @@ html {
 
 /* line 7, ../sass/_general.scss */
 body {
-  background-color: #D1DBBD;
+  background-color: #ffefdc;
   width: 100%;
   margin: 0 auto;
 }
@@ -462,7 +468,7 @@ a {
 
 /* line 17, ../sass/_general.scss */
 h1 {
-  color: #D1DBBD;
+  color: #e6ba76;
   font-size: 36px;
   font-weight: bold;
 }
@@ -471,30 +477,30 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: bold;
-  color: #91AA9D;
+  color: #c28e56;
   letter-spacing: 2px;
 }
 
 /* line 30, ../sass/_general.scss */
 h3 {
-  margin: 50px auto 50px;
+  margin: 0 auto;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #193441;
+  color: #8e5c3d;
   letter-spacing: 2px;
 }
 
 /* line 39, ../sass/_general.scss */
 h4, h5 {
   font-size: 20px;
-  color: #193441;
+  color: #8e5c3d;
   letter-spacing: 2px;
 }
 
 /* line 45, ../sass/_general.scss */
 p {
-  color: #3E606F;
+  color: #ba7e54;
   letter-spacing: 1px;
   line-height: 150%;
   font-size: 16px;
@@ -502,7 +508,7 @@ p {
 /* line 51, ../sass/_general.scss */
 p strong {
   font-weight: bold;
-  color: #91AA9D;
+  color: #c28e56;
 }
 
 /* line 57, ../sass/_general.scss */
@@ -516,54 +522,34 @@ section {
   display: block;
   clear: both;
   padding: 0px;
+  margin-top: 50px;
 }
 
-/* line 69, ../sass/_general.scss */
+/* line 70, ../sass/_general.scss */
 .alternate {
-  background: #3E606F;
+  background: #ba7e54;
 }
-/* line 71, ../sass/_general.scss */
+/* line 72, ../sass/_general.scss */
 .alternate h1 {
-  color: #FCFFF5;
+  color: #ffefdc;
 }
-/* line 74, ../sass/_general.scss */
+/* line 75, ../sass/_general.scss */
 .alternate h3 {
-  color: #D1DBBD;
+  color: #ffefdc;
 }
 
 /* line 1, ../sass/_head.scss */
 header {
-  background-color: #193441;
+  background: url("../img/hero-backg.jpg") fixed;
+  background-size: 100%;
   min-width: 100%;
   float: left;
 }
-/* line 6, ../sass/_head.scss */
-header #wrapper-logo {
+/* line 7, ../sass/_head.scss */
+header #wrapper-var {
   height: 150px;
   text-align: middle;
-  border-bottom: solid 1px #FCFFF5;
-}
-/* line 12, ../sass/_head.scss */
-header #logo {
-  background-color: #D1DBBD;
-  float: left;
-  margin-left: 64px;
-  width: 150px;
-  height: 150px;
-}
-/* line 17, ../sass/_head.scss */
-header #logo svg {
-  margin-left: 25px;
-  margin-right: auto;
-  /*has to be in the element to verticaly align*/
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100px;
-  height: 100px;
+  float: right;
 }
 /* line 34, ../sass/mixins.scss */
 header nav ul li {
@@ -574,7 +560,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #FCFFF5;
+  color: #ffefdc;
   font-size: 14px;
   letter-spacing: 2px;
 }
@@ -583,11 +569,11 @@ header nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }
-/* line 27, ../sass/_head.scss */
+/* line 16, ../sass/_head.scss */
 header #wrapper-name {
   height: 150px;
 }
-/* line 30, ../sass/_head.scss */
+/* line 19, ../sass/_head.scss */
 header #wrapper-name h1 {
   float: left;
   /*has to be in the element to verticaly align*/
@@ -597,12 +583,12 @@ header #wrapper-name h1 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  border-right: solid 1px #FCFFF5;
+  border-right: solid 1px #ffefdc;
   padding-left: 64px;
   padding-right: 64px;
   margin: 0 auto;
 }
-/* line 38, ../sass/_head.scss */
+/* line 27, ../sass/_head.scss */
 header #wrapper-name h2 {
   display: inline-block;
   float: left;
@@ -619,41 +605,41 @@ header #wrapper-name h2 {
 
 /*Responsive Styles*/
 @media screen and (max-width: 760px) {
-  /* line 51, ../sass/_head.scss */
+  /* line 40, ../sass/_head.scss */
   header {
     max-width: 640px;
     /*Make dropdown links appear inline*/
   }
-  /* line 55, ../sass/_head.scss */
+  /* line 44, ../sass/_head.scss */
   header nav ul {
     position: static;
     display: none;
     width: 100%;
   }
-  /* line 59, ../sass/_head.scss */
+  /* line 48, ../sass/_head.scss */
   header nav ul li {
     width: 100%;
     /*Create vertical spacing*/
     margin-bottom: 1px;
   }
-  /* line 63, ../sass/_head.scss */
+  /* line 52, ../sass/_head.scss */
   header nav ul li a {
     width: 100%;
   }
-  /* line 70, ../sass/_head.scss */
+  /* line 59, ../sass/_head.scss */
   header #wrapper-name {
-    background-color: #193441;
+    background-color: #8e5c3d;
   }
-  /* line 72, ../sass/_head.scss */
+  /* line 61, ../sass/_head.scss */
   header #wrapper-name h1 {
-    border-bottom: solid 1px #FCFFF5;
+    border-bottom: solid 1px #ffefdc;
     width: 100%;
     margin-right: 0;
   }
-  /* line 78, ../sass/_head.scss */
+  /* line 67, ../sass/_head.scss */
   header #wrapper-name h2 {
     width: 100%;
-    background-color: #193441;
+    background-color: #8e5c3d;
     height: 150px;
     margin-left: 0;
     margin-right: 0;
@@ -666,24 +652,26 @@ header #wrapper-name h2 {
 }
 /* line 4, ../sass/_aboutme.scss */
 #about_me #myself {
-  width: 150px;
   margin: 20px auto;
+  width: 200px;
 }
 /* line 7, ../sass/_aboutme.scss */
 #about_me #myself svg {
-  background: -webkit-gradient(linear, to top, to bottom, from(#FCFFF5), to(#193441));
-  background: -webkit-linear-gradient(to top, #FCFFF5, #193441);
+  background: -webkit-gradient(linear, to top, to bottom, from(#ffefdc), to(#8e5c3d));
+  background: -webkit-linear-gradient(to top, #ffefdc, #8e5c3d);
   /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(to top, #FCFFF5, #193441);
+  background: -moz-linear-gradient(to top, #ffefdc, #8e5c3d);
   /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(to top, #FCFFF5, #193441);
+  background: -o-linear-gradient(to top, #ffefdc, #8e5c3d);
   /* For Opera 11.1 to 12.0 */
-  background: -ms-linear-gradient(to top, #FCFFF5, #193441);
-  background: linear-gradient(to top, #FCFFF5, #193441);
+  background: -ms-linear-gradient(to top, #ffefdc, #8e5c3d);
+  background: linear-gradient(to top, #ffefdc, #8e5c3d);
   /* Standard syntax */
   border-radius: 100%;
+  border: 3px solid #fcfff5;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 12, ../sass/_aboutme.scss */
+/* line 14, ../sass/_aboutme.scss */
 #about_me p {
   margin-top: 50px;
   text-align: center;
@@ -702,7 +690,7 @@ header #wrapper-name h2 {
 /* line 7, ../sass/_skills.scss */
 #skills ul li {
   width: 270px;
-  color: #3E606F;
+  color: #ba7e54;
   font-size: 16px;
   margin-right: 2%;
   margin-left: 2%;
@@ -716,7 +704,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-0 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 0px;
   box-shadow: 270px 0 0 #fff;
@@ -725,7 +713,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-1 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 27px;
   box-shadow: 243px 0 0 #fff;
@@ -734,7 +722,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-2 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 54px;
   box-shadow: 216px 0 0 #fff;
@@ -743,7 +731,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-3 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 81px;
   box-shadow: 189px 0 0 #fff;
@@ -752,7 +740,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-4 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 108px;
   box-shadow: 162px 0 0 #fff;
@@ -761,7 +749,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-5 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 135px;
   box-shadow: 135px 0 0 #fff;
@@ -770,7 +758,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-6 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 162px;
   box-shadow: 108.0px 0 0 #fff;
@@ -779,7 +767,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-7 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 189px;
   box-shadow: 81.0px 0 0 #fff;
@@ -788,7 +776,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-8 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 216px;
   box-shadow: 54.0px 0 0 #fff;
@@ -797,7 +785,7 @@ header #wrapper-name h2 {
 #skills ul li .skill-9 {
   margin: 20px 0;
   border-radius: 10px;
-  background: #193441;
+  background: #8e5c3d;
   height: 10px;
   width: 243px;
   box-shadow: 27.0px 0 0 #fff;
@@ -836,7 +824,7 @@ header #wrapper-name h2 {
   overflow: hidden;
   height: 134px;
   width: 200px;
-  background: #193441;
+  background: #8e5c3d;
   cursor: pointer;
 }
 /* line 26, ../sass/_work.scss */
@@ -847,20 +835,20 @@ header #wrapper-name h2 {
   top: -134px;
   transition: top 0.5s ease;
   vertical-align: left;
-  background: rgba(25, 52, 65, 0.9);
+  background: rgba(142, 92, 61, 0.9);
   padding-left: 10px;
 }
 /* line 35, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption h4, #work #work-belt #thumb-cointainer #work-wrap figure figcaption h4, #work #work-belt #work-container #thumb-wrap figure figcaption h4, #work #work-belt #work-container #work-wrap figure figcaption h4 {
   opacity: 1 !important;
-  color: #D1DBBD;
+  color: #e6ba76;
   font-weight: bold;
   font-size: 14px;
 }
 /* line 41, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption p, #work #work-belt #thumb-cointainer #work-wrap figure figcaption p, #work #work-belt #work-container #thumb-wrap figure figcaption p, #work #work-belt #work-container #work-wrap figure figcaption p {
   font-size: 12px;
-  color: #c8d4ce;
+  color: #7e682e;
 }
 /* line 47, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure:hover figcaption, #work #work-belt #thumb-cointainer #work-wrap figure:hover figcaption, #work #work-belt #work-container #thumb-wrap figure:hover figcaption, #work #work-belt #work-container #work-wrap figure:hover figcaption {
@@ -890,11 +878,24 @@ header #wrapper-name h2 {
   background: pink;
 }
 /* line 70, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-wrap, #work #work-belt #work-container #work-wrap {
+#work #work-belt #thumb-cointainer #work-container, #work #work-belt #work-container #work-container {
   margin: 0 auto;
+  text-align: center;
+}
+/* line 74, ../sass/_work.scss */
+#work #work-belt #thumb-cointainer #work-container #work-wrap, #work #work-belt #work-container #work-container #work-wrap {
+  width: 750px;
   position: relative;
   top: -50px;
-  width: 750px;
+}
+/* line 79, ../sass/_work.scss */
+#work #work-belt #thumb-cointainer #work-container #work-wrap #icon svg, #work #work-belt #work-container #work-container #work-wrap #icon svg {
+  vertical-align: middle;
+  height: 150px;
+}
+/* line 82, ../sass/_work.scss */
+#work #work-belt #thumb-cointainer #work-container #work-wrap #icon svg path, #work #work-belt #work-container #work-container #work-wrap #icon svg path {
+  fill: #ffefdc;
 }
 
 /* line 1, ../sass/_social.scss */
@@ -918,51 +919,56 @@ header #wrapper-name h2 {
 /* line 15, ../sass/_social.scss */
 #social #icons .icon {
   opacity: 0.7;
-  background: #FCFFF5;
+  border: 2px solid #ffefdc;
   border-radius: 40px;
   width: 50px;
   height: 50px;
   margin: 20px;
   transition: all .1s ease-in-out;
 }
-/* line 22, ../sass/_social.scss */
+/* line 23, ../sass/_social.scss */
 #social #icons .icon:hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 27, ../sass/_social.scss */
+/* line 28, ../sass/_social.scss */
 #social #icons .icon svg {
   vertical-align: middle;
   height: 50px;
 }
-/* line 35, ../sass/_social.scss */
+/* line 31, ../sass/_social.scss */
+#social #icons .icon svg path {
+  fill: #ffefdc;
+}
+/* line 39, ../sass/_social.scss */
 #social .bar {
   width: 250px;
   height: 5px;
-  background-color: #193441;
+  background-color: #8e5c3d;
   border: 0;
   margin: 0 auto 70px;
 }
-/* line 43, ../sass/_social.scss */
+/* line 47, ../sass/_social.scss */
 #social .big-email {
   display: inline-block;
   margin: 0 auto 70px;
   font-size: 72px;
+  line-height: 1;
   font-weight: 300;
-  color: #91AA9D;
+  color: #8e5c3d;
 }
-/* line 49, ../sass/_social.scss */
+/* line 54, ../sass/_social.scss */
 #social .big-email:hover {
-  color: #FCFFF5;
+  color: #ffefdc;
   cursor: pointer;
 }
-/* line 56, ../sass/_social.scss */
+/* line 61, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
 @media screen and (max-width: 760px) {
-  /* line 61, ../sass/_social.scss */
+  /* line 67, ../sass/_social.scss */
   #social .big-email {
     font-size: 32px;
   }
@@ -976,19 +982,19 @@ header #wrapper-name h2 {
 /* line 4, ../sass/_contact.scss */
 #contact form {
   letter-spacing: 2px;
-  color: #3E606F;
+  color: #ba7e54;
 }
 /* line 7, ../sass/_contact.scss */
 #contact form input, #contact form textarea {
-  border: 3px solid #193441;
+  border: 3px solid #8e5c3d;
   padding: 3px 10px;
   font-size: 16px;
-  background: #c8d4ce;
+  background: #7e682e;
   margin-top: 7px;
 }
 /* line 13, ../sass/_contact.scss */
 #contact form input:focus, #contact form textarea:focus {
-  border-color: #91AA9D;
+  border-color: #c28e56;
 }
 /* line 19, ../sass/_contact.scss */
 #contact form .info-group {
@@ -1013,37 +1019,50 @@ header #wrapper-name h2 {
 #contact form .info-group label input {
   width: calc(100% - 20px);
 }
-/* line 37, ../sass/_contact.scss */
+@media screen and (max-width: 760px) {
+  /* line 37, ../sass/_contact.scss */
+  #contact form .info-group label {
+    width: 90%;
+    float: left !important;
+  }
+}
+/* line 43, ../sass/_contact.scss */
 #contact form .tell-group {
   margin-top: 10px;
 }
-/* line 39, ../sass/_contact.scss */
+/* line 45, ../sass/_contact.scss */
 #contact form .tell-group textarea {
   height: 10em;
   width: calc(100% - 20px);
   resize: none;
 }
-/* line 45, ../sass/_contact.scss */
+@media screen and (max-width: 760px) {
+  /* line 51, ../sass/_contact.scss */
+  #contact form .tell-group textarea {
+    width: 90% !important;
+  }
+}
+/* line 56, ../sass/_contact.scss */
 #contact form .submit-wrap {
   margin-top: 20px;
   float: right;
 }
-/* line 48, ../sass/_contact.scss */
+/* line 59, ../sass/_contact.scss */
 #contact form .submit-wrap input {
   width: 100px;
   font-size: 18px;
   font-weight: 600;
-  color: #c8d4ce;
-  background-color: #193441;
+  color: #7e682e;
+  background-color: #8e5c3d;
   margin-right: -6px;
   padding: 10px 60px 10px;
   letter-spacing: 2px;
 }
-/* line 57, ../sass/_contact.scss */
+/* line 68, ../sass/_contact.scss */
 #contact form .submit-wrap input:hover {
-  color: #FCFFF5;
+  color: #ffefdc;
 }
-/* line 64, ../sass/_contact.scss */
+/* line 75, ../sass/_contact.scss */
 #contact .success-message {
   font-size: 36px;
   text-align: center;
@@ -1051,7 +1070,7 @@ header #wrapper-name h2 {
 
 /* line 1, ../sass/_footer.scss */
 footer {
-  background-color: #193441;
+  background-color: #8e5c3d;
   height: 150px;
   vertical-align: middle;
   width: 100%;
@@ -1073,7 +1092,7 @@ footer .wrapper nav ul li {
 footer .wrapper nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  color: #FCFFF5;
+  color: #ffefdc;
   font-size: 14px;
   letter-spacing: 2px;
 }
@@ -1081,4 +1100,9 @@ footer .wrapper nav ul li a {
 footer .wrapper nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
+}
+/* line 13, ../sass/_footer.scss */
+footer .wrapper .navbar-icon {
+  width: 30px;
+  height: 30px;
 }
