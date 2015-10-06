@@ -1,45 +1,72 @@
 header{
-		background: url("../img/hero-backg.jpg") fixed;
-		background-size: 100%;
-		min-width: 100%;
-		float:left;	
+	background: 
+		linear-gradient(
+  			rgba($color5, 0.4), 
+  			rgba($color5, 0.4)
+		),
+		url("../img/typewriter-large.jpg"),
+		no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;	
+	height: 100%;
+	overflow: hidden;
+
+	#wrapper-head{
+		max-width: $full-width;
 		
-	#wrapper-var{
-		height:150px;
-		text-align: middle;
-		float:right;
-	}
+		@include navbar;
+
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
 
 
-	@include navbar;
-
-	#wrapper-name{
-		height:150px;
-		
-		h1{
-			float:left;
-			@include verticaly-align;	
-			border-right: solid 1px $color1;		
-			padding-left: 64px;
-			padding-right: 64px;
-			margin: 0 auto;
-		}	
-		h2{		
-			display:inline-block;
-			float: left;
-			@include verticaly-align;
-			padding-left: 64px;
-			margin: 0 auto;
+		#wrapper-name{
+			padding-top: 50%;
+			h1, h2{
+				text-align: center;
+			}
 		}
 	}
 }
 
 /*Responsive Styles*/
 
-@media screen and (max-width : 760px){
+@media screen and (min-width: 480px) and (max-width: 960px){
 	header{
-		max-width: 640px;
-		/*Make dropdown links appear inline*/
+		background: 
+			linear-gradient(
+	  			rgba($color5, 0.4), 
+	  			rgba($color5, 0.4)
+			),
+			url("../img/typewriter-medium.jpg")
+			no-repeat,
+			fixed;
+		background-position: top center;
+		-webkit-background-size: cover;
+	       -moz-background-size: cover;
+	         -o-background-size: cover;
+	            background-size: cover;
+	}
+}
+
+@media screen and (max-width : 480px){
+	header{
+		background: 
+			linear-gradient(
+	  			rgba($color5, 0.4), 
+	  			rgba($color5, 0.4)
+			),
+			url("../img/typewriter-small.jpg")
+			no-repeat,
+			fixed;
+		background-position: top center;
+		background-size: auto auto;
+	   /*Make dropdown links appear inline*/
 		nav{
 			ul {
 				position: static;
@@ -56,21 +83,6 @@ header{
 			}		
 		}
 
-		#wrapper-name{
-			background-color: $color5;
-			h1{
-				border-bottom: solid 1px $color1;
-				width: 100%;
-				margin-right: 0;
-
-			}
-			h2{
-				width: 100%;
-				background-color: $color5;
-				height: 150px;			
-				margin-left: 0;
-				margin-right: 0;
-			}
-		}
+		
 	}
 }

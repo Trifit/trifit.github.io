@@ -1,9 +1,19 @@
 $(function() {
+	parallax();
 	workBelt();	
 	smoothScroll(300);
 	//formSubmit();
 	minimenu();
 }); 
+
+function parallax(){
+	$(window).scroll(function(){
+		var wScroll = $(this).scrollTop();
+		$("#wrapper-name").css({
+			'transform' : 'translateY('+ wScroll/7 +'%)'
+		});		
+	});
+}
 
 function workBelt() {
 	//Thumnails items and details items MUST follow the same order and must be one of each
