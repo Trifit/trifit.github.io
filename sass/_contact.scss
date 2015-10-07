@@ -1,9 +1,10 @@
 #contact {
     margin: 0 auto 200px;
-    max-width: 500px;
+    max-width: 600px;
     form {
         letter-spacing: 2px;
         color: $color4;
+        margin: 0 2%;
         input, textarea {
             border: 3px solid $color5;
             padding: 3px 10px;
