@@ -21,7 +21,7 @@ $(function() {
 		this.$arrowBtn = null;
 		this.$thumbnail_wrap = null;
 		this.$project_wrap = null;
-		this.clickedItem = -1;
+		this.clickedItem = 0;
 
 		this.init();
 	};
@@ -41,11 +41,12 @@ $(function() {
 		this.$arrowBtn = $(SELECTORS.ARROW_BTN);
 		this.$thumbnail_wrap = $(CLASSES.THUMBNAILS_WRAP);
 		this.$project_wrap = $(SELECTORS.PROJECT_WRAP);
+		this.clickedItem = 1;
 
 		this.hideProjects();
 		
 		this.$projThumnail.each( function(index){
-			$(this).data('id', index);			
+			$(this).data('item', index);					
 		});
 
 		return this;
@@ -79,36 +80,48 @@ $(function() {
 		return this;		
 	};
 
+	Sliding.prototype.smoothScroll = function (){
+		$('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        
+		        return false;
+		      }
+		    }
+  		});
+			
+		
+		return this;
+	};
 	//////////////////////////////////////////////////////////
     // EVENT HANDLERS
     //////////////////////////////////////////////////////////
 
     Sliding.prototype.onThumbnailClick = function(e){    	
+		this.clickedItem = $(e.target).closest('.thumbnail').data('item');
 		var wrap_possition = $(e.target).closest(SELECTORS.PROJECT_SECTION).css('left');
-		if (this.clickedItem === -1){
-			this.clickedItem = $(e.target).closest('figure').data('id');
-			console.log(this.clickedItem);
+				
+		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
+			this.$project_wrap.children().each(function(index){
+				if (index !== 0){
+					$(this).fadeOut(250);										
+				}
+			});
+		}else{
+			this.$project_wrap.children().eq(this.clickedItem+1).toggle();
 		}
-		
 
 		if(wrap_possition === '0px'){
 			$(e.target).closest(SELECTORS.PROJECT_SECTION).animate({left:"-100%"});			
 		}else{
 			$(e.target).closest(SELECTORS.PROJECT_SECTION).animate({left:"0"});			
 		}
-				
-		/*this.$project_wrap.each(function(index){
-			console.log($(this).children(CLASSES.PROJECT_DETAIL + ':eq(' + index + ')'));
-			//$(this).children(CLASSES.PROJECT_DETAIL).toggle();
-		});*/
-
-		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
-			console.log(this.$project_wrap.find(CLASSES.PROJECT_DETAIL + ':eq(' + this.clickedItem + ')'));
-			this.$project_wrap.find(CLASSES.PROJECT_DETAIL + ':eq(' + this.clickedItem + ')').toggle();
-		}
-
-		//this.$project_wrap.find(CLASSES.PROJECT_DETAIL + ':eq(' + clickedElement + ')').toggle();
-		return this;
+		
     };
 		
 	return new Sliding();

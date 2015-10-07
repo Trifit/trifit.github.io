@@ -406,50 +406,36 @@ header #wrapper-head #wrapper-name h1, header #wrapper-head #wrapper-name h2 {
 }
 /* line 54, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap #arrow, #work #work-belt #thumb-cointainer #work-wrap #arrow, #work #work-belt #work-container #thumb-wrap #arrow, #work #work-belt #work-container #work-wrap #arrow {
-  width: 50px;
-  height: 50px;
   cursor: pointer;
-  opacity: 0.5;
-  position: relative;
-  top: 50px;
-  left: -60px;
-}
-/* line 61, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #thumb-wrap #arrow path, #work #work-belt #thumb-cointainer #work-wrap #arrow path, #work #work-belt #work-container #thumb-wrap #arrow path, #work #work-belt #work-container #work-wrap #arrow path {
-  stroke: grey;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 100vw;
+  height: 100%;
+  width: 50px;
+  background: #fff;
 }
 /* line 64, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap #arrow:hover, #work #work-belt #thumb-cointainer #work-wrap #arrow:hover, #work #work-belt #work-container #thumb-wrap #arrow:hover, #work #work-belt #work-container #work-wrap #arrow:hover {
   opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
-/* line 68, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #thumb-wrap img, #work #work-belt #thumb-cointainer #thumb-wrap iframe, #work #work-belt #thumb-cointainer #work-wrap img, #work #work-belt #thumb-cointainer #work-wrap iframe, #work #work-belt #work-container #thumb-wrap img, #work #work-belt #work-container #thumb-wrap iframe, #work #work-belt #work-container #work-wrap img, #work #work-belt #work-container #work-wrap iframe {
-  margin: 0 auto;
-  background: pink;
+/* line 70, ../sass/_work.scss */
+#work #work-belt #thumb-cointainer #thumb-wrap .detail, #work #work-belt #thumb-cointainer #work-wrap .detail, #work #work-belt #work-container #thumb-wrap .detail, #work #work-belt #work-container #work-wrap .detail {
+  width: 600px;
+  text-align: center;
 }
 /* line 73, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-container, #work #work-belt #work-container #work-container {
-  margin: 0 auto;
-  text-align: center;
+#work #work-belt #thumb-cointainer #thumb-wrap .detail .icon, #work #work-belt #thumb-cointainer #work-wrap .detail .icon, #work #work-belt #work-container #thumb-wrap .detail .icon, #work #work-belt #work-container #work-wrap .detail .icon {
+  width: 50px;
+  opacity: 0.7;
 }
 /* line 76, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-container #work-wrap, #work #work-belt #work-container #work-container #work-wrap {
-  width: 700px;
-  position: relative;
-  top: -50px;
-}
-/* line 81, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-container #work-wrap .icon svg, #work #work-belt #work-container #work-container #work-wrap .icon svg {
-  vertical-align: middle;
-  height: 150px;
-}
-/* line 84, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-container #work-wrap .icon svg path, #work #work-belt #work-container #work-container #work-wrap .icon svg path {
-  fill: #FCFFF5;
-}
-/* line 89, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-container #work-wrap .detail h4, #work #work-belt #work-container #work-container #work-wrap .detail h4 {
-  text-align: center;
+#work #work-belt #thumb-cointainer #thumb-wrap .detail .icon:hover, #work #work-belt #thumb-cointainer #work-wrap .detail .icon:hover, #work #work-belt #work-container #thumb-wrap .detail .icon:hover, #work #work-belt #work-container #work-wrap .detail .icon:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* line 1, ../sass/_social.scss */
