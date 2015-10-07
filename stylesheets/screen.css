@@ -631,7 +631,7 @@ footer {
   height: 150px;
   width: 100%;
 }
-/* line 6, ../sass/_footer.scss */
+/* line 5, ../sass/_footer.scss */
 footer .wrapper {
   max-width: 700px;
   text-align: center;
@@ -662,27 +662,31 @@ footer .wrapper nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }
-/* line 13, ../sass/_footer.scss */
+/* line 12, ../sass/_footer.scss */
 footer .wrapper .navbar-icon {
   width: 30px;
   height: 30px;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 21, ../sass/_footer.scss */
-  nav ul {
+  /* line 19, ../sass/_footer.scss */
+  .wrapper {
+    text-align: left;
+  }
+  /* line 22, ../sass/_footer.scss */
+  .wrapper nav ul {
     position: static;
     display: none;
     width: 100%;
   }
-  /* line 25, ../sass/_footer.scss */
-  nav ul li {
+  /* line 26, ../sass/_footer.scss */
+  .wrapper nav ul li {
     width: 100%;
     /*Create vertical spacing*/
     margin-bottom: 1px;
   }
-  /* line 29, ../sass/_footer.scss */
-  nav ul li a {
+  /* line 30, ../sass/_footer.scss */
+  .wrapper nav ul li a {
     width: 100%;
   }
 }
