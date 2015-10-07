@@ -1,10 +1,10 @@
 footer{
 	background-color: $color5;
 	height: 150px;
-	vertical-align: middle;
+	
 	width: 100%;
 	.wrapper{
-		width: 900px;
+		max-width: 900px;
 		text-align: center;
 		margin:0 auto;
 		position: relative;
