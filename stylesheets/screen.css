@@ -668,3 +668,22 @@ footer .wrapper .navbar-icon {
   width: 30px;
   height: 30px;
 }
+
+@media screen and (max-width: 480px) {
+  /* line 22, ../sass/_footer.scss */
+  nav ul {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+  /* line 26, ../sass/_footer.scss */
+  nav ul li {
+    width: 100%;
+    /*Create vertical spacing*/
+    margin-bottom: 1px;
+  }
+  /* line 30, ../sass/_footer.scss */
+  nav ul li a {
+    width: 100%;
+  }
+}

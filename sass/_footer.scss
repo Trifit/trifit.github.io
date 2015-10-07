@@ -15,3 +15,23 @@ footer{
 		}		
 	}
 }
+
+@media screen and (max-width : 480px){
+
+		nav{
+			ul {
+				position: static;
+				display: none;
+				width: 100%;
+				li {
+					width: 100%;
+					/*Create vertical spacing*/		
+					margin-bottom: 1px;
+					a{
+						width: 100%;
+					}
+				}
+			}		
+		}
+}
+	
