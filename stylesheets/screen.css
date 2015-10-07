@@ -633,7 +633,7 @@ footer {
 }
 /* line 6, ../sass/_footer.scss */
 footer .wrapper {
-  max-width: 900px;
+  max-width: 700px;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -669,19 +669,19 @@ footer .wrapper .navbar-icon {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 22, ../sass/_footer.scss */
+  /* line 21, ../sass/_footer.scss */
   nav ul {
     position: static;
     display: none;
     width: 100%;
   }
-  /* line 26, ../sass/_footer.scss */
+  /* line 25, ../sass/_footer.scss */
   nav ul li {
     width: 100%;
     /*Create vertical spacing*/
     margin-bottom: 1px;
   }
-  /* line 30, ../sass/_footer.scss */
+  /* line 29, ../sass/_footer.scss */
   nav ul li a {
     width: 100%;
   }
