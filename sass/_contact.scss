@@ -1,95 +1,35 @@
 #contact {
     margin: 0 auto 200px;
     max-width: 600px;
-    form {
-        letter-spacing: 2px;
-        color: $color4;
-        margin: 0 2%;
-        input, textarea {
-            border: 3px solid $color5;
-            padding: 3px 10px;
-            font-size: 16px;
-            background: $color2;
-            margin-top: 7px;
-            &:focus {
-                border-color: $color3;
-                background: $color1;
-            }            
-        }
-        
-
-        .info-group {
-            margin-top: 10px;
-            display: inline-block;
-            label {
-                width: 45%;
-                float:left;
+    h3{
+        margin-bottom: 40px;
+    }
+    .contact-form{
+        .form-group{
+            display: flex;
+            flex-wrap: wrap;            
+            label{
                 span{
-                    text-align: left;                    
-                }
-                &:nth-child(2) {
-                    float: right;
-                    margin: 0 auto;
-                }
-                input{
-                    width: calc(100% - 20px);
-                }
+                    display: block;
+                    color: $color4;
+                    letter-spacing: 1px;
+                    line-height: 150%;
+                    font-size: 16px;
+                }                
             }
-            @media screen and (max-width : 760px){
+            .col-6{
+                width: 50%;
                 label{
                     width: 90%;
-                    float:left !important;
                 }
             }
-        }
-        .tell-group {
-        	margin-top: 10px;
-        	textarea {
-                height: 10em;
-                width: calc(100% - 20px);
-                resize: none; 
-            }
-            @media screen and (max-width : 760px){
+            .col-12{
+                width: 100%;
                 textarea{
-                    width: 90%!important;                    
+                    width: 90%;
                 }
-            }
-        }
-        .submit-wrap {
-            margin-top: 20px;
-            float: right;
-            input {
-                width: 100px;
-                font-size: 18px;
-                font-weight: 600;
-                color: $color1;
-                background: $color5;
-                margin-right: -6px; //we have this negative margin because the border of 3px in the inputs                
-                padding:10px 0;
-                letter-spacing: 2px;
-                opacity: 0.8;
-                transition: all .2s ease-in-out;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            .shockwave{
-                transition: all .1s ease-in-out;
-                -webkit-transform-origin : 100% 50%;
-                -moz-transform-origin : 100% 50%;
-                -o-transform-origin : 100% 50%;
-                -ms-transform-origin : 100% 50%;
-                transform-origin : 100% 50%;
-                &:hover{
-                    transform: scale(1.1);
-                    cursor: pointer;
-                }
-            }
-        }
 
-    }
-    .success-message{
-        font-size: 36px;
-        text-align: center;
+            }
+        }
     }
 }

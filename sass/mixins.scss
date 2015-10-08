@@ -55,3 +55,29 @@
 	}
 
 }
+
+@mixin navbarRes{
+	@media screen and (max-width : 480px){
+		nav{
+			background: $color5;
+			ul {
+				position: static;
+				display: none;
+				width: 100%;
+				li {
+					width: 100%;
+					border-bottom: 1px solid $color1;
+					/*Create vertical spacing*/		
+					margin-bottom: 1px;
+					line-height: 40px;
+					a{
+						width: 100%;
+					}
+				}
+				li:last-child{
+					border-bottom: none!important;
+				}
+			}		
+		}
+	}
+}

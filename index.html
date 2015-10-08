@@ -238,29 +238,31 @@
       <a href="mailto:davhern@gmail.com" class="big-email">davhern@gmail.com</a>
 
     </section>
+
     <section id="contact">
       <h3>Let's work Together!</h3>
-      <form method="POST" action="http://formspree.io/davhern@gmail.com" id="contact-form">
-        <div class="info-group">
-          <label>
+      <form method="POST" action="http://formspree.io/davhern@gmail.com" class="contact-form">
+        <div class="form-group">
+          <label class="col-6">
             <span>Your Name</span>
             <input type="text" name="name" required/>
           </label>
-          <label>
+          <label class="col-6">
             <span>Your Email</span>
             <input type="email" name="email" required/>
           </label>
         </div>
-        <div class="tell-group">
-          <label>
+        <div class="form-group">
+          <label class="col-12">
             <span>What can you tell me about your project?</span>
             <textarea name="message" required></textarea>
           </label>
         </div>
-        <div class="submit-wrap">
-          <input type="submit" value="SEND" class="shockwave"></div>
-        </form>
-      </section>
+        <div class="form-group">
+          <input type="submit" value="SEND" class="send-button">
+        </div>
+      </form>
+    </section>
 
 
       <footer>

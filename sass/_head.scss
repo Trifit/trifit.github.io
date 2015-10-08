@@ -24,6 +24,7 @@ header{
   		justify-content: center;
   		flex-direction: column;
 
+		margin: 0 auto;
 
 		#wrapper-name{
 			padding-top: 50%;
@@ -66,23 +67,8 @@ header{
 			fixed;
 		background-position: top center;
 		background-size: auto auto;
-	   /*Make dropdown links appear inline*/
-		nav{
-			ul {
-				position: static;
-				display: none;
-				width: 100%;
-				li {
-					width: 100%;
-					/*Create vertical spacing*/		
-					margin-bottom: 1px;
-					a{
-						width: 100%;
-					}
-				}
-			}		
-		}
-
-		
+	   
 	}
 }
+
+@include navbarRes;
