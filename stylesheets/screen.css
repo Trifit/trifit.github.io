@@ -358,7 +358,6 @@ header #wrapper-head #wrapper-name h1, header #wrapper-head #wrapper-name h2 {
 }
 /* line 13, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #thumb-cointainer #work-wrap, #work #work-belt #work-container #thumb-wrap, #work #work-belt #work-container #work-wrap {
-  max-width: 700px;
   margin: 0 auto;
   min-height: 1px;
 }
@@ -423,7 +422,7 @@ header #wrapper-head #wrapper-name h1, header #wrapper-head #wrapper-name h2 {
 }
 /* line 70, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail, #work #work-belt #thumb-cointainer #work-wrap .detail, #work #work-belt #work-container #thumb-wrap .detail, #work #work-belt #work-container #work-wrap .detail {
-  width: 600px;
+  max-width: 600px;
   text-align: center;
 }
 /* line 73, ../sass/_work.scss */
