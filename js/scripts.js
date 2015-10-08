@@ -29,7 +29,8 @@ $(function() {
 	Sliding.prototype.init = function() {
 		this.createChildren()
 			.setupHandlers()
-			.enable();
+			.enable()
+			.smoothScroll();
 
 		return this;
 	};
@@ -89,7 +90,7 @@ $(function() {
 		        $('html,body').animate({
 		          scrollTop: target.offset().top
 		        }, 1000);
-		        
+
 		        return false;
 		      }
 		    }
@@ -103,9 +104,9 @@ $(function() {
     //////////////////////////////////////////////////////////
 
     Sliding.prototype.onThumbnailClick = function(e){    	
-		this.clickedItem = $(e.target).closest('.thumbnail').data('item');
-		var wrap_possition = $(e.target).closest(SELECTORS.PROJECT_SECTION).css('left');
-				
+    	var $projSection = $(e.target).closest(SELECTORS.PROJECT_SECTION);
+		this.clickedItem = $(e.target).closest(CLASSES.PROJECT_THUMBNAIL).data('item');
+						
 		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
 			this.$project_wrap.children().each(function(index){
 				if (index !== 0){
@@ -116,10 +117,10 @@ $(function() {
 			this.$project_wrap.children().eq(this.clickedItem+1).toggle();
 		}
 
-		if(wrap_possition === '0px'){
-			$(e.target).closest(SELECTORS.PROJECT_SECTION).animate({left:"-100%"});			
+		if($projSection.css('left') === '0px'){
+			$projSection.animate({left:"-100%"});			
 		}else{
-			$(e.target).closest(SELECTORS.PROJECT_SECTION).animate({left:"0"});			
+			$projSection.animate({left:"0"});			
 		}
 		
     };
