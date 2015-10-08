@@ -387,16 +387,15 @@ header #wrapper-head #wrapper-name h1, header #wrapper-head #wrapper-name h2 {
   transition: top 0.5s ease;
   vertical-align: left;
   background: rgba(25, 52, 65, 0.9);
-  padding-left: 10px;
 }
-/* line 39, ../sass/_work.scss */
+/* line 38, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption h4, #work #work-belt #thumb-cointainer #work-wrap figure figcaption h4, #work #work-belt #work-container #thumb-wrap figure figcaption h4, #work #work-belt #work-container #work-wrap figure figcaption h4 {
   opacity: 1 !important;
   color: #D1DBBD;
   font-weight: bold;
   font-size: 14px;
 }
-/* line 45, ../sass/_work.scss */
+/* line 44, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption p, #work #work-belt #thumb-cointainer #work-wrap figure figcaption p, #work #work-belt #work-container #thumb-wrap figure figcaption p, #work #work-belt #work-container #work-wrap figure figcaption p {
   font-size: 10px;
   color: #c8d4ce;

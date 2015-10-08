@@ -34,8 +34,7 @@
 						top:-134px;
 						transition: top 0.5s ease;
 						vertical-align: left;
-						background: rgba($color5, 0.9);
-						padding-left: 10px;
+						background: rgba($color5, 0.9);						
 					  	h4{
 							opacity:1!important;
 							color:$color2;
@@ -45,6 +44,7 @@
 						p{
 							font-size: 10px;
 							color: $color6;
+							
 						}
 					}
 				}
@@ -85,7 +85,7 @@
 					a{
 						font-weight: 300;
 						color:$color5;
-						
+
 						&:hover{
 							color:$color1;
 							transition: all .25s ease-in-out;
