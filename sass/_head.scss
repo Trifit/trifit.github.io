@@ -12,25 +12,25 @@ header{
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;	
-	height: 100%;
-	overflow: hidden;
+	text-align: center;
+	max-height:600px;
 
 	#wrapper-head{
 		max-width: $full-width;
 		
 		@include navbar;
 
-		display: flex;
+		/* display: flex;
   		justify-content: center;
-  		flex-direction: column;
-
-		margin: 0 auto;
-
+  		flex-direction: column; */
+		
+		display: inline-block;
+		text-align: center;
+		
+		
 		#wrapper-name{
-			padding-top: 50%;
-			h1, h2{
-				text-align: center;
-			}
+			padding-top: 250px;	
+			padding-bottom: 250px;
 		}
 	}
 }
@@ -52,6 +52,11 @@ header{
 	       -moz-background-size: cover;
 	         -o-background-size: cover;
 	            background-size: cover;
+	    #wrapper-name{
+			padding-top: 150px!important;
+			padding-bottom: 150px!important;	
+		
+		}
 	}
 }
 
@@ -66,7 +71,18 @@ header{
 			no-repeat,
 			fixed;
 		background-position: top center;
-		background-size: auto auto;
+
+		#wrapper-name{
+			padding-top: 0!important;	
+			padding-bottom: 0!important;	
+			h1{
+				font-size: 16px!important;
+			}
+			h2{
+				font-size: 14px!important;
+			}
+		
+		}
 	   
 	}
 }
