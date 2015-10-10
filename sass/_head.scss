@@ -13,17 +13,12 @@ header{
 	     -o-background-size: cover;
 	        background-size: cover;	
 	text-align: center;
-	max-height:600px;
-
-	#wrapper-head{
+	
+	.wrapper-head{
 		max-width: $full-width;
 		
 		@include navbar;
 
-		/* display: flex;
-  		justify-content: center;
-  		flex-direction: column; */
-		
 		display: inline-block;
 		text-align: center;
 		
@@ -62,15 +57,7 @@ header{
 
 @media screen and (max-width : 480px){
 	header{
-		background: 
-			linear-gradient(
-	  			rgba($color5, 0.4), 
-	  			rgba($color5, 0.4)
-			),
-			url("../img/typewriter-small.jpg")
-			no-repeat,
-			fixed;
-		background-position: top center;
+		background:none $color5;
 
 		#wrapper-name{
 			padding-top: 0!important;	
@@ -85,6 +72,5 @@ header{
 		}
 	   
 	}
+	@include navbarRes;
 }
-
-@include navbarRes;

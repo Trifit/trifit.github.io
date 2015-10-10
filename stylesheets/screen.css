@@ -557,49 +557,45 @@ header {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  max-height: 600px;
 }
-/* line 18, ../sass/_head.scss */
-header #wrapper-head {
+/* line 17, ../sass/_head.scss */
+header .wrapper-head {
   max-width: 900px;
-  		/* display: flex;
-    		justify-content: center;
-    		flex-direction: column; */
   display: inline-block;
   text-align: center;
 }
-/* line 36, ../sass/mixins.scss */
-header #wrapper-head nav ul {
+/* line 37, ../sass/mixins.scss */
+header .wrapper-head .wrapper-bar nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 40, ../sass/mixins.scss */
-header #wrapper-head nav ul li {
+/* line 41, ../sass/mixins.scss */
+header .wrapper-head .wrapper-bar nav ul li {
   margin: 0 30px;
 }
-/* line 42, ../sass/mixins.scss */
-header #wrapper-head nav ul li a {
+/* line 43, ../sass/mixins.scss */
+header .wrapper-head .wrapper-bar nav ul li a {
   text-decoration: none;
   font-weight: 600;
   color: #D1DBBD;
   font-size: 14px;
   letter-spacing: 2px;
 }
-/* line 48, ../sass/mixins.scss */
-header #wrapper-head nav ul li a:hover {
+/* line 49, ../sass/mixins.scss */
+header .wrapper-head .wrapper-bar nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }
-/* line 31, ../sass/_head.scss */
-header #wrapper-head #wrapper-name {
+/* line 26, ../sass/_head.scss */
+header .wrapper-head #wrapper-name {
   padding-top: 250px;
   padding-bottom: 250px;
 }
 
 /*Responsive Styles*/
 @media screen and (min-width: 480px) and (max-width: 960px) {
-  /* line 41, ../sass/_head.scss */
+  /* line 36, ../sass/_head.scss */
   header {
     background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-medium.jpg") no-repeat, fixed;
     background-position: top center;
@@ -608,58 +604,113 @@ header #wrapper-head #wrapper-name {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 55, ../sass/_head.scss */
+  /* line 50, ../sass/_head.scss */
   header #wrapper-name {
     padding-top: 150px !important;
     padding-bottom: 150px !important;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 64, ../sass/_head.scss */
+  /* line 59, ../sass/_head.scss */
   header {
-    background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-small.jpg") no-repeat, fixed;
-    background-position: top center;
+    background: none #193441;
   }
-  /* line 75, ../sass/_head.scss */
+  /* line 62, ../sass/_head.scss */
   header #wrapper-name {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
-  /* line 78, ../sass/_head.scss */
+  /* line 65, ../sass/_head.scss */
   header #wrapper-name h1 {
     font-size: 16px !important;
   }
-  /* line 81, ../sass/_head.scss */
+  /* line 68, ../sass/_head.scss */
   header #wrapper-name h2 {
     font-size: 14px !important;
   }
-}
-@media screen and (max-width: 480px) {
-  /* line 61, ../sass/mixins.scss */
-  nav {
+
+  /* line 62, ../sass/mixins.scss */
+  .wrapper-head {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  /* line 66, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: right !important;
+    display: inline-block !important;
+    position: relative;
+  }
+  /* line 74, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon span,
+  .wrapper-head .wrapper-bar .menu-icon span:before,
+  .wrapper-head .wrapper-bar .menu-icon span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #D1DBBD;
+  }
+  /* line 85, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon span {
+    top: 15px;
+    left: 5px;
+  }
+  /* line 89, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon span:before {
+    top: -5px;
+  }
+  /* line 94, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon span:after {
+    top: 5px;
+  }
+  /* line 98, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon-onClick {
+    background-color: transparent !important;
+    transition: background-color .25s ease-in-out, transform .25s ease-in-out;
+  }
+  /* line 103, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon-onClick:before {
+    top: 0 !important;
+    transform: rotate(-45deg);
+    transform-origin: center center;
+    transition: transform .25s ease-out;
+  }
+  /* line 109, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar .menu-icon-onClick:after {
+    top: 0 !important;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition: transform .25s ease-out;
+  }
+  /* line 115, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav {
     background: #193441;
   }
-  /* line 63, ../sass/mixins.scss */
-  nav ul {
+  /* line 117, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
-    width: 100%;
   }
-  /* line 67, ../sass/mixins.scss */
-  nav ul li {
-    width: 100%;
-    border-bottom: 1px solid #FCFFF5;
+  /* line 120, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav ul li {
+    width: 100% !important;
+    border-bottom: 1px solid #91AA9D;
     /*Create vertical spacing*/
-    margin-bottom: 1px;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+  /* line 127, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
+    display: block;
   }
-  /* line 73, ../sass/mixins.scss */
-  nav ul li a {
-    width: 100%;
-  }
-  /* line 77, ../sass/mixins.scss */
-  nav ul li:last-child {
-    border-bottom: none !important;
+  /* line 132, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav ul li:first-child {
+    border-top: 1px solid #91AA9D;
   }
 }
 /* line 1, ../sass/_aboutme.scss */
@@ -1123,26 +1174,26 @@ footer .wrapper {
   position: relative;
   top: 50%;
 }
-/* line 36, ../sass/mixins.scss */
-footer .wrapper nav ul {
+/* line 37, ../sass/mixins.scss */
+footer .wrapper .wrapper-bar nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 40, ../sass/mixins.scss */
-footer .wrapper nav ul li {
+/* line 41, ../sass/mixins.scss */
+footer .wrapper .wrapper-bar nav ul li {
   margin: 0 30px;
 }
-/* line 42, ../sass/mixins.scss */
-footer .wrapper nav ul li a {
+/* line 43, ../sass/mixins.scss */
+footer .wrapper .wrapper-bar nav ul li a {
   text-decoration: none;
   font-weight: 600;
   color: #D1DBBD;
   font-size: 14px;
   letter-spacing: 2px;
 }
-/* line 48, ../sass/mixins.scss */
-footer .wrapper nav ul li a:hover {
+/* line 49, ../sass/mixins.scss */
+footer .wrapper .wrapper-bar nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }

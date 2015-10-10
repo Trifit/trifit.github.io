@@ -3,7 +3,11 @@ $(function() {
 	var CLASSES = {
 		PROJECT_DETAIL: '.detail',
 		PROJECT_THUMBNAIL: '.thumbnail',
-		THUMBNAILS_WRAP: '.thumb-wrap'
+		THUMBNAILS_WRAP: '.thumb-wrap',
+		MENU_ICON: '.menu-icon',
+		MENU_TEXT: '.menu-text',
+		MENU_BAR: '.wrapper-bar',
+		TITLE: '.wrapper-name'
 	};
 	
 	var SELECTORS = {
@@ -21,6 +25,11 @@ $(function() {
 		this.$arrowBtn = null;
 		this.$thumbnail_wrap = null;
 		this.$project_wrap = null;
+		this.$menu_icon = null;
+		this.$menu_text = null;
+		this.$menuBar = null;
+		this.$title = null;
+
 		this.clickedItem = 0;
 
 		this.init();
@@ -42,7 +51,16 @@ $(function() {
 		this.$arrowBtn = $(SELECTORS.ARROW_BTN);
 		this.$thumbnail_wrap = $(CLASSES.THUMBNAILS_WRAP);
 		this.$project_wrap = $(SELECTORS.PROJECT_WRAP);
+		this.$menuIcon = $(CLASSES.MENU_ICON);
+		this.$menuText = $(CLASSES.MENU_TEXT);
+		this.$menuBar = $(CLASSES.MENU_BAR);
+		this.$title = $(CLASSES.TITLE);
+
+		console.log(this.$title.insertBefore(this.$menuBar));
+		
 		this.clickedItem = 1;
+
+		this.resMenu();
 
 		this.hideProjects();
 		
@@ -56,6 +74,8 @@ $(function() {
 	Sliding.prototype.setupHandlers = function() {
 		this.handleThumbnailClick = $.proxy(this.onThumbnailClick, this);
 		this.handleArrowClick = $.proxy(this.onThumbnailClick, this);
+		this.handleMenuClick = $.proxy(this.onMenuClick, this);
+
 
 		return this;
 	};
@@ -67,6 +87,7 @@ $(function() {
 
         this.$projThumnail.on('click', this.handleThumbnailClick);
         this.$arrowBtn.on('click', this.handleArrowClick);
+        this.$menuIcon.on('click', this.handleMenuClick);
 
         this.isEnabled = true;
 
@@ -99,6 +120,21 @@ $(function() {
 		
 		return this;
 	};
+
+	Sliding.prototype.resMenu = function (){
+
+	    if (window.matchMedia('(max-width: 480px)').matches) {
+		    this.$title.before($(this).prev(CLASSES.MENU_BAR));
+
+	        this.$menuText.hide();
+	        this.$menuIcon.show();
+	    } else {
+	        this.$menuText.show();
+	        this.$menuIcon.hide();
+	    }
+	    
+		return this;
+	};
 	//////////////////////////////////////////////////////////
     // EVENT HANDLERS
     //////////////////////////////////////////////////////////
@@ -124,6 +160,17 @@ $(function() {
 		}
 		
     };
+
+    Sliding.prototype.onMenuClick = function(e){
+    	$(this.$menuIcon).children().toggleClass('menu-icon-onClick');
+    	$(this.$menuText).slideToggle('medium', function() {
+			if ($(e.target).is(':visible')){
+				$(e.target).css('display','inline-block');
+			}
+		});
+
+    };
 		
-	return new Sliding();
+	return new Sliding();    
+
 });

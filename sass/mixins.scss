@@ -32,22 +32,24 @@
 }
 
 @mixin navbar{
-	nav{
-		ul{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			li{
-				margin:0 30px;
-				a{
-					text-decoration: none;
-					font-weight: 600;
-					color: $color2;
-					font-size: 14px;
-					letter-spacing: 2px;
-					&:hover{
-						border-bottom: 2px solid;
-						padding-bottom: 1px;
+	.wrapper-bar{		
+		nav{
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				li{
+					margin:0 30px;
+					a{
+						text-decoration: none;
+						font-weight: 600;
+						color: $color2;
+						font-size: 14px;
+						letter-spacing: 2px;
+						&:hover{
+							border-bottom: 2px solid;
+							padding-bottom: 1px;
+						}
 					}
 				}
 			}
@@ -57,27 +59,81 @@
 }
 
 @mixin navbarRes{
-	@media screen and (max-width : 480px){
-		nav{
-			background: $color5;
-			ul {
-				position: static;
-				display: none;
-				width: 100%;
-				li {
-					width: 100%;
-					border-bottom: 1px solid $color1;
-					/*Create vertical spacing*/		
-					margin-bottom: 1px;
-					line-height: 40px;
-					a{
-						width: 100%;
+	.wrapper-head{
+		width: 100%!important;
+		text-align: left!important;
+		.wrapper-bar{
+			.menu-icon {
+			  width: 30px;
+			  height: 30px;
+			  cursor: pointer;	  
+			  text-align: right!important;
+			  display: inline-block!important;
+			  position: relative;				
+			}
+			.menu-icon span, 
+			.menu-icon span:before, 
+			.menu-icon span:after{
+			  content: "";
+			  display: block;
+			  position: absolute;
+			  width: 20px;
+			  height: 1px;
+			  background: $color2;				  
+			}
+
+			.menu-icon span{
+				top:15px;
+				left:5px;		  
+			}
+			.menu-icon span:before{
+				top:-5px;					  
+			}
+
+
+			.menu-icon span:after{
+				top:5px;			
+			}
+
+			.menu-icon-onClick{
+				background-color: transparent!important;
+				transition: background-color .25s ease-in-out, transform .25s ease-in-out;
+			}
+			
+			.menu-icon-onClick:before{
+				top:0!important;
+				transform: rotate(-45deg);
+				transform-origin: center center;
+				transition: transform .25s ease-out;
+			}
+			.menu-icon-onClick:after{
+				top:0!important;
+				transform: rotate(45deg);
+				transform-origin: center center;
+				transition: transform .25s ease-out;
+			}
+			nav{
+				background: $color5;				
+				ul {
+					position: static;
+					display: none;
+					li {
+						width: 100%!important;
+						border-bottom: 1px solid $color3;
+						/*Create vertical spacing*/		
+						text-align: center;
+
+						margin: 0 auto!important;
+						a{
+							line-height: 40px;
+							display: block;
+						}
 					}
-				}
-				li:last-child{
-					border-bottom: none!important;
-				}
-			}		
+					li:first-child{
+						border-top: 1px solid $color3;
+					}					
+				}		
+			}	
 		}
 	}
 }
