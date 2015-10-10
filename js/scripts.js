@@ -1,13 +1,15 @@
 $(function() {
 
 	var CLASSES = {
-		PROJECT_DETAIL: '.detail',
-		PROJECT_THUMBNAIL: '.thumbnail',
-		THUMBNAILS_WRAP: '.thumb-wrap',
-		MENU_ICON: '.menu-icon',
-		MENU_TEXT: '.menu-text',
-		MENU_BAR: '.wrapper-bar',
-		TITLE: '.wrapper-name'
+		PROJECT_DETAIL: 'detail',
+		PROJECT_THUMBNAIL: 'thumbnail',
+		THUMBNAILS_WRAP: 'thumb-wrap',
+		MENU_ICON: 'menu-icon',
+		MENU_TEXT: 'menu-text',
+		MENU_BAR: 'wrapper-bar',
+		TITLE: 'wrapper-name',
+		MENU_CLICKED: 'menu-isClick',
+		MENU_NOT_CLICKED: 'menu-isNotClick'
 	};
 	
 	var SELECTORS = {
@@ -25,10 +27,15 @@ $(function() {
 		this.$arrowBtn = null;
 		this.$thumbnail_wrap = null;
 		this.$project_wrap = null;
-		this.$menu_icon = null;
-		this.$menu_text = null;
+		this.$menuIcon = null;
+		this.$menuText = null;
 		this.$menuBar = null;
 		this.$title = null;
+
+		this.menuClicked = null;
+		this.menuNotClicked = null;
+
+		this.menuButtonState = false;
 
 		this.clickedItem = 0;
 
@@ -45,19 +52,23 @@ $(function() {
 	};
 
 	Sliding.prototype.createChildren = function() {
-		this.$projDetail = $(CLASSES.PROJECT_DETAIL);
-		this.$projThumnail = $(CLASSES.PROJECT_THUMBNAIL);
+		this.$projDetail = $('.' + CLASSES.PROJECT_DETAIL);
+		this.$projThumnail = $('.' + CLASSES.PROJECT_THUMBNAIL);
 		this.$projSection = $(SELECTORS.PROJECT_SECTION);
 		this.$arrowBtn = $(SELECTORS.ARROW_BTN);
-		this.$thumbnail_wrap = $(CLASSES.THUMBNAILS_WRAP);
+		this.$thumbnail_wrap = $('.' + CLASSES.THUMBNAILS_WRAP);
 		this.$project_wrap = $(SELECTORS.PROJECT_WRAP);
-		this.$menuIcon = $(CLASSES.MENU_ICON);
-		this.$menuText = $(CLASSES.MENU_TEXT);
-		this.$menuBar = $(CLASSES.MENU_BAR);
-		this.$title = $(CLASSES.TITLE);
+		this.$menuIcon = $('.' + CLASSES.MENU_ICON);
+		this.$menuText = $('.' + CLASSES.MENU_TEXT);
+		this.$menuBar = $('.' + CLASSES.MENU_BAR);
+		this.$title = $('.' + CLASSES.TITLE);
+		this.menuClicked = CLASSES.MENU_CLICKED;
+		this.menuNotClicked = CLASSES.MENU_NOT_CLICKED;
 
-		console.log(this.$title.insertBefore(this.$menuBar));
+
+
 		
+				
 		this.clickedItem = 1;
 
 		this.resMenu();
@@ -123,9 +134,10 @@ $(function() {
 
 	Sliding.prototype.resMenu = function (){
 
-	    if (window.matchMedia('(max-width: 480px)').matches) {
-		    this.$title.before($(this).prev(CLASSES.MENU_BAR));
 
+	    if (window.matchMedia('(max-width: 480px)').matches) {
+	    	this.$title.prependTo(this.$menuBar);
+		    
 	        this.$menuText.hide();
 	        this.$menuIcon.show();
 	    } else {
@@ -162,13 +174,18 @@ $(function() {
     };
 
     Sliding.prototype.onMenuClick = function(e){
-    	$(this.$menuIcon).children().toggleClass('menu-icon-onClick');
+    	
+    	if(this.$menuIcon.children().hasClass(this.menuClicked)){
+    		this.$menuIcon.children().toggleClass(this.menuNotClicked);
+    	}else{
+    		this.$menuIcon.children().toggleClass(this.menuClicked);
+    	}
+
     	$(this.$menuText).slideToggle('medium', function() {
 			if ($(e.target).is(':visible')){
 				$(e.target).css('display','inline-block');
 			}
 		});
-
     };
 		
 	return new Sliding();    
