@@ -3,7 +3,6 @@
 	margin:0 auto;
 	#myself{
 		margin: 20px auto;
-		width: 200px;
 		svg{
 			@include gradient;	
 			border-radius: 100%;
@@ -12,7 +11,8 @@
 		}		
 	}
 	p{	
-		margin-top: 50px;			
+		margin-top:50px;	
+		padding:0 20px;		
 		text-align:center;		
 	}
 }

@@ -176,14 +176,16 @@ $(function() {
     Sliding.prototype.onMenuClick = function(e){
     	
     	if(this.$menuIcon.children().hasClass(this.menuClicked)){
-    		this.$menuIcon.children().toggleClass(this.menuNotClicked);
+    		this.$menuIcon.children().removeClass(this.menuClicked);
+    		this.$menuIcon.children().addClass(this.menuNotClicked);
     	}else{
-    		this.$menuIcon.children().toggleClass(this.menuClicked);
+    		this.$menuIcon.children().removeClass(this.menuNotClicked);
+    		this.$menuIcon.children().addClass(this.menuClicked);
     	}
 
     	$(this.$menuText).slideToggle('medium', function() {
-			if ($(e.target).is(':visible')){
-				$(e.target).css('display','inline-block');
+			if ($(this).is(':visible')){
+				$(this).css('display','inline-block');
 			}
 		});
     };

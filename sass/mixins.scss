@@ -66,22 +66,22 @@
 			display: inline-block!important;	
 			vertical-align: middle;
 			margin: 10px;
-			border-bottom: 1px solid $color2;
 			h1{
 				font-size: 14px;
 				margin: 0!important;
 			}
 			h2{
-				font-size: 12px;
+				font-size: 10px;
 			}
 		}
 		.wrapper-bar{
-			margin: 10px;
-			.menu-icon {
+			
+			.menu-icon{
 			  cursor: pointer;	  
 			  text-align: right!important;
 			  display: inline-block!important;
-			  position: relative;				
+			  position: relative;	
+			  margin-left: 10px;		  
 			}
 			.menu-icon span, 
 			.menu-icon span:before, 
@@ -91,13 +91,11 @@
 			  position: absolute;
 			  width: 50px;
 			  height: 1px;
-			  background: $color2;	
-
+			  background: $color2;
 			}
 
 			.menu-icon span{
-				top:0;
-				left:5px;		  
+				top:-5px;		  
 			}
 
 			.menu-icon span:before{
@@ -156,10 +154,7 @@
 						margin: 0 auto!important;
 						a{
 							line-height: 40px;
-							display: block;
-							&:hover, &:active, &:visited{
-								text-decoration: none!important;
-							}
+							display: block;							
 						}
 					}
 									

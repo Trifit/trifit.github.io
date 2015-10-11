@@ -639,27 +639,23 @@ header .wrapper-head #wrapper-name {
     display: inline-block !important;
     vertical-align: middle;
     margin: 10px;
-    border-bottom: 1px solid #D1DBBD;
   }
-  /* line 70, ../sass/mixins.scss */
+  /* line 69, ../sass/mixins.scss */
   .wrapper-head .wrapper-name h1 {
     font-size: 14px;
     margin: 0 !important;
   }
-  /* line 74, ../sass/mixins.scss */
+  /* line 73, ../sass/mixins.scss */
   .wrapper-head .wrapper-name h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
-  /* line 78, ../sass/mixins.scss */
-  .wrapper-head .wrapper-bar {
-    margin: 10px;
-  }
-  /* line 80, ../sass/mixins.scss */
+  /* line 79, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon {
     cursor: pointer;
     text-align: right !important;
     display: inline-block !important;
     position: relative;
+    margin-left: 10px;
   }
   /* line 86, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span,
@@ -672,80 +668,75 @@ header .wrapper-head #wrapper-name {
     height: 1px;
     background: #D1DBBD;
   }
-  /* line 98, ../sass/mixins.scss */
+  /* line 97, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span {
-    top: 0;
-    left: 5px;
+    top: -5px;
   }
-  /* line 103, ../sass/mixins.scss */
+  /* line 101, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 107, ../sass/mixins.scss */
+  /* line 105, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 111, ../sass/mixins.scss */
+  /* line 109, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 116, ../sass/mixins.scss */
+  /* line 114, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 122, ../sass/mixins.scss */
+  /* line 120, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 129, ../sass/mixins.scss */
+  /* line 127, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 133, ../sass/mixins.scss */
+  /* line 131, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 140, ../sass/mixins.scss */
+  /* line 138, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 146, ../sass/mixins.scss */
+  /* line 144, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav {
     background: #193441;
   }
-  /* line 148, ../sass/mixins.scss */
+  /* line 146, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 151, ../sass/mixins.scss */
+  /* line 149, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 157, ../sass/mixins.scss */
+  /* line 155, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
-  }
-  /* line 160, ../sass/mixins.scss */
-  .wrapper-head .wrapper-bar nav ul li a:hover, .wrapper-head .wrapper-bar nav ul li a:active, .wrapper-head .wrapper-bar nav ul li a:visited {
-    text-decoration: none !important;
   }
 }
 /* line 1, ../sass/_aboutme.scss */
@@ -756,9 +747,8 @@ header .wrapper-head #wrapper-name {
 /* line 4, ../sass/_aboutme.scss */
 #about_me #myself {
   margin: 20px auto;
-  width: 200px;
 }
-/* line 7, ../sass/_aboutme.scss */
+/* line 6, ../sass/_aboutme.scss */
 #about_me #myself svg {
   background: -webkit-gradient(linear, to top, to bottom, from(#FCFFF5), to(#193441));
   background: -webkit-linear-gradient(to top, #FCFFF5, #193441);
@@ -774,9 +764,10 @@ header .wrapper-head #wrapper-name {
   border: 5px solid #fcfff5;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 14, ../sass/_aboutme.scss */
+/* line 13, ../sass/_aboutme.scss */
 #about_me p {
   margin-top: 50px;
+  padding: 0 20px;
   text-align: center;
 }
 
