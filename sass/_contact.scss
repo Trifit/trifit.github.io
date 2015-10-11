@@ -1,5 +1,5 @@
 #contact {
-    margin: 0 auto 100px;
+    margin: 0 auto;
     max-width: 500px;
     *{
         box-sizing: border-box!important;
@@ -7,10 +7,9 @@
     form {
         letter-spacing: 2px;
         color: $color4;
-        margin:0 auto;
+        margin:0 20px;
         label{
             display:inline-block;
-                
             input, textarea {
                 border: 3px solid $color5;
                 padding: 3px 10px;
