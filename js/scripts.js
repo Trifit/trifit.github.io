@@ -76,8 +76,9 @@ $(function() {
 		this.hideProjects();
 		
 		this.$projThumnail.each( function(index){
-			$(this).data('item', index);					
+			$(this).data('item', index);
 		});
+		
 
 		return this;
 	};
@@ -107,7 +108,7 @@ $(function() {
 
 	Sliding.prototype.hideProjects = function(){
 		this.$project_wrap.each(function(index){
-			$(this).children(CLASSES.PROJECT_DETAIL).toggle();				
+			$(this).children(this.$projDetail).toggle();	
 		});
 
 		return this;		
@@ -153,8 +154,12 @@ $(function() {
 
     Sliding.prototype.onThumbnailClick = function(e){    	
     	var $projSection = $(e.target).closest(SELECTORS.PROJECT_SECTION);
-		this.clickedItem = $(e.target).closest(CLASSES.PROJECT_THUMBNAIL).data('item');
-						
+    	var temp = 	'.' + CLASSES.PROJECT_THUMBNAIL;
+
+    	this.clickedItem = $(e.target).closest(temp).data('item');
+
+		
+
 		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
 			this.$project_wrap.children().each(function(index){
 				if (index !== 0){
