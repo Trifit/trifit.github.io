@@ -186,7 +186,7 @@ $(function() {
     		this.$menuIcon.children().addClass(this.menuClicked);
     	}
 
-    	$(this.$menuText).slideToggle();
+    	//$(this.$menuText).slideToggle();
     	$(this.$menuText).slideToggle('medium', function() {
 			if ($(this).is(':visible')){
 				$(this).css('display','inline-block');
