@@ -66,6 +66,8 @@
 			display: inline-block!important;	
 			vertical-align: middle;
 			margin: 10px;
+			margin: 5%;
+    		width: 69%;
 			h1{
 				font-size: 14px;
 				margin: 0!important;
@@ -75,7 +77,7 @@
 			}
 		}
 		.wrapper-bar{
-			
+		/*icon styles*/			
 			.menu-icon{
 			  cursor: pointer;	  
 			  text-align: right!important;
@@ -141,6 +143,7 @@
 				transform: rotate(0deg)!important;
 				transition: transform .25s ease-out;
 			}
+
 			nav{
 				background: $color5;				
 				ul {

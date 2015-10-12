@@ -24,6 +24,7 @@ header{
 		
 		
 		#wrapper-name{
+			width: 60%;
 			padding-top: 250px;	
 			padding-bottom: 250px;
 		}
@@ -62,6 +63,7 @@ header{
 		#wrapper-name{
 			padding-top: 0!important;	
 			padding-bottom: 0!important;	
+			width: 60%;
 			h1{
 				font-size: 16px!important;
 			}
@@ -71,6 +73,6 @@ header{
 		
 		}
 	   
+		@include navbarRes;
 	}
-	@include navbarRes;
 }
