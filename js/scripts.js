@@ -158,8 +158,6 @@ $(function() {
 
     	this.clickedItem = $(e.target).closest(temp).data('item');
 
-		
-
 		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
 			this.$project_wrap.children().each(function(index){
 				if (index !== 0){
@@ -188,6 +186,7 @@ $(function() {
     		this.$menuIcon.children().addClass(this.menuClicked);
     	}
 
+    	$(this.$menuText).slideToggle();
     	$(this.$menuText).slideToggle('medium', function() {
 			if ($(this).is(':visible')){
 				$(this).css('display','inline-block');
