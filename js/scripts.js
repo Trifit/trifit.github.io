@@ -86,7 +86,7 @@ $(function() {
 	Sliding.prototype.setupHandlers = function() {
 		this.handleThumbnailClick = $.proxy(this.onThumbnailClick, this);
 		this.handleArrowClick = $.proxy(this.onThumbnailClick, this);
-		this.handleMenuClick = $.proxy(this.onMenuClick, this);
+		this.handleMenuClick = $.proxy(this.onMenuItemClick, this);
 
 
 		return this;
@@ -138,11 +138,11 @@ $(function() {
 
 	    if (window.matchMedia('(max-width: 480px)').matches) {
 	    	this.$title.prependTo(this.$menuBar);
-		    
-	        this.$menuText.hide();
+		    this.$title.children('h2').hide();
+	        this.$menuText.children().hide();
 	        this.$menuIcon.show();
 	    } else {
-	        this.$menuText.show();
+	        this.$menuText.children().show();
 	        this.$menuIcon.hide();
 	    }
 	    
@@ -176,22 +176,18 @@ $(function() {
 		
     };
 
-    Sliding.prototype.onMenuClick = function(e){
+    Sliding.prototype.onMenuItemClick = function(e){
     	
+    	this.$menuText.children().slideToggle();
+
     	if(this.$menuIcon.children().hasClass(this.menuClicked)){
     		this.$menuIcon.children().removeClass(this.menuClicked);
     		this.$menuIcon.children().addClass(this.menuNotClicked);
     	}else{
     		this.$menuIcon.children().removeClass(this.menuNotClicked);
     		this.$menuIcon.children().addClass(this.menuClicked);
-    	}
-
-    	//$(this.$menuText).slideToggle();
-    	$(this.$menuText).slideToggle('medium', function() {
-			if ($(this).is(':visible')){
-				$(this).css('display','inline-block');
-			}
-		});
+    	}    	
+		
     };
 		
 	return new Sliding();    
