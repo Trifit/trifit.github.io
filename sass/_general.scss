@@ -12,7 +12,8 @@ html{
 
 body{
 	background-color: $color3;
-	margin:0 auto!important;
+	margin:0 auto;
+	font-size: 16px;
 }
 
 a{
@@ -22,38 +23,35 @@ a{
 
 h1{
 	color: $color1;
-	font-size: 36px;
+	font-size: 2em;
 	font-weight: bold;	
 }
 
 h2{
-	font-size: 20px;
+	font-size: 1.25em;
 	font-weight: bold;
 	color:$color2;
 	letter-spacing: 2px;
 }
 
 h3{
-		margin: 0 auto;
-		text-align:center;
-		font-size: 20px;
-		font-weight: bold;
-		color: $color5;
-		letter-spacing: 2px;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: $color5;
+	letter-spacing: 2px;
 }
 
 h4, h5{
-	font-size: 20px;
+	font-size: 1.25em;
 	color: $color5;
 	letter-spacing: 2px;
 }
 
 p{	
+	font-size: 1em;
 	color:$color4;
 	letter-spacing: 1px;
 	line-height: 150%;
-	font-size: 16px;
-
 	strong{
 		font-weight: bold;
 		color: $color4;
@@ -66,10 +64,10 @@ ul{
 }
 
 section{
-	display:block;	
+	display: block;	
 	clear: both;
-	margin-bottom: 20px;
-	padding-top: 20px;
+	margin:30px auto;
+	text-align: center;
 }
 
 .alternate{
@@ -80,5 +78,4 @@ section{
 	h3{
 		color: $color1;
 	}
-
 }

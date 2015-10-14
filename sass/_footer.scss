@@ -8,30 +8,11 @@ footer{
 		position: relative;
 		top:50%;
 		@include navbar;
-				
 	}
 }
 
 
 @media screen and (max-width : 480px){
-/* 	.wrapper{
-		text-align: left;
-		nav{
-			ul {
-				position: static;
-				display: none;
-				width: 100%;
-				li {
-					width: 100%;
-						
-					margin-bottom: 1px;
-					a{
-						width: 100%;
-					}
-				}
-			}		
-		}		
-	} */
 	@include navbarRes();
 }
 	 

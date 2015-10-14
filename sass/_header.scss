@@ -13,20 +13,18 @@ header{
 	     -o-background-size: cover;
 	        background-size: cover;	
 	text-align: center;
-	
+	padding-bottom: 30px;
 	.wrapper-head{
 		max-width: $full-width;
 		
 		@include navbar;
 
 		display: inline-block;
-		text-align: center;
-		
+		text-align: center;		
 		
 		#wrapper-name{
 			width: 60%;
-			padding-top: 250px;	
-			padding-bottom: 250px;
+			padding: 250px 0;
 		}
 	}
 }
@@ -49,28 +47,25 @@ header{
 	         -o-background-size: cover;
 	            background-size: cover;
 	    #wrapper-name{
-			padding-top: 150px!important;
-			padding-bottom: 150px!important;	
-		
+	    	padding: 150px!important;
 		}
 	}
 }
 
 @media screen and (max-width : 480px){
 	header{
-		background:none $color5;
-
+		background: none rgba($color5, 0.9);
+		position: fixed;
+		z-index: 99;
+		width: 100%;
+		padding: 0;
+		margin-top:-30px;
 		#wrapper-name{
-			padding-top: 0!important;	
-			padding-bottom: 0!important;	
+			padding:0;	
 			width: 60%;
 			h1{
 				font-size: 16px!important;
 			}
-			h2{
-				font-size: 14px!important;
-			}
-		
 		}
 	   
 		@include navbarRes;

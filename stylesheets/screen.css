@@ -447,9 +447,6 @@ $color4:#ba7e54;
 $color5:#8e5c3d;
 $color6:#7e682e;
 $color7:#592809*/
-/* @mixin overlay($color,$transparence, $bImage){
-	background:linear-gradient(rgba($color, $transparence), rgba($color, $transparence)),url($bImage);
-} */
 /* line 1, ../sass/_general.scss */
 * {
   padding: 0;
@@ -466,88 +463,87 @@ html {
 /* line 13, ../sass/_general.scss */
 body {
   background-color: #91AA9D;
-  margin: 0 auto !important;
+  margin: 0 auto;
+  font-size: 16px;
 }
 
-/* line 18, ../sass/_general.scss */
+/* line 19, ../sass/_general.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 23, ../sass/_general.scss */
+/* line 24, ../sass/_general.scss */
 h1 {
   color: #FCFFF5;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: bold;
 }
 
-/* line 29, ../sass/_general.scss */
+/* line 30, ../sass/_general.scss */
 h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: bold;
   color: #D1DBBD;
   letter-spacing: 2px;
 }
 
-/* line 36, ../sass/_general.scss */
+/* line 37, ../sass/_general.scss */
 h3 {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: bold;
   color: #193441;
   letter-spacing: 2px;
 }
 
-/* line 45, ../sass/_general.scss */
+/* line 44, ../sass/_general.scss */
 h4, h5 {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #193441;
   letter-spacing: 2px;
 }
 
-/* line 51, ../sass/_general.scss */
+/* line 50, ../sass/_general.scss */
 p {
+  font-size: 1em;
   color: #3E606F;
   letter-spacing: 1px;
   line-height: 150%;
-  font-size: 16px;
 }
-/* line 57, ../sass/_general.scss */
+/* line 55, ../sass/_general.scss */
 p strong {
   font-weight: bold;
   color: #3E606F;
 }
 
-/* line 63, ../sass/_general.scss */
+/* line 61, ../sass/_general.scss */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 68, ../sass/_general.scss */
+/* line 66, ../sass/_general.scss */
 section {
   display: block;
   clear: both;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-/* line 75, ../sass/_general.scss */
+/* line 73, ../sass/_general.scss */
 .alternate {
   background: #3E606F;
 }
-/* line 77, ../sass/_general.scss */
+/* line 75, ../sass/_general.scss */
 .alternate h1 {
   color: #FCFFF5;
 }
-/* line 80, ../sass/_general.scss */
+/* line 78, ../sass/_general.scss */
 .alternate h3 {
   color: #FCFFF5;
 }
 
-/* line 1, ../sass/_head.scss */
+/* line 1, ../sass/_header.scss */
 header {
   background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-large.jpg"), no-repeat;
   background-position: top center;
@@ -557,24 +553,25 @@ header {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
+  padding-bottom: 30px;
 }
-/* line 17, ../sass/_head.scss */
+/* line 17, ../sass/_header.scss */
 header .wrapper-head {
   max-width: 900px;
   display: inline-block;
   text-align: center;
 }
-/* line 37, ../sass/mixins.scss */
+/* line 33, ../sass/mixins.scss */
 header .wrapper-head .wrapper-bar nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 41, ../sass/mixins.scss */
+/* line 37, ../sass/mixins.scss */
 header .wrapper-head .wrapper-bar nav ul li {
   margin: 0 30px;
 }
-/* line 43, ../sass/mixins.scss */
+/* line 39, ../sass/mixins.scss */
 header .wrapper-head .wrapper-bar nav ul li a {
   text-decoration: none;
   font-weight: 600;
@@ -582,21 +579,20 @@ header .wrapper-head .wrapper-bar nav ul li a {
   font-size: 14px;
   letter-spacing: 2px;
 }
-/* line 49, ../sass/mixins.scss */
+/* line 45, ../sass/mixins.scss */
 header .wrapper-head .wrapper-bar nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }
-/* line 26, ../sass/_head.scss */
+/* line 25, ../sass/_header.scss */
 header .wrapper-head #wrapper-name {
   width: 60%;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding: 250px 0;
 }
 
 /*Responsive Styles*/
 @media screen and (min-width: 480px) and (max-width: 960px) {
-  /* line 37, ../sass/_head.scss */
+  /* line 35, ../sass/_header.scss */
   header {
     background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-medium.jpg") no-repeat, fixed;
     background-position: top center;
@@ -605,37 +601,36 @@ header .wrapper-head #wrapper-name {
     -o-background-size: cover;
     background-size: cover;
   }
-  /* line 51, ../sass/_head.scss */
+  /* line 49, ../sass/_header.scss */
   header #wrapper-name {
-    padding-top: 150px !important;
-    padding-bottom: 150px !important;
+    padding: 150px !important;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 60, ../sass/_head.scss */
+  /* line 56, ../sass/_header.scss */
   header {
-    background: none #193441;
+    background: none rgba(25, 52, 65, 0.9);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 0;
+    margin-top: -30px;
   }
-  /* line 63, ../sass/_head.scss */
+  /* line 63, ../sass/_header.scss */
   header #wrapper-name {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 0;
     width: 60%;
   }
-  /* line 67, ../sass/_head.scss */
+  /* line 66, ../sass/_header.scss */
   header #wrapper-name h1 {
     font-size: 16px !important;
   }
-  /* line 70, ../sass/_head.scss */
-  header #wrapper-name h2 {
-    font-size: 14px !important;
-  }
-  /* line 62, ../sass/mixins.scss */
+  /* line 58, ../sass/mixins.scss */
   header .wrapper-head {
     width: 100% !important;
     text-align: left !important;
   }
-  /* line 65, ../sass/mixins.scss */
+  /* line 61, ../sass/mixins.scss */
   header .wrapper-head .wrapper-name {
     display: inline-block !important;
     vertical-align: middle;
@@ -643,20 +638,20 @@ header .wrapper-head #wrapper-name {
     margin: 5%;
     width: 69%;
   }
-  /* line 71, ../sass/mixins.scss */
+  /* line 67, ../sass/mixins.scss */
   header .wrapper-head .wrapper-name h1 {
     font-size: 14px;
     margin: 0 !important;
   }
-  /* line 75, ../sass/mixins.scss */
+  /* line 71, ../sass/mixins.scss */
   header .wrapper-head .wrapper-name h2 {
     font-size: 10px;
   }
-  /* line 79, ../sass/mixins.scss */
+  /* line 75, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar {
     /*icon styles*/
   }
-  /* line 81, ../sass/mixins.scss */
+  /* line 77, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon {
     cursor: pointer;
     text-align: right !important;
@@ -664,7 +659,7 @@ header .wrapper-head #wrapper-name {
     position: relative;
     margin-left: 10px;
   }
-  /* line 88, ../sass/mixins.scss */
+  /* line 84, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span,
   header .wrapper-head .wrapper-bar .menu-icon span:before,
   header .wrapper-head .wrapper-bar .menu-icon span:after {
@@ -675,72 +670,68 @@ header .wrapper-head #wrapper-name {
     height: 1px;
     background: #D1DBBD;
   }
-  /* line 99, ../sass/mixins.scss */
+  /* line 95, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 103, ../sass/mixins.scss */
+  /* line 99, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 107, ../sass/mixins.scss */
+  /* line 103, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 111, ../sass/mixins.scss */
+  /* line 107, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 116, ../sass/mixins.scss */
+  /* line 112, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 122, ../sass/mixins.scss */
+  /* line 118, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 129, ../sass/mixins.scss */
+  /* line 125, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 133, ../sass/mixins.scss */
+  /* line 129, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 140, ../sass/mixins.scss */
+  /* line 136, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 147, ../sass/mixins.scss */
-  header .wrapper-head .wrapper-bar nav {
-    background: #193441;
-  }
-  /* line 149, ../sass/mixins.scss */
+  /* line 145, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 152, ../sass/mixins.scss */
+  /* line 148, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 158, ../sass/mixins.scss */
+  /* line 154, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
@@ -748,15 +739,13 @@ header .wrapper-head #wrapper-name {
 }
 /* line 1, ../sass/_aboutme.scss */
 #about_me {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 900px;
 }
-/* line 4, ../sass/_aboutme.scss */
+/* line 3, ../sass/_aboutme.scss */
 #about_me #myself {
-  margin: 20px auto 0;
-  text-align: center;
+  margin: 30px auto;
 }
-/* line 7, ../sass/_aboutme.scss */
+/* line 5, ../sass/_aboutme.scss */
 #about_me #myself svg {
   width: 200px;
   height: 200px;
@@ -774,37 +763,39 @@ header .wrapper-head #wrapper-name {
   border: 5px solid #fcfff5;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 15, ../sass/_aboutme.scss */
+/* line 13, ../sass/_aboutme.scss */
 #about_me p {
-  margin-top: 20px;
-  padding: 0 20px;
-  text-align: center;
+  margin: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  /* line 19, ../sass/_aboutme.scss */
+  #about_me {
+    padding-top: 60px;
+  }
+}
 /* line 1, ../sass/_skills.scss */
 #skills {
   max-width: 900px;
-  margin: 0 auto;
 }
-/* line 4, ../sass/_skills.scss */
+/* line 3, ../sass/_skills.scss */
 #skills ul {
   text-align: center;
   margin: 20px auto 0;
 }
-/* line 7, ../sass/_skills.scss */
+/* line 6, ../sass/_skills.scss */
 #skills ul li {
   width: 270px;
   color: #3E606F;
-  font-size: 16px;
-  margin-right: 2%;
-  margin-left: 2%;
+  font-size: 1em;
+  margin: 0 2%;
   display: inline-block;
 }
-/* line 15, ../sass/_skills.scss */
+/* line 13, ../sass/_skills.scss */
 #skills ul li p {
   text-align: left;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-0 {
   margin: 20px 0;
   border-radius: 10px;
@@ -813,7 +804,7 @@ header .wrapper-head #wrapper-name {
   width: 0px;
   box-shadow: 270px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-1 {
   margin: 20px 0;
   border-radius: 10px;
@@ -822,7 +813,7 @@ header .wrapper-head #wrapper-name {
   width: 27px;
   box-shadow: 243px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-2 {
   margin: 20px 0;
   border-radius: 10px;
@@ -831,7 +822,7 @@ header .wrapper-head #wrapper-name {
   width: 54px;
   box-shadow: 216px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-3 {
   margin: 20px 0;
   border-radius: 10px;
@@ -840,7 +831,7 @@ header .wrapper-head #wrapper-name {
   width: 81px;
   box-shadow: 189px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-4 {
   margin: 20px 0;
   border-radius: 10px;
@@ -849,7 +840,7 @@ header .wrapper-head #wrapper-name {
   width: 108px;
   box-shadow: 162px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-5 {
   margin: 20px 0;
   border-radius: 10px;
@@ -858,7 +849,7 @@ header .wrapper-head #wrapper-name {
   width: 135px;
   box-shadow: 135px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-6 {
   margin: 20px 0;
   border-radius: 10px;
@@ -867,7 +858,7 @@ header .wrapper-head #wrapper-name {
   width: 162px;
   box-shadow: 108.0px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-7 {
   margin: 20px 0;
   border-radius: 10px;
@@ -876,7 +867,7 @@ header .wrapper-head #wrapper-name {
   width: 189px;
   box-shadow: 81.0px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-8 {
   margin: 20px 0;
   border-radius: 10px;
@@ -885,7 +876,7 @@ header .wrapper-head #wrapper-name {
   width: 216px;
   box-shadow: 54.0px 0 0 #fff;
 }
-/* line 19, ../sass/_skills.scss */
+/* line 17, ../sass/_skills.scss */
 #skills ul li .skill-9 {
   margin: 20px 0;
   border-radius: 10px;
@@ -909,10 +900,9 @@ header .wrapper-head #wrapper-name {
 #work #work-belt #thumb-cointainer, #work #work-belt #work-container {
   width: 50%;
   float: left;
-}
-/* line 10, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #work-container #thumb-wrap {
-  font-size: 0;
+  /* #thumb-wrap{
+  	font-size: 0; 
+  } */
 }
 /* line 13, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #thumb-cointainer #work-wrap, #work #work-belt #work-container #thumb-wrap, #work #work-belt #work-container #work-wrap {
@@ -925,7 +915,7 @@ header .wrapper-head #wrapper-name {
 #work #work-belt #thumb-cointainer #thumb-wrap h3, #work #work-belt #thumb-cointainer #work-wrap h3, #work #work-belt #work-container #thumb-wrap h3, #work #work-belt #work-container #work-wrap h3 {
   margin-bottom: 30px;
 }
-/* line 21, ../sass/_work.scss */
+/* line 22, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure, #work #work-belt #thumb-cointainer #work-wrap figure, #work #work-belt #work-container #thumb-wrap figure, #work #work-belt #work-container #work-wrap figure {
   display: inline-block;
   position: relative;
@@ -936,7 +926,7 @@ header .wrapper-head #wrapper-name {
   background: #193441;
   cursor: pointer;
 }
-/* line 30, ../sass/_work.scss */
+/* line 32, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption, #work #work-belt #thumb-cointainer #work-wrap figure figcaption, #work #work-belt #work-container #thumb-wrap figure figcaption, #work #work-belt #work-container #work-wrap figure figcaption {
   position: absolute;
   height: 100%;
@@ -946,23 +936,24 @@ header .wrapper-head #wrapper-name {
   vertical-align: left;
   background: rgba(25, 52, 65, 0.9);
 }
-/* line 38, ../sass/_work.scss */
+/* line 40, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption h4, #work #work-belt #thumb-cointainer #work-wrap figure figcaption h4, #work #work-belt #work-container #thumb-wrap figure figcaption h4, #work #work-belt #work-container #work-wrap figure figcaption h4 {
   opacity: 1 !important;
   color: #D1DBBD;
   font-weight: bold;
   font-size: 14px;
+  padding-top: 25px;
 }
-/* line 44, ../sass/_work.scss */
+/* line 47, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption p, #work #work-belt #thumb-cointainer #work-wrap figure figcaption p, #work #work-belt #work-container #thumb-wrap figure figcaption p, #work #work-belt #work-container #work-wrap figure figcaption p {
   font-size: 10px;
   color: #c8d4ce;
 }
-/* line 51, ../sass/_work.scss */
+/* line 53, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure:hover figcaption, #work #work-belt #thumb-cointainer #work-wrap figure:hover figcaption, #work #work-belt #work-container #thumb-wrap figure:hover figcaption, #work #work-belt #work-container #work-wrap figure:hover figcaption {
   top: 0;
 }
-/* line 55, ../sass/_work.scss */
+/* line 57, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap #arrow, #work #work-belt #thumb-cointainer #work-wrap #arrow, #work #work-belt #work-container #thumb-wrap #arrow, #work #work-belt #work-container #work-wrap #arrow {
   cursor: pointer;
   opacity: 0.7;
@@ -971,37 +962,37 @@ header .wrapper-head #wrapper-name {
   width: 50px;
   background: #fff;
 }
-/* line 64, ../sass/_work.scss */
+/* line 66, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap #arrow:hover, #work #work-belt #thumb-cointainer #work-wrap #arrow:hover, #work #work-belt #work-container #thumb-wrap #arrow:hover, #work #work-belt #work-container #work-wrap #arrow:hover {
   opacity: 1;
   transform: scale(1.2);
   transform-origin: center center;
   transition: all .25s ease-in-out;
 }
-/* line 71, ../sass/_work.scss */
+/* line 73, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail, #work #work-belt #thumb-cointainer #work-wrap .detail, #work #work-belt #work-container #thumb-wrap .detail, #work #work-belt #work-container #work-wrap .detail {
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
 }
-/* line 75, ../sass/_work.scss */
+/* line 77, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icon, #work #work-belt #thumb-cointainer #work-wrap .detail .icon, #work #work-belt #work-container #thumb-wrap .detail .icon, #work #work-belt #work-container #work-wrap .detail .icon {
   width: 50px;
   opacity: 0.7;
 }
-/* line 78, ../sass/_work.scss */
+/* line 80, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icon:hover, #work #work-belt #thumb-cointainer #work-wrap .detail .icon:hover, #work #work-belt #work-container #thumb-wrap .detail .icon:hover, #work #work-belt #work-container #work-wrap .detail .icon:hover {
   opacity: 1;
   transform: scale(1.2);
   transform-origin: center center;
   transition: all .25s ease-in-out;
 }
-/* line 85, ../sass/_work.scss */
+/* line 87, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail a, #work #work-belt #thumb-cointainer #work-wrap .detail a, #work #work-belt #work-container #thumb-wrap .detail a, #work #work-belt #work-container #work-wrap .detail a {
   font-weight: 300;
   color: #193441;
 }
-/* line 89, ../sass/_work.scss */
+/* line 91, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail a:hover, #work #work-belt #thumb-cointainer #work-wrap .detail a:hover, #work #work-belt #work-container #thumb-wrap .detail a:hover, #work #work-belt #work-container #work-wrap .detail a:hover {
   color: #FCFFF5;
   transition: all .25s ease-in-out;
@@ -1210,17 +1201,17 @@ footer .wrapper {
   position: relative;
   top: 50%;
 }
-/* line 37, ../sass/mixins.scss */
+/* line 33, ../sass/mixins.scss */
 footer .wrapper .wrapper-bar nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 41, ../sass/mixins.scss */
+/* line 37, ../sass/mixins.scss */
 footer .wrapper .wrapper-bar nav ul li {
   margin: 0 30px;
 }
-/* line 43, ../sass/mixins.scss */
+/* line 39, ../sass/mixins.scss */
 footer .wrapper .wrapper-bar nav ul li a {
   text-decoration: none;
   font-weight: 600;
@@ -1228,37 +1219,19 @@ footer .wrapper .wrapper-bar nav ul li a {
   font-size: 14px;
   letter-spacing: 2px;
 }
-/* line 49, ../sass/mixins.scss */
+/* line 45, ../sass/mixins.scss */
 footer .wrapper .wrapper-bar nav ul li a:hover {
   border-bottom: 2px solid;
   padding-bottom: 1px;
 }
 
 @media screen and (max-width: 480px) {
-  /* 	.wrapper{
-  		text-align: left;
-  		nav{
-  			ul {
-  				position: static;
-  				display: none;
-  				width: 100%;
-  				li {
-  					width: 100%;
-  						
-  					margin-bottom: 1px;
-  					a{
-  						width: 100%;
-  					}
-  				}
-  			}		
-  		}		
-  	} */
-  /* line 62, ../sass/mixins.scss */
+  /* line 58, ../sass/mixins.scss */
   .wrapper-head {
     width: 100% !important;
     text-align: left !important;
   }
-  /* line 65, ../sass/mixins.scss */
+  /* line 61, ../sass/mixins.scss */
   .wrapper-head .wrapper-name {
     display: inline-block !important;
     vertical-align: middle;
@@ -1266,20 +1239,20 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     margin: 5%;
     width: 69%;
   }
-  /* line 71, ../sass/mixins.scss */
+  /* line 67, ../sass/mixins.scss */
   .wrapper-head .wrapper-name h1 {
     font-size: 14px;
     margin: 0 !important;
   }
-  /* line 75, ../sass/mixins.scss */
+  /* line 71, ../sass/mixins.scss */
   .wrapper-head .wrapper-name h2 {
     font-size: 10px;
   }
-  /* line 79, ../sass/mixins.scss */
+  /* line 75, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar {
     /*icon styles*/
   }
-  /* line 81, ../sass/mixins.scss */
+  /* line 77, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon {
     cursor: pointer;
     text-align: right !important;
@@ -1287,7 +1260,7 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     position: relative;
     margin-left: 10px;
   }
-  /* line 88, ../sass/mixins.scss */
+  /* line 84, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span,
   .wrapper-head .wrapper-bar .menu-icon span:before,
   .wrapper-head .wrapper-bar .menu-icon span:after {
@@ -1298,72 +1271,68 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     height: 1px;
     background: #D1DBBD;
   }
-  /* line 99, ../sass/mixins.scss */
+  /* line 95, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 103, ../sass/mixins.scss */
+  /* line 99, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 107, ../sass/mixins.scss */
+  /* line 103, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 111, ../sass/mixins.scss */
+  /* line 107, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 116, ../sass/mixins.scss */
+  /* line 112, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 122, ../sass/mixins.scss */
+  /* line 118, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 129, ../sass/mixins.scss */
+  /* line 125, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 133, ../sass/mixins.scss */
+  /* line 129, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 140, ../sass/mixins.scss */
+  /* line 136, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 147, ../sass/mixins.scss */
-  .wrapper-head .wrapper-bar nav {
-    background: #193441;
-  }
-  /* line 149, ../sass/mixins.scss */
+  /* line 145, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 152, ../sass/mixins.scss */
+  /* line 148, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 158, ../sass/mixins.scss */
+  /* line 154, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;

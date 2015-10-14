@@ -22,10 +22,6 @@
 	background: linear-gradient(to top, $color1, $color5);/* Standard syntax */
 }
 
-/* @mixin overlay($color,$transparence, $bImage){
-	background:linear-gradient(rgba($color, $transparence), rgba($color, $transparence)),url($bImage);
-} */
-
 @mixin column{
 	display: block;
 	float:left;	
@@ -145,7 +141,7 @@
 			}
 
 			nav{
-				background: $color5;				
+							
 				ul {
 					position: static;
 					display: none;

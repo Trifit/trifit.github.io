@@ -165,7 +165,7 @@ $(function() {
 				}
 			});
 		}else{
-			this.$project_wrap.children().eq(this.clickedItem+1).toggle();
+			this.$project_wrap.children().eq(this.clickedItem).toggle();
 		}
 
 		if($projSection.css('left') === '0px'){

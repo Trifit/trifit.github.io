@@ -1,9 +1,7 @@
 #about_me{
-	max-width: 600px;
-	margin:0 auto;
+	max-width: $full-width;
 	#myself{
-		margin: 20px auto 0;
-		text-align: center;		
+		margin: 30px auto;		
 		svg{
 			@include size(200px);
 			@include gradient;	
@@ -13,9 +11,12 @@
 		}		
 	}
 	p{	
-		margin-top:20px;	
-		padding:0 20px;		
-		text-align:center;		
+		margin:30px;
 	}
 }
 
+@media screen and (max-width : 480px){
+	#about_me{
+	    padding-top: 60px;
+	}
+}
