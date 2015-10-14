@@ -543,6 +543,12 @@ section {
   color: #FCFFF5;
 }
 
+/* line 83, ../sass/_general.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* line 1, ../sass/_header.scss */
 header {
   background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-large.jpg"), no-repeat;
