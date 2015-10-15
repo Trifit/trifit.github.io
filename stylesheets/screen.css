@@ -973,14 +973,14 @@ header .wrapper-head #wrapper-name {
   display: inline-block;
 }
 /* line 66, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame #arrow, #work #work-belt #thumb-cointainer #work-wrap .detail .icons-Frame #arrow, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame #arrow, #work #work-belt #work-container #work-wrap .detail .icons-Frame #arrow {
+#work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .arrow, #work #work-belt #thumb-cointainer #work-wrap .detail .icons-Frame .arrow, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .arrow, #work #work-belt #work-container #work-wrap .detail .icons-Frame .arrow {
   cursor: pointer;
   opacity: 0.7;
   display: inline-block;
   vertical-align: middle;
 }
 /* line 71, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame #arrow:hover, #work #work-belt #thumb-cointainer #work-wrap .detail .icons-Frame #arrow:hover, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame #arrow:hover, #work #work-belt #work-container #work-wrap .detail .icons-Frame #arrow:hover {
+#work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .arrow:hover, #work #work-belt #thumb-cointainer #work-wrap .detail .icons-Frame .arrow:hover, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .arrow:hover, #work #work-belt #work-container #work-wrap .detail .icons-Frame .arrow:hover {
   opacity: 1;
   transform: scale(1.2);
   transform-origin: center center;

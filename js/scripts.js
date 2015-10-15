@@ -9,12 +9,12 @@ $(function() {
 		MENU_BAR: 'wrapper-bar',
 		TITLE: 'wrapper-name',
 		MENU_CLICKED: 'menu-isClick',
-		MENU_NOT_CLICKED: 'menu-isNotClick'
+		MENU_NOT_CLICKED: 'menu-isNotClick',
+		ARROW_BTN: 'arrow'
 	};
 	
 	var SELECTORS = {
 		PROJECT_SECTION: '#work-belt',
-		ARROW_BTN: '#arrow',
 		PROJECT_WRAP: '#work-wrap'
 	};
 
@@ -56,7 +56,7 @@ $(function() {
 		this.$projDetail = $('.' + CLASSES.PROJECT_DETAIL);
 		this.$projThumnail = $('.' + CLASSES.PROJECT_THUMBNAIL);
 		this.$projSection = $(SELECTORS.PROJECT_SECTION);
-		this.$arrowBtn = $(SELECTORS.ARROW_BTN);
+		this.$arrowBtn = $('.' + CLASSES.ARROW_BTN);
 		this.$thumbnail_wrap = $('.' + CLASSES.THUMBNAILS_WRAP);
 		this.$project_wrap = $(SELECTORS.PROJECT_WRAP);
 		this.$menuIcon = $('.' + CLASSES.MENU_ICON);
