@@ -46,7 +46,8 @@ $(function() {
 		this.createChildren()
 			.setupHandlers()
 			.enable()
-			.smoothScroll();
+			.smoothScroll()
+			.inject();
 
 		return this;
 	};
@@ -65,10 +66,6 @@ $(function() {
 		this.menuClicked = CLASSES.MENU_CLICKED;
 		this.menuNotClicked = CLASSES.MENU_NOT_CLICKED;
 
-
-
-		
-				
 		this.clickedItem = 1;
 
 		this.resMenu();
@@ -85,10 +82,8 @@ $(function() {
 
 	Sliding.prototype.setupHandlers = function() {
 		this.handleThumbnailClick = $.proxy(this.onThumbnailClick, this);
-		this.handleArrowClick = $.proxy(this.onThumbnailClick, this);
+		this.handleArrowClick = $.proxy(this.onArrowClick, this);
 		this.handleMenuClick = $.proxy(this.onMenuItemClick, this);
-
-
 		return this;
 	};
 
@@ -101,14 +96,17 @@ $(function() {
         this.$arrowBtn.on('click', this.handleArrowClick);
         this.$menuIcon.on('click', this.handleMenuClick);
 
+		console.log(this.handleArrowClick);
+		
         this.isEnabled = true;
 
 		return this;
 	};
 
 	Sliding.prototype.hideProjects = function(){
+
 		this.$project_wrap.each(function(index){
-			$(this).children(this.$projDetail).toggle();	
+			$(this).children(this.$projDetail).not('#arrow').hide();			
 		});
 
 		return this;		
@@ -148,6 +146,16 @@ $(function() {
 	    
 		return this;
 	};
+
+	Sliding.prototype.inject = function (){
+		// Elements to inject
+		var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+		// Do the injection
+		SVGInjector(mySVGsToInject);
+
+		return this;
+	};
 	//////////////////////////////////////////////////////////
     // EVENT HANDLERS
     //////////////////////////////////////////////////////////
@@ -158,22 +166,20 @@ $(function() {
 
     	this.clickedItem = $(e.target).closest(temp).data('item');
 
-		if($(e.target).closest(SELECTORS.ARROW_BTN).attr('id') === 'arrow'){
-			this.$project_wrap.children().each(function(index){
-				if (index !== 0){
-					$(this).fadeOut(250);										
-				}
-			});
-		}else{
-			this.$project_wrap.children().eq(this.clickedItem).toggle();
-		}
+		this.$project_wrap.children().eq(this.clickedItem).toggle();
 
-		if($projSection.css('left') === '0px'){
-			$projSection.animate({left:"-100%"});			
-		}else{
-			$projSection.animate({left:"0"});			
-		}
-		
+		$projSection.animate({left:"-100%"});		
+    };
+
+    Sliding.prototype.onArrowClick = function(e){
+    	var $projSection = $(e.target).closest(SELECTORS.PROJECT_SECTION);
+    	
+    	
+    	$projSection.animate({left:"0"});
+
+    	this.$project_wrap.children().each(function(index){
+			$(this).fadeOut(250);													
+		});
     };
 
     Sliding.prototype.onMenuItemClick = function(e){

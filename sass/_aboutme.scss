@@ -2,7 +2,7 @@
 	max-width: $full-width;
 	#myself{
 		margin: 30px auto;		
-		svg{
+		img{
 			@include size(200px);
 			@include gradient;	
 			border-radius: 100%;
