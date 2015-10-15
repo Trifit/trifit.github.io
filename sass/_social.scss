@@ -49,10 +49,12 @@
 		font-size: 72px;
 		line-height: 1;
 		font-weight: 300;
-		color:$color5;
+		color:$color1;
+		cursor:pointer;
+		opacity: 0.5;
 		&:hover{
-			color:$color1;
-			cursor:pointer;
+			opacity: 1;
+			transition: opacity .2s ease-in-out;
 		}
 	}
 

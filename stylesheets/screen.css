@@ -620,15 +620,20 @@ header .wrapper-head #wrapper-name {
     z-index: 99;
     width: 100%;
     padding: 0;
-    margin-top: -30px;
+    top: 0;
   }
   /* line 63, ../sass/_header.scss */
-  header #wrapper-name {
+  header .wrapper-head {
+    padding: 2% 0;
+    right: 2%;
+  }
+  /* line 66, ../sass/_header.scss */
+  header .wrapper-head #wrapper-name {
     padding: 0;
     width: 60%;
   }
-  /* line 66, ../sass/_header.scss */
-  header #wrapper-name h1 {
+  /* line 69, ../sass/_header.scss */
+  header .wrapper-head #wrapper-name h1 {
     font-size: 16px !important;
   }
   /* line 58, ../sass/mixins.scss */
@@ -937,7 +942,7 @@ header .wrapper-head #wrapper-name {
   height: 100%;
   width: 100%;
   top: -134px;
-  transition: top 0.5s ease;
+  transition: top 0.2s ease;
   vertical-align: left;
   background: rgba(25, 52, 65, 0.9);
 }
@@ -1066,19 +1071,21 @@ header .wrapper-head #wrapper-name {
   font-size: 72px;
   line-height: 1;
   font-weight: 300;
-  color: #193441;
-}
-/* line 53, ../sass/_social.scss */
-#social .big-email:hover {
   color: #FCFFF5;
   cursor: pointer;
+  opacity: 0.5;
 }
-/* line 60, ../sass/_social.scss */
+/* line 55, ../sass/_social.scss */
+#social .big-email:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+/* line 62, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
 @media screen and (max-width: 760px) {
-  /* line 66, ../sass/_social.scss */
+  /* line 68, ../sass/_social.scss */
   #social .big-email {
     font-size: 32px;
   }
@@ -1102,8 +1109,9 @@ header .wrapper-head #wrapper-name {
 /* line 11, ../sass/_contact.scss */
 #contact form label {
   display: inline-block;
+  text-align: left;
 }
-/* line 13, ../sass/_contact.scss */
+/* line 14, ../sass/_contact.scss */
 #contact form label input, #contact form label textarea {
   border: 3px solid #193441;
   padding: 3px 10px;
@@ -1111,92 +1119,75 @@ header .wrapper-head #wrapper-name {
   background: #D1DBBD;
   margin: 7px auto;
   box-sizing: border-box !important;
+  text-align: left;
 }
-/* line 20, ../sass/_contact.scss */
+/* line 22, ../sass/_contact.scss */
 #contact form label input:focus, #contact form label textarea:focus {
   border-color: #91AA9D;
   background: #FCFFF5;
 }
-/* line 28, ../sass/_contact.scss */
+/* line 30, ../sass/_contact.scss */
 #contact form .info-group {
   margin-top: 10px;
 }
-/* line 30, ../sass/_contact.scss */
+/* line 32, ../sass/_contact.scss */
 #contact form .info-group label {
-  width: 45%;
-  float: left;
+  width: 49%;
 }
-/* line 33, ../sass/_contact.scss */
+/* line 34, ../sass/_contact.scss */
 #contact form .info-group label span {
   display: block;
   text-align: left;
 }
-/* line 37, ../sass/_contact.scss */
-#contact form .info-group label:nth-child(2) {
-  float: right;
-  margin: 0 auto;
-}
-/* line 41, ../sass/_contact.scss */
+/* line 38, ../sass/_contact.scss */
 #contact form .info-group label input {
-  max-width: calc(100% - 20px);
+  width: 90%;
 }
-@media screen and (max-width: 760px) {
-  /* line 46, ../sass/_contact.scss */
-  #contact form .info-group label, #contact form .info-group input {
-    width: 100% !important;
-    float: none !important;
+/* line 47, ../sass/_contact.scss */
+#contact form .info-group .tell-group label textarea {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  /* line 53, ../sass/_contact.scss */
+  #contact form .info-group label {
+    width: 100%;
   }
 }
-/* line 52, ../sass/_contact.scss */
+/* line 59, ../sass/_contact.scss */
 #contact form .tell-group {
   margin-top: 10px;
 }
-/* line 54, ../sass/_contact.scss */
+/* line 61, ../sass/_contact.scss */
 #contact form .tell-group textarea {
   height: 10em;
-  width: calc(100% - 20px);
+  width: 100%;
   resize: none;
 }
-@media screen and (max-width: 760px) {
-  /* line 60, ../sass/_contact.scss */
-  #contact form .tell-group textarea {
-    width: 95% !important;
-  }
-}
-/* line 65, ../sass/_contact.scss */
+/* line 68, ../sass/_contact.scss */
 #contact form .submit-wrap {
   margin-top: 20px;
+  text-align: right;
 }
-/* line 68, ../sass/_contact.scss */
+/* line 71, ../sass/_contact.scss */
 #contact form .submit-wrap input {
   width: 100px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 300;
   color: #FCFFF5;
   background: #193441;
   padding: 10px 0;
   letter-spacing: 2px;
-  opacity: 0.8;
-  transition: all .2s ease-in-out;
   border: none;
 }
-/* line 80, ../sass/_contact.scss */
-#contact form .submit-wrap input:hover {
-  opacity: 1;
-}
-/* line 84, ../sass/_contact.scss */
+/* line 85, ../sass/_contact.scss */
 #contact form .submit-wrap .shockwave {
-  transition: all .1s ease-in-out;
-  -webkit-transform-origin: 100% 50%;
-  -moz-transform-origin: 100% 50%;
-  -o-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
   transform-origin: 0 50%;
-}
-/* line 91, ../sass/_contact.scss */
-#contact form .submit-wrap .shockwave:hover {
-  transform: scale(1.1);
   cursor: pointer;
+}
+/* line 88, ../sass/_contact.scss */
+#contact form .submit-wrap .shockwave:hover {
+  transition: box-shadow .1s ease-in-out;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
 }
 
 /* line 1, ../sass/_footer.scss */

@@ -10,6 +10,7 @@
         margin:0 20px;
         label{
             display:inline-block;
+            text-align: left;
             input, textarea {
                 border: 3px solid $color5;
                 padding: 3px 10px;
@@ -17,6 +18,7 @@
                 background: $color2;
                 margin: 7px auto;
                 box-sizing: border-box!important;
+                text-align: left;
                 &:focus {
                     border-color: $color3;
                     background: $color1;
@@ -28,69 +30,64 @@
         .info-group {
             margin-top: 10px;
             label {
-                width:45%;
-                float:left;
+                width:49%;
                 span{
                     display:block;
                     text-align: left;                    
                 }
-                &:nth-child(2) {
-                    float: right;
-                    margin: 0 auto;
-                }
                 input{
-                    max-width: calc(100% - 20px);
+                    width: 90%;
                 }
+                &:nth-child(2) {
+                    
+                }               
             }
-            @media screen and (max-width : 760px){
-                label,input{
-                    width: 100%!important;
-                    float: none!important;                   
-                }                
+        .tell-group{
+            label{
+                textarea{
+                    width:100%;
+                }
             }
         }
+            @media screen and (max-width : 480px){
+                label{
+                    width: 100%;
+                }
+            }            
+        }
+
         .tell-group {
             margin-top: 10px;
             textarea {
                 height: 10em;
-                width: calc(100% - 20px);
+                width: 100%;
                 resize: none; 
             }
-            @media screen and (max-width : 760px){
-                textarea{
-                    width: 95%!important;                    
-                }
-            }
+            
         }
         .submit-wrap {
             margin-top: 20px;
-            
+            text-align: right;
             input {
                 width: 100px;
                 font-size: 18px;
-                font-weight: 600;
+                font-weight: 300;
                 color: $color1;
                 background: $color5;
                 
                 padding:10px 0;
                 letter-spacing: 2px;
-                opacity: 0.8;
-                transition: all .2s ease-in-out;
+               
+               
                 border:none;
-                &:hover {
-                    opacity: 1;
-                }
+                
             }
             .shockwave{
-                transition: all .1s ease-in-out;
-                -webkit-transform-origin : 100% 50%;
-                -moz-transform-origin : 100% 50%;
-                -o-transform-origin : 100% 50%;
-                -ms-transform-origin : 100% 50%;
                 transform-origin : 0 50%;
+                cursor: pointer;
                 &:hover{
-                    transform: scale(1.1);
-                    cursor: pointer;
+                    transition: box-shadow .1s ease-in-out;
+                    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
                 }
             }
         }
