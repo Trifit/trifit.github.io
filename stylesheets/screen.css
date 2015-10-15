@@ -752,7 +752,7 @@ header .wrapper-head #wrapper-name {
   margin: 30px auto;
 }
 /* line 5, ../sass/_aboutme.scss */
-#about_me #myself img {
+#about_me #myself svg {
   width: 200px;
   height: 200px;
   background: -webkit-gradient(linear, to top, to bottom, from(#FCFFF5), to(#193441));
