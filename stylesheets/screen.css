@@ -1152,23 +1152,27 @@ header .wrapper-head #wrapper-name {
   #contact form .info-group label {
     width: 100%;
   }
+  /* line 55, ../sass/_contact.scss */
+  #contact form .info-group label input {
+    width: 100%;
+  }
 }
-/* line 59, ../sass/_contact.scss */
+/* line 62, ../sass/_contact.scss */
 #contact form .tell-group {
   margin-top: 10px;
 }
-/* line 61, ../sass/_contact.scss */
+/* line 64, ../sass/_contact.scss */
 #contact form .tell-group textarea {
   height: 10em;
   width: 100%;
   resize: none;
 }
-/* line 68, ../sass/_contact.scss */
+/* line 71, ../sass/_contact.scss */
 #contact form .submit-wrap {
   margin-top: 20px;
   text-align: right;
 }
-/* line 71, ../sass/_contact.scss */
+/* line 74, ../sass/_contact.scss */
 #contact form .submit-wrap input {
   width: 100px;
   font-size: 18px;
@@ -1179,12 +1183,12 @@ header .wrapper-head #wrapper-name {
   letter-spacing: 2px;
   border: none;
 }
-/* line 85, ../sass/_contact.scss */
+/* line 88, ../sass/_contact.scss */
 #contact form .submit-wrap .shockwave {
   transform-origin: 0 50%;
   cursor: pointer;
 }
-/* line 88, ../sass/_contact.scss */
+/* line 91, ../sass/_contact.scss */
 #contact form .submit-wrap .shockwave:hover {
   transition: box-shadow .1s ease-in-out;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
