@@ -16,10 +16,10 @@
 				@for $i from 0 to 10{
 					.skill-#{$i}
 					{				
-						margin:20px 0;
+						margin:10px 0 30px;
 						border-radius: 10px;
 						background: $color5;
-						height: 10px;
+						height: 5px;
 						width: ($val*$i*0.1);
 						$shade:($val*(1-($i*0.1)));
 						box-shadow:$shade 0 0 #fff;		

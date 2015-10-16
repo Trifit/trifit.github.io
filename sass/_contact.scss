@@ -7,14 +7,16 @@
     form {
         letter-spacing: 2px;
         color: $color4;
-        margin:0 20px;
+        fieldset{
+            border: none;
+        }
         label{
             display:inline-block;
             text-align: left;
             input, textarea {
                 border: 3px solid $color5;
                 padding: 3px 10px;
-                font-size: 16px;
+                font-size: 1em;
                 background: $color2;
                 margin: 7px auto;
                 box-sizing: border-box!important;
@@ -31,16 +33,21 @@
             margin-top: 10px;
             label {
                 width:49%;
+                text-align:left;
                 span{
-                    display:block;
                     text-align: left;                    
                 }
                 input{
                     width: 90%;
                 }
                 &:nth-child(2) {
-                    
-                }               
+                    text-align:right;
+                    background: #ccc;
+
+                }     
+                .email-wrap{
+
+                }        
             }
         .tell-group{
             label{
@@ -72,7 +79,7 @@
             margin-top: 20px;
             text-align: right;
             input {
-                width: 100px;
+                width: 200px;
                 font-size: 18px;
                 font-weight: 300;
                 color: $color1;
@@ -80,19 +87,13 @@
                 
                 padding:10px 0;
                 letter-spacing: 2px;
-               
-               
                 border:none;
+                &:hover{
+                    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+                }
                 
             }
-            .shockwave{
-                transform-origin : 0 50%;
-                cursor: pointer;
-                &:hover{
-                    transition: box-shadow .1s ease-in-out;
-                    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
-                }
-            }
+            
         }
 
     }
