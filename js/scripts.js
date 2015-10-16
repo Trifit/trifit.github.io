@@ -14,6 +14,7 @@ $(function() {
 	};
 	
 	var SELECTORS = {
+		WORK_CONTAINER: '#work-container',
 		PROJECT_SECTION: '#work-belt',
 		PROJECT_WRAP: '#work-wrap'
 	};
@@ -31,6 +32,7 @@ $(function() {
 		this.$menuText = null;
 		this.$menuBar = null;
 		this.$title = null;
+		this.$workContainer = null;
 
 		this.menuClicked = null;
 		this.menuNotClicked = null;
@@ -63,6 +65,8 @@ $(function() {
 		this.$menuText = $('.' + CLASSES.MENU_TEXT);
 		this.$menuBar = $('.' + CLASSES.MENU_BAR);
 		this.$title = $('.' + CLASSES.TITLE);
+		this.$workContainer = $(SELECTORS.WORK_CONTAINER);
+
 		this.menuClicked = CLASSES.MENU_CLICKED;
 		this.menuNotClicked = CLASSES.MENU_NOT_CLICKED;
 
@@ -180,6 +184,8 @@ $(function() {
     	this.$project_wrap.children().each(function(index){
 			$(this).fadeOut(250);													
 		});
+		
+   		$('html,body').animate({scrollTop: this.$workContainer.offset().top}, 300);
     };
 
     Sliding.prototype.onMenuItemClick = function(e){

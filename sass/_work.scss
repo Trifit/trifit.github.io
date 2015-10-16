@@ -1,5 +1,8 @@
 #work{
 	overflow: hidden;
+	h3{
+		margin-bottom: 30px;
+	}
 	#work-belt{	
 		width: 200%;	
 		left: 0;
@@ -7,19 +10,25 @@
 		#thumb-cointainer, #work-container{
 			width: 50%;			
 			float: left;
-			/* #thumb-wrap{
+			 #thumb-wrap{
 				font-size: 0; 
-			} */
+				text-align: left;
+			} 
+			#work-wrap{
+				text-align: center;
+			}
 			#thumb-wrap, #work-wrap{				
 				margin: 0 auto;
-				text-align: center;
-    			max-width: 600px;
-				//min-height: 1px; //in this way the div doesn't collapse when whe hide id with jquery
+    			max-width: 800px;
+				
 				h3{
-					margin-bottom: 30px;					
+					margin-bottom: 30px;
+
 				}
 				figure{		
 					display: inline-block;
+					text-align: center;
+					vertical-align: middle;
 		  			position: relative;
 		  			margin:0;
 		  			overflow: hidden;
@@ -32,21 +41,21 @@
 					  	position: absolute;
 						height:100%;
 						width:100%;
-						top:-134px;
+						top:-194px;
 						transition: top 0.2s ease;
-						vertical-align: left;
-						background: rgba($color5, 0.9);						
+						
+						background: rgba($color5, 0.9);		
+						img{
+							border:3px solid #fff;
+						}				
 					  	h4{
 							opacity:1!important;
 							color:$color2;
 							font-weight: bold;
 							font-size: 14px;
-							padding-top: 25px;
+							line-height: 134px;
 						}
-						p{
-							font-size: 10px;
-							color: $color6;							
-						}
+						
 					}
 				}
 				figure:hover figcaption {
@@ -69,11 +78,13 @@
 							font-weight: 600;
 							font-size: 1.1em;
 						}
+
 					}
 
 					img{
 						max-width:300px;
   						height:auto;
+  						
 					}
 					.video-container {
 					    position: relative;
@@ -94,7 +105,7 @@
 					}
 					
 					.icons-Frame{
-						display: inline-block;
+						
 						.arrow{
 							cursor: pointer;
 							opacity: 0.7;	
@@ -108,7 +119,9 @@
 							}
 						}
 						.icon{
-							opacity: 0.7;					
+							opacity: 0.7;
+							display: inline-block;
+							vertical-align: middle;
 							&:hover{
 								opacity: 1;
 								transform: scale(1.2);
@@ -116,15 +129,7 @@
 					        	transition: all .25s ease-in-out;
 							}
 						}
-						a{
-							font-weight: 300;
-							color:$color5;
-
-							&:hover{
-								color:$color1;
-								transition: all .25s ease-in-out;
-							}
-						}						
+										
 					}
 				}
 			}			
