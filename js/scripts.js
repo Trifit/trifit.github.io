@@ -14,7 +14,7 @@ $(function() {
 	};
 	
 	var SELECTORS = {
-		WORK_CONTAINER: '#work-container',
+		WORK_SECTION: '#work',
 		PROJECT_SECTION: '#work-belt',
 		PROJECT_WRAP: '#work-wrap'
 	};
@@ -65,7 +65,7 @@ $(function() {
 		this.$menuText = $('.' + CLASSES.MENU_TEXT);
 		this.$menuBar = $('.' + CLASSES.MENU_BAR);
 		this.$title = $('.' + CLASSES.TITLE);
-		this.$workContainer = $(SELECTORS.WORK_CONTAINER);
+		this.$workContainer = $(SELECTORS.WORK_SECTION);
 
 		this.menuClicked = CLASSES.MENU_CLICKED;
 		this.menuNotClicked = CLASSES.MENU_NOT_CLICKED;

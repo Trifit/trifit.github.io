@@ -13,6 +13,7 @@
 			 #thumb-wrap{
 				font-size: 0; 
 				text-align: left;
+
 			} 
 			#work-wrap{
 				text-align: center;
@@ -64,12 +65,16 @@
 
 				.detail{
 					max-width: $half-width;
-					text-align: center;
 					margin: 0 auto;
-					h4, h5, img, p{
+					p{
+						text-align: justify;
+						margin: 15px 0 15px 15px;
+    					font-size: 0.875em;
+					}
+					h4, h5, img{
+						text-align: center;
 						margin: 15px;
 					}
-
 					h4,h5{
 						text-align: left;
 						font-weight: 300;
@@ -78,13 +83,21 @@
 							font-weight: 600;
 							font-size: 1.1em;
 						}
-
+						.fa-external-link:hover:before{
+							content:"\f14c"!important;
+						}
+						a:hover{
+							border-bottom: 3px solid $color5;
+						}
 					}
-
+					
+					.fa-link{
+						font-family: "FontAwesome";
+						content:"/f08e";
+					}
 					img{
-						max-width:300px;
-  						height:auto;
-  						
+						max-width: $half-width;
+    					height: auto;  						
 					}
 					.video-container {
 					    position: relative;
@@ -132,7 +145,14 @@
 										
 					}
 				}
-			}			
+			}	
+			 @media screen and (max-width : 480px){
+			 	#thumb-wrap{
+
+			 		text-align: center!important;
+			 		
+			 	}
+			 }		
 		}			
 	}
 }

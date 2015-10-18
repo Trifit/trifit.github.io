@@ -1,9 +1,7 @@
 #contact {
     margin: 0 auto;
     max-width: 500px;
-    *{
-        box-sizing: border-box!important;
-    }
+   
     form {
         letter-spacing: 2px;
         color: $color4;
@@ -14,15 +12,18 @@
             display:inline-block;
             text-align: left;
             input, textarea {
-                border: 3px solid $color5;
-                padding: 3px 10px;
-                font-size: 1em;
+                letter-spacing: 1px;
+                padding: 5px;
+                font-size: 0.875em;
                 background: $color2;
                 margin: 7px auto;
                 box-sizing: border-box!important;
                 text-align: left;
+                outline-width: 0;
+                border: none;
+                
+
                 &:focus {
-                    border-color: $color3;
                     background: $color1;
                 }            
             }
@@ -79,7 +80,7 @@
             margin-top: 20px;
             text-align: right;
             input {
-                width: 200px;
+                width: 100px;
                 font-size: 18px;
                 font-weight: 300;
                 color: $color1;
@@ -89,7 +90,14 @@
                 letter-spacing: 2px;
                 border:none;
                 &:hover{
-                    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+                    //box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+                    background: none;
+                    border:1px solid $color5;
+                    color: $color7;
+                    transition: background .25s ease-in-out;
+                    box-sizing: border-box;
+
+
                 }
                 
             }
