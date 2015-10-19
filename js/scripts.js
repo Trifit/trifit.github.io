@@ -171,6 +171,7 @@ $(function() {
     	this.clickedItem = $(e.target).closest(temp).data('item');
 
 		this.$project_wrap.children().eq(this.clickedItem).toggle();
+		this.$thumbnail_wrap.hide();
 
 		$projSection.animate({left:"-100%"});		
     };
@@ -178,7 +179,7 @@ $(function() {
     Sliding.prototype.onArrowClick = function(e){
     	var $projSection = $(e.target).closest(SELECTORS.PROJECT_SECTION);
     	
-    	
+    	this.$thumbnail_wrap.show();
     	$projSection.animate({left:"0"});
 
     	this.$project_wrap.children().each(function(index){

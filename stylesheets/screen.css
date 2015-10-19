@@ -4181,7 +4181,7 @@ header .wrapper-head #wrapper-name {
 }
 /* line 98, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail img, #work #work-belt #thumb-cointainer #work-wrap .detail img, #work #work-belt #work-container #thumb-wrap .detail img, #work #work-belt #work-container #work-wrap .detail img {
-  max-width: 600px;
+  max-width: 100%;
   height: auto;
 }
 /* line 102, ../sass/_work.scss */
