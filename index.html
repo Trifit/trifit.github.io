@@ -46,7 +46,7 @@
     </header>
     
     <section id="about_me">
-      <h3>Let me introduce myself</h3>
+      <h3>Who am I?</h3>
       <div id="myself">
          <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve">
@@ -87,7 +87,7 @@
         </svg>
         <!-- <img class="inject-me" src="img/SVG/me.svg"> -->
       </div>
-      <p><strong>David is a little guy who is: </strong> Front-End Web developer, Android Developer, CGI generalist and computer's nerd. All this meanwhile is rissing a family in the midwest and stays up to date with the latest web trends. I love to learn, in fact I kind like imagine a 100 year old myself, in front of the computer learning how to make inline forms in CSS5</p>
+      <p><strong>A Front-End Web developer, Android Developer, CGI generalist and computer's nerd</strong>. All this meanwhile is rissing a family in the midwest and stays up to date with the latest web trends.</p>
     </section>
     <section id="skills">
       <h3>SKILLS</h3>
@@ -426,28 +426,25 @@
 
    <section id="contact">
       <h3>Let's work Together!</h3>
-      <form method="POST" action="http://formspree.io/davhern@gmail.com" id="contact-form">
-        <fieldset class="info-group">
-          <label>
-            <span>Your Name</span>
-            <input type="text" name="name" required/>
-          </label>
-          <label>
-            <div class="email-wrap">
-              <span>Your Email</span>
-              <input type="email" name="email" required/>
-            </div>
-          </label>
-        </fieldset>
-        <fieldset class="tell-group">
-          <label>
-            <span>What can you tell me about your project?</span>
-            <textarea name="message" required></textarea>
-          </label>
-        </fieldset>
-        <fieldset class="submit-wrap">
-          <input type="submit" value="Send" class="shockwave">
-        </fieldset>
+      <form method="POST" action="http://formspree.io/davhern@gmail.com" class="contact-form">
+        <div class="row">          
+          <div class="form-group col-md-6">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required/>
+            
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required/>            
+          </div>          
+        </div>
+        <div class="form-group">
+          <label for="project">What can you tell me about your project?</label>
+          <textarea name="message" id="project" required></textarea>          
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Send" class="btn-submit">
+        </div>
       </form>
     </section>
       <!-- <footer>
