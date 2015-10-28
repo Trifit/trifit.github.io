@@ -119,25 +119,22 @@ $(function() {
 	Sliding.prototype.smoothScroll = function (){
 		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-
+		    	this.$menuIcon.children().addClass(this.menuNotClicked);
+				var target = $(this.hash);
+		      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      	if (target.length) {
+		        	$('html,body').animate({
+		          		scrollTop: target.offset().top
+		        	}, 1000);
+		        	this.$menuText.children().slideToggle();
 		        return false;
 		      }
 		    }
   		});
-			
-		
 		return this;
 	};
 
 	Sliding.prototype.resMenu = function (){
-
-
 	    if (window.matchMedia('(max-width: 480px)').matches) {
 	    	this.$title.prependTo(this.$menuBar);
 		    this.$title.children('h2').hide();

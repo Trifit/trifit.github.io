@@ -3917,6 +3917,11 @@ header .wrapper-head #wrapper-name {
     line-height: 40px;
     display: block;
   }
+  /* line 158, ../sass/mixins.scss */
+  header .wrapper-head .wrapper-bar nav ul li a:hover {
+    border-bottom: none !important;
+    color: #FCFFF5;
+  }
 }
 /* line 1, ../sass/_aboutme.scss */
 #about_me {
@@ -4550,5 +4555,10 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
   .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
+  }
+  /* line 158, ../sass/mixins.scss */
+  .wrapper-head .wrapper-bar nav ul li a:hover {
+    border-bottom: none !important;
+    color: #FCFFF5;
   }
 }
