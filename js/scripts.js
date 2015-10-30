@@ -100,9 +100,7 @@ $(function() {
         this.$arrowBtn.on('click', this.handleArrowClick);
         this.$menuIcon.on('click', this.handleMenuClick);
 
-		console.log(this.handleArrowClick);
-		
-        this.isEnabled = true;
+		this.isEnabled = true;
 
 		return this;
 	};
