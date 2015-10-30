@@ -17,10 +17,12 @@
 			} 
 			#work-wrap{
 				text-align: center;
+				max-width: 800px;
 			}
-			#thumb-wrap, #work-wrap{				
-				margin: 0 auto;
+			#thumb-wrap{				
     			max-width: 800px;
+				display: inline-block;
+				text-align: center;
 				
 				h3{
 					margin-bottom: 30px;

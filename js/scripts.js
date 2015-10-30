@@ -133,7 +133,7 @@ $(function() {
 	};
 
 	Sliding.prototype.resMenu = function (){
-	    if (window.matchMedia('(max-width: 480px)').matches) {
+	    if (window.matchMedia('(max-width: 870px)').matches) {
 	    	this.$title.prependTo(this.$menuBar);
 		    this.$title.children('h2').hide();
 	        this.$menuText.children().hide();

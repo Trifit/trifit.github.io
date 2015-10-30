@@ -2,7 +2,6 @@
 	text-align: center;
 	#icons{
 		max-width: 700px;
-		margin:0 auto;
 		padding-bottom: 40px;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -11,22 +10,21 @@
 		    -ms-flex-pack: distribute;
 		        justify-content: space-around;
 		flex-wrap: wrap;
+		margin:20px auto;
 		.icon{
 			opacity: 0.7;
-			//background: $color1;
 			border: 2px solid $color1;
-			border-radius: 40px;
+			border-radius: 50%;
 			@include size(50px);
-			margin:20px;
 			transition: all .1s ease-in-out;
+			margin:5%;
 			&:hover{
 				opacity: 1;
 				-webkit-transform: scale(1.2);
 				        transform: scale(1.2);
 			}
 			svg{
-				vertical-align: middle;
-				height: 50px;	
+				margin-top: 15%;
 				path{
 					fill: $color1;
 				}

@@ -31,28 +31,8 @@ header{
 
 /*Responsive Styles*/
 
-@media screen and (min-width: 480px) and (max-width: 960px){
-	header{
-		background: 
-			linear-gradient(
-	  			rgba($color5, 0.4), 
-	  			rgba($color5, 0.4)
-			),
-			url("../img/typewriter-medium.jpg")
-			no-repeat,
-			fixed;
-		background-position: top center;
-		-webkit-background-size: cover;
-	       -moz-background-size: cover;
-	         -o-background-size: cover;
-	            background-size: cover;
-	    #wrapper-name{
-	    	padding: 150px!important;
-		}
-	}
-}
 
-@media screen and (max-width : 480px){
+@media screen and (max-width : 870px){
 	header{
 		background: none rgba($color5, 0.9);
 		position: fixed;
