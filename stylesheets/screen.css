@@ -3720,6 +3720,11 @@ img {
   height: auto;
 }
 
+/* line 94, ../sass/_general.scss */
+iframe {
+  border: none;
+}
+
 /* line 1, ../sass/_header.scss */
 header {
   background: linear-gradient(rgba(25, 52, 65, 0.4), rgba(25, 52, 65, 0.4)), url("../img/typewriter-large.jpg"), no-repeat;
