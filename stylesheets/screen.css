@@ -4276,14 +4276,11 @@ header .wrapper-head #wrapper-name {
   transform: scale(1.2);
 }
 /* line 26, ../sass/_social.scss */
-#social #icons .icon svg {
+#social #icons .icon .icon-svg {
+  fill: #FCFFF5;
   margin-top: 15%;
 }
-/* line 28, ../sass/_social.scss */
-#social #icons .icon svg path {
-  fill: #FCFFF5;
-}
-/* line 36, ../sass/_social.scss */
+/* line 34, ../sass/_social.scss */
 #social .bar {
   width: 250px;
   height: 5px;
@@ -4291,7 +4288,7 @@ header .wrapper-head #wrapper-name {
   border: 0;
   margin: 0 auto 70px;
 }
-/* line 44, ../sass/_social.scss */
+/* line 42, ../sass/_social.scss */
 #social .big-email {
   display: inline-block;
   margin: 0 auto 70px;
@@ -4302,17 +4299,17 @@ header .wrapper-head #wrapper-name {
   cursor: pointer;
   opacity: 0.5;
 }
-/* line 53, ../sass/_social.scss */
+/* line 51, ../sass/_social.scss */
 #social .big-email:hover {
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
-/* line 60, ../sass/_social.scss */
+/* line 58, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
 @media screen and (max-width: 760px) {
-  /* line 66, ../sass/_social.scss */
+  /* line 64, ../sass/_social.scss */
   #social .big-email {
     font-size: 32px;
   }

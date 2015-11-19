@@ -23,11 +23,9 @@
 				-webkit-transform: scale(1.2);
 				        transform: scale(1.2);
 			}
-			svg{
-				margin-top: 15%;
-				path{
-					fill: $color1;
-				}
+			.icon-svg{
+				fill: $color1;
+				margin-top: 15%;				
 			}
 		}
 
