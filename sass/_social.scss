@@ -18,6 +18,9 @@
 			@include size(50px);
 			transition: all .1s ease-in-out;
 			margin:5%;
+			svg *{
+				fill:$color1;
+			}
 			&:hover{
 				opacity: 1;
 				-webkit-transform: scale(1.2);
