@@ -18,7 +18,7 @@
 			@include size(50px);
 			transition: all .1s ease-in-out;
 			margin:5%;
-			svg *{
+			svg:first-child{
 				fill:$color2;
 			}
 			&:hover{
