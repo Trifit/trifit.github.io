@@ -4180,7 +4180,7 @@ header .wrapper-head #wrapper-name {
 #work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #work-container #thumb-wrap {
   max-width: 800px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   font-size: 0;
 }
 /* line 96, ../sass/_work.scss */
