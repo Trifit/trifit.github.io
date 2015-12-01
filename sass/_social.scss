@@ -19,7 +19,7 @@
 			transition: all .1s ease-in-out;
 			margin:5%;
 			svg:first-child{
-				fill:$color2;
+				fill:$color1;
 			}
 			&:hover{
 				opacity: 1;
@@ -37,7 +37,7 @@
 	.bar{
 		width: 250px;
 		height: 5px;
-		background-color: $color5;
+		background-color: $color1;
 		border:0;
 		margin: 0 auto 70px;
 	}
@@ -59,8 +59,7 @@
 
 	
 	h3{
-		padding-top: 40px;
-		
+		padding-top: 40px;		
 	}
 
 	@media screen and (max-width : 760px){
