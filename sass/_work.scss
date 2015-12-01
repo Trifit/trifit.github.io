@@ -34,6 +34,7 @@
 						}
 						a:hover > .fa-external-link:before{
 							content:"\f14c"!important;
+							transition: all .25s ease-in-out;
 						}
 						a:hover{
 							border-bottom: 3px solid $color5;
