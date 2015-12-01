@@ -3,7 +3,6 @@ $(function() {
 	var CLASSES = {
 		PROJECT_DETAIL: 'detail',
 		PROJECT_THUMBNAIL: 'thumbnail',
-		THUMBNAILS_WRAP: 'thumb-wrap',
 		MENU_ICON: 'menu-icon',
 		MENU_TEXT: 'menu-text',
 		MENU_BAR: 'wrapper-bar',
@@ -16,7 +15,8 @@ $(function() {
 	var SELECTORS = {
 		WORK_SECTION: '#work',
 		PROJECT_SECTION: '#work-belt',
-		PROJECT_WRAP: '#work-wrap'
+		PROJECT_WRAP: '#work-wrap',
+		THUMBNAILS_WRAP: '#thumb-wrap',
 	};
 
 	
@@ -59,7 +59,7 @@ $(function() {
 		this.$projThumnail = $('.' + CLASSES.PROJECT_THUMBNAIL);
 		this.$projSection = $(SELECTORS.PROJECT_SECTION);
 		this.$arrowBtn = $('.' + CLASSES.ARROW_BTN);
-		this.$thumbnail_wrap = $('.' + CLASSES.THUMBNAILS_WRAP);
+		this.$thumbnail_wrap = $(SELECTORS.THUMBNAILS_WRAP);
 		this.$project_wrap = $(SELECTORS.PROJECT_WRAP);
 		this.$menuIcon = $('.' + CLASSES.MENU_ICON);
 		this.$menuText = $('.' + CLASSES.MENU_TEXT);

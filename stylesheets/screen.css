@@ -4281,8 +4281,9 @@ header .wrapper-head #wrapper-name {
   background-color: #FCFFF5;
   border: 0;
   margin: 0 auto 70px;
+  opacity: 0.5;
 }
-/* line 45, ../sass/_social.scss */
+/* line 46, ../sass/_social.scss */
 #social .big-email {
   display: inline-block;
   margin: 0 auto 70px;
@@ -4293,17 +4294,17 @@ header .wrapper-head #wrapper-name {
   cursor: pointer;
   opacity: 0.5;
 }
-/* line 54, ../sass/_social.scss */
+/* line 55, ../sass/_social.scss */
 #social .big-email:hover {
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
-/* line 61, ../sass/_social.scss */
+/* line 62, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
 @media screen and (max-width: 760px) {
-  /* line 66, ../sass/_social.scss */
+  /* line 67, ../sass/_social.scss */
   #social .big-email {
     font-size: 32px;
   }
@@ -4352,7 +4353,7 @@ header .wrapper-head #wrapper-name {
 /* line 35, ../sass/_contactme.scss */
 #contact .contact-form input:focus, #contact .contact-form textarea:focus {
   color: #3E606F;
-  background: #91AA9D;
+  background: #FCFFF5;
 }
 /* line 41, ../sass/_contactme.scss */
 #contact .contact-form textarea {
