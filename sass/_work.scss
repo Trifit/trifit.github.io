@@ -18,52 +18,6 @@
 			#work-wrap{
 				max-width: 800px;
 				margin: 0 auto;
-			}
-			#thumb-wrap{				
-    			max-width: 800px;
-				display: inline-block;
-				text-align: center;
-				
-				h3{
-					margin-bottom: 30px;
-				}
-				figure{		
-					display: inline-block;
-					text-align: center;
-					vertical-align: middle;
-		  			position: relative;
-		  			margin:0;
-		  			overflow: hidden;
-		  			height: 134px;
-		  			width: 200px;
-		  			background: $color5;
-					cursor: pointer;	
-											
-					figcaption {
-					  	position: absolute;
-						height:100%;
-						width:100%;
-						top:-194px;
-						transition: top 0.2s ease;
-						
-						background: rgba($color5, 0.9);		
-						img{
-							border:3px solid #fff;
-						}				
-					  	h4{
-							opacity:1!important;
-							color:$color2;
-							font-weight: bold;
-							font-size: 14px;
-							line-height: 134px;
-						}
-						
-					}
-				}
-				figure:hover figcaption {
-					top:0;
-				}
-
 				.detail{
 					max-width: $half-width;
 					margin: 0 auto;
@@ -141,6 +95,53 @@
 										
 					}
 				}
+			}
+			#thumb-wrap{				
+    			max-width: 800px;
+				display: inline-block;
+				text-align: center;
+				
+				h3{
+					margin-bottom: 30px;
+				}
+				figure{		
+					display: inline-block;
+					text-align: center;
+					vertical-align: middle;
+		  			position: relative;
+		  			margin:0;
+		  			overflow: hidden;
+		  			height: 134px;
+		  			width: 200px;
+		  			background: $color5;
+					cursor: pointer;	
+											
+					figcaption {
+					  	position: absolute;
+						height:100%;
+						width:100%;
+						top:-194px;
+						transition: top 0.2s ease;
+						
+						background: rgba($color5, 0.9);		
+						img{
+							border:3px solid #fff;
+						}				
+					  	h4{
+							opacity:1!important;
+							color:$color2;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 134px;
+						}
+						
+					}
+				}
+				figure:hover figcaption {
+					top:0;
+				}
+
+				
 			}	
 			 @media screen and (max-width : 480px){
 			 	#thumb-wrap{
