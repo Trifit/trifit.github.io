@@ -4116,12 +4116,12 @@ header .wrapper-head #wrapper-name {
   font-size: 1.1em;
 }
 /* line 35, ../sass/_work.scss */
-#work #work-belt #thumb-cointainer #work-wrap .detail h4 .fa-external-link:hover:before, #work #work-belt #thumb-cointainer #work-wrap .detail h5 .fa-external-link:hover:before, #work #work-belt #work-container #work-wrap .detail h4 .fa-external-link:hover:before, #work #work-belt #work-container #work-wrap .detail h5 .fa-external-link:hover:before {
+#work #work-belt #thumb-cointainer #work-wrap .detail h4 a:hover > .fa-external-link:before, #work #work-belt #thumb-cointainer #work-wrap .detail h5 a:hover > .fa-external-link:before, #work #work-belt #work-container #work-wrap .detail h4 a:hover > .fa-external-link:before, #work #work-belt #work-container #work-wrap .detail h5 a:hover > .fa-external-link:before {
   content: "" !important;
 }
 /* line 38, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #work-wrap .detail h4 a:hover, #work #work-belt #thumb-cointainer #work-wrap .detail h5 a:hover, #work #work-belt #work-container #work-wrap .detail h4 a:hover, #work #work-belt #work-container #work-wrap .detail h5 a:hover {
-  border-bottom: 2px solid #193441;
+  border-bottom: 3px solid #193441;
 }
 /* line 43, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #work-wrap .detail .fa-link, #work #work-belt #work-container #work-wrap .detail .fa-link {
