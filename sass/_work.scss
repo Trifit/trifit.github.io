@@ -10,31 +10,21 @@
 		#thumb-cointainer, #work-container{
 			width: 50%;			
 			float: left;
-			#thumb-wrap{
-				
-
-			} 
 			#work-wrap{
 				max-width: 800px;
 				margin: 0 auto;
 				.detail{
 					max-width: $half-width;
+					h4, h5, img, p{					
+						margin-bottom: 15px;
+					}
 					
-					p{
-						text-align: justify;
-						margin-bottom: 15px;
-    					font-size: 0.875em;
-					}
-					h4, h5, img{
-						text-align: center;
-						margin-bottom: 15px;
-					}
 					img{
 						max-width: 91%;
     					height: auto;  						
 					}
+
 					h4,h5{
-						text-align: left;
 						font-weight: 300;
 						font-size: 1em;
 						strong{
