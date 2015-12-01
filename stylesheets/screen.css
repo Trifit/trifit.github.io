@@ -4093,8 +4093,8 @@ header .wrapper-head #wrapper-name {
 }
 /* line 18, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #work-wrap, #work #work-belt #work-container #work-wrap {
-  text-align: center;
   max-width: 800px;
+  margin: 0 auto;
 }
 /* line 22, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #work-container #thumb-wrap {
@@ -4106,7 +4106,7 @@ header .wrapper-head #wrapper-name {
 #work #work-belt #thumb-cointainer #thumb-wrap h3, #work #work-belt #work-container #thumb-wrap h3 {
   margin-bottom: 30px;
 }
-/* line 31, ../sass/_work.scss */
+/* line 30, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure, #work #work-belt #work-container #thumb-wrap figure {
   display: inline-block;
   text-align: center;
@@ -4119,7 +4119,7 @@ header .wrapper-head #wrapper-name {
   background: #193441;
   cursor: pointer;
 }
-/* line 43, ../sass/_work.scss */
+/* line 42, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption, #work #work-belt #work-container #thumb-wrap figure figcaption {
   position: absolute;
   height: 100%;
@@ -4128,11 +4128,11 @@ header .wrapper-head #wrapper-name {
   transition: top 0.2s ease;
   background: rgba(25, 52, 65, 0.9);
 }
-/* line 51, ../sass/_work.scss */
+/* line 50, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption img, #work #work-belt #work-container #thumb-wrap figure figcaption img {
   border: 3px solid #fff;
 }
-/* line 54, ../sass/_work.scss */
+/* line 53, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure figcaption h4, #work #work-belt #work-container #thumb-wrap figure figcaption h4 {
   opacity: 1 !important;
   color: #D1DBBD;
@@ -4140,56 +4140,56 @@ header .wrapper-head #wrapper-name {
   font-size: 14px;
   line-height: 134px;
 }
-/* line 64, ../sass/_work.scss */
+/* line 63, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap figure:hover figcaption, #work #work-belt #work-container #thumb-wrap figure:hover figcaption {
   top: 0;
 }
-/* line 68, ../sass/_work.scss */
+/* line 67, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail, #work #work-belt #work-container #thumb-wrap .detail {
   max-width: 600px;
   margin: 0 auto;
 }
-/* line 71, ../sass/_work.scss */
+/* line 70, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail p, #work #work-belt #work-container #thumb-wrap .detail p {
   text-align: justify;
   margin: 15px;
   font-size: 0.875em;
 }
-/* line 76, ../sass/_work.scss */
+/* line 75, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail h4, #work #work-belt #thumb-cointainer #thumb-wrap .detail h5, #work #work-belt #thumb-cointainer #thumb-wrap .detail img, #work #work-belt #work-container #thumb-wrap .detail h4, #work #work-belt #work-container #thumb-wrap .detail h5, #work #work-belt #work-container #thumb-wrap .detail img {
   text-align: center;
   margin: 15px;
 }
-/* line 80, ../sass/_work.scss */
+/* line 79, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail img, #work #work-belt #work-container #thumb-wrap .detail img {
   max-width: 91%;
   height: auto;
 }
-/* line 84, ../sass/_work.scss */
+/* line 83, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail h4, #work #work-belt #thumb-cointainer #thumb-wrap .detail h5, #work #work-belt #work-container #thumb-wrap .detail h4, #work #work-belt #work-container #thumb-wrap .detail h5 {
   text-align: left;
   font-weight: 300;
   font-size: 1em;
 }
-/* line 88, ../sass/_work.scss */
+/* line 87, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail h4 strong, #work #work-belt #thumb-cointainer #thumb-wrap .detail h5 strong, #work #work-belt #work-container #thumb-wrap .detail h4 strong, #work #work-belt #work-container #thumb-wrap .detail h5 strong {
   font-weight: 600;
   font-size: 1.1em;
 }
-/* line 92, ../sass/_work.scss */
+/* line 91, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail h4 .fa-external-link:hover:before, #work #work-belt #thumb-cointainer #thumb-wrap .detail h5 .fa-external-link:hover:before, #work #work-belt #work-container #thumb-wrap .detail h4 .fa-external-link:hover:before, #work #work-belt #work-container #thumb-wrap .detail h5 .fa-external-link:hover:before {
   content: "" !important;
 }
-/* line 95, ../sass/_work.scss */
+/* line 94, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail h4 a:hover, #work #work-belt #thumb-cointainer #thumb-wrap .detail h5 a:hover, #work #work-belt #work-container #thumb-wrap .detail h4 a:hover, #work #work-belt #work-container #thumb-wrap .detail h5 a:hover {
   border-bottom: 3px solid #193441;
 }
-/* line 100, ../sass/_work.scss */
+/* line 99, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .fa-link, #work #work-belt #work-container #thumb-wrap .detail .fa-link {
   font-family: "FontAwesome";
   content: "/f08e";
 }
-/* line 104, ../sass/_work.scss */
+/* line 103, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .video-container, #work #work-belt #work-container #thumb-wrap .detail .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -4197,7 +4197,7 @@ header .wrapper-head #wrapper-name {
   height: 0;
   overflow: hidden;
 }
-/* line 112, ../sass/_work.scss */
+/* line 111, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .video-container iframe,
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .video-container object,
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .video-container embed, #work #work-belt #work-container #thumb-wrap .detail .video-container iframe,
@@ -4209,26 +4209,26 @@ header .wrapper-head #wrapper-name {
   width: 100%;
   height: 100%;
 }
-/* line 122, ../sass/_work.scss */
+/* line 121, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame {
   margin: 15px;
   width: 100%;
 }
-/* line 125, ../sass/_work.scss */
+/* line 124, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .arrow, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .arrow {
   cursor: pointer;
 }
-/* line 128, ../sass/_work.scss */
+/* line 127, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .icon, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .icon {
   display: inline-block;
   text-align: center;
   width: 48%;
 }
-/* line 132, ../sass/_work.scss */
+/* line 131, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .icon svg, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .icon svg {
   opacity: 0.7;
 }
-/* line 134, ../sass/_work.scss */
+/* line 133, ../sass/_work.scss */
 #work #work-belt #thumb-cointainer #thumb-wrap .detail .icons-Frame .icon svg:hover, #work #work-belt #work-container #thumb-wrap .detail .icons-Frame .icon svg:hover {
   opacity: 1;
   transform: scale(1.2);
@@ -4236,7 +4236,7 @@ header .wrapper-head #wrapper-name {
   transition: all .25s ease-in-out;
 }
 @media screen and (max-width: 480px) {
-  /* line 147, ../sass/_work.scss */
+  /* line 146, ../sass/_work.scss */
   #work #work-belt #thumb-cointainer #thumb-wrap, #work #work-belt #work-container #thumb-wrap {
     text-align: center !important;
   }
@@ -4270,17 +4270,21 @@ header .wrapper-head #wrapper-name {
   margin: 5%;
 }
 /* line 21, ../sass/_social.scss */
+#social #icons .icon svg:first-child {
+  fill: #D1DBBD;
+}
+/* line 24, ../sass/_social.scss */
 #social #icons .icon:hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 26, ../sass/_social.scss */
+/* line 29, ../sass/_social.scss */
 #social #icons .icon .icon-svg {
   fill: #FCFFF5;
   margin-top: 15%;
 }
-/* line 34, ../sass/_social.scss */
+/* line 37, ../sass/_social.scss */
 #social .bar {
   width: 250px;
   height: 5px;
@@ -4288,7 +4292,7 @@ header .wrapper-head #wrapper-name {
   border: 0;
   margin: 0 auto 70px;
 }
-/* line 42, ../sass/_social.scss */
+/* line 45, ../sass/_social.scss */
 #social .big-email {
   display: inline-block;
   margin: 0 auto 70px;
@@ -4299,17 +4303,17 @@ header .wrapper-head #wrapper-name {
   cursor: pointer;
   opacity: 0.5;
 }
-/* line 51, ../sass/_social.scss */
+/* line 54, ../sass/_social.scss */
 #social .big-email:hover {
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
-/* line 58, ../sass/_social.scss */
+/* line 61, ../sass/_social.scss */
 #social h3 {
   padding-top: 40px;
 }
 @media screen and (max-width: 760px) {
-  /* line 64, ../sass/_social.scss */
+  /* line 67, ../sass/_social.scss */
   #social .big-email {
     font-size: 32px;
   }
@@ -4358,20 +4362,21 @@ header .wrapper-head #wrapper-name {
 /* line 35, ../sass/_contactme.scss */
 #contact .contact-form input:focus, #contact .contact-form textarea:focus {
   color: #3E606F;
+  background: #91AA9D;
 }
-/* line 40, ../sass/_contactme.scss */
+/* line 41, ../sass/_contactme.scss */
 #contact .contact-form textarea {
   height: 10em;
   width: 100%;
   resize: none;
 }
-/* line 45, ../sass/_contactme.scss */
+/* line 46, ../sass/_contactme.scss */
 #contact .contact-form .row:before,
 #contact .contact-form .row:after {
   content: " ";
   display: table;
 }
-/* line 50, ../sass/_contactme.scss */
+/* line 51, ../sass/_contactme.scss */
 #contact .contact-form .btn-submit {
   width: 100px;
   padding: 10px 0;
@@ -4383,7 +4388,7 @@ header .wrapper-head #wrapper-name {
   background: #3E606F;
   border: none;
 }
-/* line 63, ../sass/_contactme.scss */
+/* line 64, ../sass/_contactme.scss */
 #contact .contact-form .btn-submit:hover {
   background: none;
   border: 1px solid #193441;
@@ -4392,7 +4397,7 @@ header .wrapper-head #wrapper-name {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 74, ../sass/_contactme.scss */
+  /* line 75, ../sass/_contactme.scss */
   .col-md-6 {
     width: 100% !important;
   }
