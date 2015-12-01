@@ -66,12 +66,13 @@
 						margin:15px;
 						width:100%;
 						.arrow{
-							cursor: pointer;							
+							cursor: pointer;
+							margin-right: 66px;
 						}
 						.icon{
 							display: inline-block;
 							text-align: center;
-							width: 48%;
+							width: 33px;
 							svg{
 								opacity: 0.7;
 								&:hover{
