@@ -4355,7 +4355,7 @@ header .wrapper-head #wrapper-name {
 #contact .contact-form input:focus, #contact .contact-form textarea:focus {
   color: #3E606F;
   background: #FCFFF5;
-  box-shadow: inset 0 0 10px #D1DBBD;
+  box-shadow: inset 0 0 20px #D1DBBD;
 }
 /* line 42, ../sass/_contactme.scss */
 #contact .contact-form textarea {
@@ -4386,7 +4386,7 @@ header .wrapper-head #wrapper-name {
   background: none;
   border: 1px solid #193441;
   color: #0a141a;
-  transition: background .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 @media screen and (max-width: 480px) {
