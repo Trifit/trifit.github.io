@@ -3790,7 +3790,7 @@ header .wrapper-head #wrapper-name {
   }
   /* line 43, ../sass/_header.scss */
   header .wrapper-head {
-    padding: 2% 0;
+    height: 100px;
     right: 2%;
   }
   /* line 46, ../sass/_header.scss */
