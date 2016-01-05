@@ -1,8 +1,43 @@
 @charset "UTF-8";
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 
+* TODO LIST
+*
+* - Refactor scss code
+* - Create a "decent" header image
+* - Create a game for the header 
+* - Create a good footer
+*/
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/*
+* CONTENTS
+*
+* GENERIC
+* normalize.............A level playing field.
+*
+* SETTINGS
+* variables.............Globally-available variables.
+*
+* TOOLS
+* font-awesome..........Awesome FontIcons from Font-awesome.
+* mixins................Usefull mixins.
+*
+* BASE
+* general...............Base Styles for all the sections. (TODO: What is in 
+*                       here should not be in the SECTIONS zone)
+*
+* COMPONENTS
+* header................The page header.
+* aboutme...............The "About Me" section.
+* skills................The "Skills" section.
+* work..................The "Work" section.
+* social................The "Social" section.
+* contactme.............The "Contact Me" section.
+* footer................The footer header. (right now hidden until create a ok 
+*                       one)
+*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
 * 1. Set default font family to sans-serif.
@@ -3781,16 +3816,16 @@ header .wrapper-head #wrapper-name {
 @media screen and (max-width: 870px) {
   /* line 36, ../sass/_header.scss */
   header {
-    background: none rgba(25, 52, 65, 0.9);
+    background: none #193441;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     position: fixed;
     z-index: 99;
     width: 100%;
     padding: 0;
     top: 0;
   }
-  /* line 43, ../sass/_header.scss */
+  /* line 44, ../sass/_header.scss */
   header .wrapper-head {
-    height: 100px;
     right: 2%;
   }
   /* line 46, ../sass/_header.scss */
@@ -3938,7 +3973,7 @@ header .wrapper-head #wrapper-name {
   background: -o-linear-gradient(to top, #FCFFF5, #193441);
   /* For Opera 11.1 to 12.0 */
   background: -ms-linear-gradient(to top, #FCFFF5, #193441);
-  background: linear-gradient(to top, #fcfff5, #193441);
+  background: linear-gradient(to top, #FCFFF5, #193441);
   /* Standard syntax */
   border-radius: 100%;
   border: 5px solid #fcfff5;
