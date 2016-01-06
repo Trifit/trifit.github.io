@@ -4,10 +4,11 @@
 		margin: 30px auto;		
 		svg{
 			@include size(200px);
-			@include gradient;	
+			background-color: #FCFFF5;
+			//@include gradient;	
 			border-radius: 100%;
-			border: 5px solid #fcfff5;
-			box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+			//border: 5px solid #fcfff5;
+			box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
 		}		
 	}
 	p{	

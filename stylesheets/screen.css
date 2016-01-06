@@ -3965,27 +3965,17 @@ header .wrapper-head #wrapper-name {
 #about_me #myself svg {
   width: 200px;
   height: 200px;
-  background: -webkit-gradient(linear, to top, to bottom, from(#FCFFF5), to(#193441));
-  background: -webkit-linear-gradient(to top, #FCFFF5, #193441);
-  /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(to top, #FCFFF5, #193441);
-  /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(to top, #FCFFF5, #193441);
-  /* For Opera 11.1 to 12.0 */
-  background: -ms-linear-gradient(to top, #FCFFF5, #193441);
-  background: linear-gradient(to top, #FCFFF5, #193441);
-  /* Standard syntax */
+  background-color: #FCFFF5;
   border-radius: 100%;
-  border: 5px solid #fcfff5;
-  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 13, ../sass/_aboutme.scss */
+/* line 14, ../sass/_aboutme.scss */
 #about_me p {
   margin: 30px;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 19, ../sass/_aboutme.scss */
+  /* line 20, ../sass/_aboutme.scss */
   #about_me {
     padding-top: 60px;
   }
