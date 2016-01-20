@@ -3847,7 +3847,7 @@ header .wrapper-head #wrapper-name {
     display: inline-block !important;
     vertical-align: middle;
     margin: 10px;
-    margin: 5%;
+    margin: 25px;
     width: 69%;
   }
   /* line 67, ../sass/mixins.scss */
@@ -3869,8 +3869,9 @@ header .wrapper-head #wrapper-name {
     text-align: right !important;
     display: inline-block !important;
     position: relative;
+    margin-right: 25px;
   }
-  /* line 84, ../sass/mixins.scss */
+  /* line 85, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span,
   header .wrapper-head .wrapper-bar .menu-icon span:before,
   header .wrapper-head .wrapper-bar .menu-icon span:after {
@@ -3882,73 +3883,73 @@ header .wrapper-head #wrapper-name {
     border-radius: 10px;
     background: #D1DBBD;
   }
-  /* line 96, ../sass/mixins.scss */
+  /* line 97, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 100, ../sass/mixins.scss */
+  /* line 101, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 104, ../sass/mixins.scss */
+  /* line 105, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 108, ../sass/mixins.scss */
+  /* line 109, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 113, ../sass/mixins.scss */
+  /* line 114, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 119, ../sass/mixins.scss */
+  /* line 120, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 126, ../sass/mixins.scss */
+  /* line 127, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 130, ../sass/mixins.scss */
+  /* line 131, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 137, ../sass/mixins.scss */
+  /* line 138, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 146, ../sass/mixins.scss */
+  /* line 147, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 149, ../sass/mixins.scss */
+  /* line 150, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 155, ../sass/mixins.scss */
+  /* line 156, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
   }
-  /* line 159, ../sass/mixins.scss */
+  /* line 160, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li a:hover {
     border-bottom: none !important;
     color: #FCFFF5;
@@ -4469,7 +4470,7 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     display: inline-block !important;
     vertical-align: middle;
     margin: 10px;
-    margin: 5%;
+    margin: 25px;
     width: 69%;
   }
   /* line 67, ../sass/mixins.scss */
@@ -4491,8 +4492,9 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     text-align: right !important;
     display: inline-block !important;
     position: relative;
+    margin-right: 25px;
   }
-  /* line 84, ../sass/mixins.scss */
+  /* line 85, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span,
   .wrapper-head .wrapper-bar .menu-icon span:before,
   .wrapper-head .wrapper-bar .menu-icon span:after {
@@ -4504,73 +4506,73 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     border-radius: 10px;
     background: #D1DBBD;
   }
-  /* line 96, ../sass/mixins.scss */
+  /* line 97, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 100, ../sass/mixins.scss */
+  /* line 101, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 104, ../sass/mixins.scss */
+  /* line 105, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 108, ../sass/mixins.scss */
+  /* line 109, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 113, ../sass/mixins.scss */
+  /* line 114, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 119, ../sass/mixins.scss */
+  /* line 120, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 126, ../sass/mixins.scss */
+  /* line 127, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 130, ../sass/mixins.scss */
+  /* line 131, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 137, ../sass/mixins.scss */
+  /* line 138, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 146, ../sass/mixins.scss */
+  /* line 147, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 149, ../sass/mixins.scss */
+  /* line 150, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 155, ../sass/mixins.scss */
+  /* line 156, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
   }
-  /* line 159, ../sass/mixins.scss */
+  /* line 160, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a:hover {
     border-bottom: none !important;
     color: #FCFFF5;
