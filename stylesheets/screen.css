@@ -3878,7 +3878,7 @@ header .wrapper-head #wrapper-name {
     display: block;
     position: absolute;
     width: 50px;
-    height: 1px;
+    height: 3px;
     background: #D1DBBD;
   }
   /* line 95, ../sass/mixins.scss */
@@ -4499,7 +4499,7 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     display: block;
     position: absolute;
     width: 50px;
-    height: 1px;
+    height: 3px;
     background: #D1DBBD;
   }
   /* line 95, ../sass/mixins.scss */
