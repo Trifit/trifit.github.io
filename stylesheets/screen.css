@@ -3878,76 +3878,77 @@ header .wrapper-head #wrapper-name {
     display: block;
     position: absolute;
     width: 50px;
-    height: 3px;
+    height: 4px;
+    border-radius: 10px;
     background: #D1DBBD;
   }
-  /* line 95, ../sass/mixins.scss */
+  /* line 96, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 99, ../sass/mixins.scss */
+  /* line 100, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 103, ../sass/mixins.scss */
+  /* line 104, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 107, ../sass/mixins.scss */
+  /* line 108, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 112, ../sass/mixins.scss */
+  /* line 113, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 118, ../sass/mixins.scss */
+  /* line 119, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 125, ../sass/mixins.scss */
+  /* line 126, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 129, ../sass/mixins.scss */
+  /* line 130, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 136, ../sass/mixins.scss */
+  /* line 137, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 145, ../sass/mixins.scss */
+  /* line 146, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 148, ../sass/mixins.scss */
+  /* line 149, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 154, ../sass/mixins.scss */
+  /* line 155, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
   }
-  /* line 158, ../sass/mixins.scss */
+  /* line 159, ../sass/mixins.scss */
   header .wrapper-head .wrapper-bar nav ul li a:hover {
     border-bottom: none !important;
     color: #FCFFF5;
@@ -4499,76 +4500,77 @@ footer .wrapper .wrapper-bar nav ul li a:hover {
     display: block;
     position: absolute;
     width: 50px;
-    height: 3px;
+    height: 4px;
+    border-radius: 10px;
     background: #D1DBBD;
   }
-  /* line 95, ../sass/mixins.scss */
+  /* line 96, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span {
     top: -5px;
   }
-  /* line 99, ../sass/mixins.scss */
+  /* line 100, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:before {
     top: -15px;
   }
-  /* line 103, ../sass/mixins.scss */
+  /* line 104, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-icon span:after {
     top: 15px;
   }
-  /* line 107, ../sass/mixins.scss */
+  /* line 108, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick {
     background-color: transparent !important;
     transition: background-color .25s ease-in-out, transform .25s ease-in-out;
   }
-  /* line 112, ../sass/mixins.scss */
+  /* line 113, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:before {
     top: 0 !important;
     transform: rotate(-45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 118, ../sass/mixins.scss */
+  /* line 119, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isClick:after {
     top: 0 !important;
     transform: rotate(45deg);
     transform-origin: center center;
     transition: transform .25s ease-out;
   }
-  /* line 125, ../sass/mixins.scss */
+  /* line 126, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick {
     background: #D1DBBD !important;
   }
-  /* line 129, ../sass/mixins.scss */
+  /* line 130, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:before {
     top: -15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 136, ../sass/mixins.scss */
+  /* line 137, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar .menu-isNotClick:after {
     top: 15px !important;
     transform-origin: center center !important;
     transform: rotate(0deg) !important;
     transition: transform .25s ease-out;
   }
-  /* line 145, ../sass/mixins.scss */
+  /* line 146, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul {
     position: static;
     display: none;
   }
-  /* line 148, ../sass/mixins.scss */
+  /* line 149, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li {
     width: 100% !important;
     /*Create vertical spacing*/
     text-align: center;
     margin: 0 auto !important;
   }
-  /* line 154, ../sass/mixins.scss */
+  /* line 155, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a {
     line-height: 40px;
     display: block;
   }
-  /* line 158, ../sass/mixins.scss */
+  /* line 159, ../sass/mixins.scss */
   .wrapper-head .wrapper-bar nav ul li a:hover {
     border-bottom: none !important;
     color: #FCFFF5;
