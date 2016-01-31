@@ -48,8 +48,8 @@ $(function() {
 		this.createChildren()
 			.setupHandlers()
 			.enable()
-			.smoothScroll()
-			.inject();
+			.inject()
+			.smoothScroll();
 
 		return this;
 	};
@@ -117,7 +117,7 @@ $(function() {
 	Sliding.prototype.smoothScroll = function (){
 		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		    	this.$menuIcon.children().addClass(this.menuNotClicked);
+		    	//.$menuIcon.children().addClass(this.menuNotClicked);
 				var target = $(this.hash);
 		      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      	if (target.length) {
@@ -129,6 +129,7 @@ $(function() {
 		      }
 		    }
   		});
+  		console.log('test');
 		return this;
 	};
 
