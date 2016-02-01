@@ -3807,25 +3807,25 @@ header .wrapper-head .wrapper-bar nav ul li a:hover {
   padding-bottom: 1px;
 }
 /* line 25, ../sass/_header.scss */
-header .wrapper-head #wrapper-name {
+header #wrapper-name {
   width: 60%;
   padding: 250px 0;
 }
 /* line 28, ../sass/_header.scss */
-header .wrapper-head #wrapper-name h1 {
+header #wrapper-name h1 {
   margin-top: 100px;
 }
 /* line 31, ../sass/_header.scss */
-header .wrapper-head #wrapper-name h2 {
+header #wrapper-name h2 {
   display: inline-block;
   padding: 15px;
   margin: 40px;
-  border: 2px solid #193441;
+  border: 2px solid;
 }
 
 /*Responsive Styles*/
 @media screen and (max-width: 870px) {
-  /* line 45, ../sass/_header.scss */
+  /* line 44, ../sass/_header.scss */
   header {
     background: none #193441;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -3835,16 +3835,16 @@ header .wrapper-head #wrapper-name h2 {
     padding: 0;
     top: 0;
   }
-  /* line 53, ../sass/_header.scss */
+  /* line 52, ../sass/_header.scss */
   header .wrapper-head {
     right: 2%;
   }
-  /* line 55, ../sass/_header.scss */
+  /* line 54, ../sass/_header.scss */
   header .wrapper-head #wrapper-name {
     padding: 0;
     width: 60%;
   }
-  /* line 58, ../sass/_header.scss */
+  /* line 57, ../sass/_header.scss */
   header .wrapper-head #wrapper-name h1 {
     font-size: 16px !important;
   }
