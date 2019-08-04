@@ -1,0 +1,172 @@
+@mixin verticaly-align {
+	/*has to be in the element to verticaly align*/
+	display: inline-block;	
+  	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin size($size){
+	width:$size;
+	height:$size;
+}
+
+@mixin gradient{
+  	background: -webkit-gradient(linear, to top, to bottom, from($color1), to($color5));
+	background: -webkit-linear-gradient(to top, $color1, $color5);/* For Safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(to top, $color1, $color5); /* For Firefox 3.6 to 15 */
+	background: -o-linear-gradient(to top, $color1, $color5);/* For Opera 11.1 to 12.0 */
+	background: -ms-linear-gradient(to top, $color1, $color5);
+	background: linear-gradient(to top, $color1, $color5);/* Standard syntax */
+}
+
+@mixin column{
+	display: block;
+	float:left;	
+}
+
+@mixin navbar{
+	.wrapper-bar{		
+		nav{
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				li{
+					margin:0 30px;
+					a{
+						text-decoration: none;
+						font-weight: 600;
+						color: $color2;
+						font-size: 14px;
+						letter-spacing: 2px;
+						&:hover{
+							border-bottom: 2px solid;
+							padding-bottom: 1px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@mixin navbarRes{
+	.wrapper-head{
+		width: 100%!important;		
+		text-align: left!important;
+		.wrapper-name{
+			display: inline-block!important;	
+			vertical-align: middle;
+			margin: 10px;
+			margin: 25px;
+    		width: 69%;
+			h1{
+				font-size: 14px;
+				margin: 0!important;
+			}
+			h2{
+				font-size: 10px;
+			}
+		}
+		.wrapper-bar{
+		/*icon styles*/			
+			.menu-icon{
+			  cursor: pointer;	  
+			  text-align: right!important;
+			  display: inline-block!important;
+			  position: relative;	
+			  margin-right: 25px;
+			  		  
+			}
+			.menu-icon span, 
+			.menu-icon span:before, 
+			.menu-icon span:after{
+			  content: "";
+			  display: block;
+			  position: absolute;
+			  width: 50px;
+			  height: 4px;
+			  border-radius: 10px;
+			  background: $color2;
+			}
+
+			.menu-icon span{
+				top:-5px;		  
+			}
+
+			.menu-icon span:before{
+				top:-15px;					  
+			}
+
+			.menu-icon span:after{
+				top:15px;			
+			}
+
+			.menu-isClick{
+				background-color: transparent!important;
+				transition: background-color .25s ease-in-out, transform .25s ease-in-out;
+			}
+			
+			.menu-isClick:before{
+				top:0!important;
+				transform: rotate(-45deg);
+				transform-origin: center center;
+				transition: transform .25s ease-out;
+			}
+			.menu-isClick:after{
+				top:0!important;
+				transform: rotate(45deg);
+				transform-origin: center center;
+				transition: transform .25s ease-out;
+			}
+
+			.menu-isNotClick{
+				background: $color2!important;	
+			}
+
+			.menu-isNotClick:before{
+				top:-15px!important;
+				transform-origin: center center!important;
+				transform: rotate(0deg)!important;
+				transition: transform .25s ease-out;
+			}
+
+			.menu-isNotClick:after{
+				top:15px!important;
+				transform-origin: center center!important;
+				transform: rotate(0deg)!important;
+				transition: transform .25s ease-out;
+			}
+
+			nav{
+							
+				ul {
+					position: static;
+					display: none;
+					li {
+						width: 100%!important;
+						/*Create vertical spacing*/		
+						text-align: center;
+
+						margin: 0 auto!important;
+						a{
+							line-height: 40px;
+							display: block;	
+								
+							&:hover{
+								border-bottom: none!important;
+								color: $color1;
+							}					
+						}
+					}
+									
+				}		
+			}	
+		}
+	
+	}
+}

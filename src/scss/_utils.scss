@@ -1,0 +1,13 @@
+.is-hidden{
+    display: none;
+}
+
+.move-left{
+    transform: translateX(100vh);
+    transition: transform 1s;
+}
+
+.move-right{
+    transform: translateX(-100vh);
+    transition: transform 1s;
+}

@@ -1,0 +1,71 @@
+#social{
+	text-align: center;
+	#icons{
+		max-width: 700px;
+		padding-bottom: 40px;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
+		flex-wrap: wrap;
+		margin:20px auto;
+		.icon{
+			opacity: 0.7;
+			border: 2px solid $color1;
+			border-radius: 50%;
+			@include size(50px);
+			transition: all .1s ease-in-out;
+			margin:5%;
+			svg:first-child{
+				fill:$color1;
+			}
+			&:hover{
+				opacity: 1;
+				-webkit-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+			.icon-svg{
+				fill: $color1;
+				margin-top: 15%;				
+			}
+		}
+
+	}
+
+	.bar{
+		width: 250px;
+		height: 5px;
+		background-color: $color1;
+		border:0;
+		margin: 0 auto 70px;
+		opacity: 0.5;
+	}
+
+	.big-email{
+		display:inline-block;
+		margin:0 auto 70px;
+		font-size: 72px;
+		line-height: 1;
+		font-weight: 300;
+		color:$color1;
+		cursor:pointer;
+		opacity: 0.5;
+		&:hover{
+			opacity: 1;
+			transition: opacity .2s ease-in-out;
+		}
+	}
+
+	
+	h3{
+		padding-top: 40px;		
+	}
+
+	@media screen and (max-width : 760px){
+		.big-email{
+			font-size: 32px;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+#skills{
+	max-width: $full-width;
+		ul{
+			text-align: center;
+			margin:20px auto 0;
+			li{
+				$val:$full-width*0.3;
+				width: $val;
+				color:$color4;
+				font-size: 1em;			
+				margin: 0 2%;
+				display: inline-block;
+				p{
+					text-align: left;
+				}
+				@for $i from 0 to 10{
+					.skill-#{$i}
+					{				
+						margin:10px 0 30px;
+						border-radius: 10px;
+						background: $color5;
+						height: 5px;
+						width: ($val*$i*0.1);
+						$shade:($val*(1-($i*0.1)));
+						box-shadow:$shade 0 0 #fff;		
+					}
+				}	
+			}
+		}
+	}
