@@ -5,12 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     watch: true,
     mode: 'development',
-    entry: ['./src/js/index.js', './src/scss/_imports.scss'],
-    devtool: "source-map",
+    entry: [
+        './src/js/index.js', 
+        './src/scss/_imports.scss'
+    ],
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 9000
+        port: 9000,
     },
     output: {
         filename: "[name].min.js",
@@ -34,13 +36,13 @@ module.exports = {
                 test: /\.s?css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: { sourceMap: true },
+                    },
                     {
                         loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-
+                        options: { sourceMap: true },
                     }
                 ]
             },
@@ -51,7 +53,6 @@ module.exports = {
                 ]
             },
             {
-                // HTML LOADER
                 test: /\.html$/,
                 loader: 'html-loader'
             }

@@ -3,11 +3,11 @@
 }
 
 .move-left{
-    transform: translateX(100vh);
+    transform: translateX(-200vh);
     transition: transform 1s;
 }
 
 .move-right{
-    transform: translateX(-100vh);
+    transform: translateX(200vh);
     transition: transform 1s;
 }

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack-dev-server -d --open"
+    "start": "webpack-dev-server --open"
   },
   "devDependencies": {
     "css-loader": "^3.1.0",
