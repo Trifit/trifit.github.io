@@ -1,16 +1,20 @@
 
 const init = () => {
-	document.querySelector(".thumbnail").addEventListener('click', e => {
-		const tbnNumber = e.currentTarget.dataset.thumbnailNumber;
-	
-		e.target.classList.toggle("is-visible");
-		document.querySelector('#work-belt').classList.add('move-left');
-		document.querySelector('#work-wrap').classList.toggle("is-hidden");
-		document.querySelectorAll('.detail').forEach(element=>{
-			if(element.dataset.thumbnailNumber === tbnNumber) {
-				element.classList.toggle("is-visible");
-				return;
-			}
+	const tumbnails = document.querySelectorAll(".thumbnail");
+	tumbnails.forEach(thumbnail => {
+		thumbnail.addEventListener('click', e => {
+			const tbnNumber = e.currentTarget.dataset.thumbnailNumber;
+		
+			e.target.classList.toggle("is-visible");
+			document.querySelector('#work-belt').classList.add('move-left');
+			document.querySelector('#work-wrap').classList.toggle("is-hidden");
+			// document.querySelectorAll('.detail').forEach(element=>{
+			// 	if(element.dataset.detailNumber === tbnNumber) {
+			// 		element.classList.toggle("is-hidden");
+			// 		return;
+			// 	}
+			// });
+			document.querySelector(`.detail[data-detail-number="${tbnNumber}"]`).classList.toggle("is-hidden");
 		});
 	});
 }
