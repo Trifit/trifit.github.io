@@ -15,19 +15,20 @@ module.exports = {
         port: 9000,
     },
     output: {
-        filename: "[name].min.js",
+        filename: "./js/[name].min.[contenthash].js",
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // all options are optional
-            filename: '[name].css',
+            filename: './css/[name].css',
             chunkFilename: '[id].css',
             ignoreOrder: false, // Enable to remove warnings about conflicting order
         }),
         new HtmlWebpackPlugin({
-            template: "./src/template.html"
+            template: "./src/templateSVG.html",
+            title: 'Caching'
         }),
     ],
     module: {
@@ -48,9 +49,10 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'img',
+                }
             },
             {
                 test: /\.html$/,

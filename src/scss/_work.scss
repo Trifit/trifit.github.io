@@ -26,7 +26,11 @@
 			left:0;
 			transform: translateY(-50%) translateZ(0); /*for older browsers*/
   			will-change: transform;
-		}	
+		}
+
+		.cxLoyalty-logo{
+			transform: translateY(-50%) translateZ(0) scale(0.8); 
+		}
 
 		figcaption {
 			position: absolute;
@@ -53,7 +57,7 @@
 	}
 
 	#thumb-wrap{		
-		display:grid;
+		display: inline-grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 10px;			
 		margin: auto;
